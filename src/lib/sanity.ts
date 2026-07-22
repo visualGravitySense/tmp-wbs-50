@@ -36,6 +36,14 @@ export const SITE_SETTINGS_QUERY = `*[_type == "siteSettings" && _id == "siteSet
   "globalNineDaysProgramDoc": *[_type == "nineDaysProgram" && _id == "nineDaysProgram"][0]{
     ${NINE_DAYS_PROGRAM_GROQ}
   },
+  theme{
+    primaryColor,
+    accentColor,
+    themeStyle
+  },
+  layout{
+    footerVariant
+  },
   header{
     logo,
     navLinks[]{ name, href },

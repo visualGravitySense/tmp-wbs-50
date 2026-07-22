@@ -21,6 +21,27 @@
   --card-bg: 255 255 255;
   --card-border: 241 245 249;       /* slate-100 */
   --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+
+  /*
+   * Contact-form footer layout (footerVariant: contact-form).
+   * Defaults match the “Get in Touch” reference: slate upper panel + near-black bar + red CTA.
+   * Brand themes may override these on [data-brand="…"] without changing structure.
+   */
+  --footer-contact-bg: 62 71 80;           /* #3E4750 slate-blue */
+  --footer-contact-bar-bg: 22 24 28;       /* near-black lower bar */
+  --footer-contact-accent: 227 6 19;       /* red pill CTA — aligned with Swiss red for consistency across themes */
+  --footer-contact-text: 255 255 255;
+}
+
+/* opstar / vip-holidays: keep slate panel; accent can track brand primary for CTA cohesion */
+[data-brand="opstar"] {
+  /* Keep reference slate bg; use brand electric blue only if you prefer: 29 97 255 */
+  --footer-contact-accent: 227 6 19;
+}
+
+[data-brand="vip-holidays"] {
+  /* Copper accent on the consultation pill; panel stays dark slate for form contrast */
+  --footer-contact-accent: 201 168 76;
 }
 
 .dark {

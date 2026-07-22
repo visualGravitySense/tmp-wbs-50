@@ -27,6 +27,8 @@ const SOCIAL_PLATFORMS = [
   { title: 'Instagram', value: 'instagram' },
   { title: 'YouTube', value: 'youtube' },
   { title: 'X (Twitter)', value: 'x' },
+  { title: 'Telegram', value: 'telegram' },
+  { title: 'WhatsApp', value: 'whatsapp' },
 ] as const
 
 export default defineType({

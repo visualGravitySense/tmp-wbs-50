@@ -130,6 +130,7 @@ export default async function RootLayout({
         <SiteChrome
           headerData={siteSettings?.header}
           footerData={siteSettings?.footer}
+          footerVariant={siteSettings?.layout?.footerVariant || 'default'}
           cookieBanner={siteSettings?.cookieBanner}
           draftEnabled={draft.isEnabled}
         >

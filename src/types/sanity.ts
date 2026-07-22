@@ -35,6 +35,11 @@ export interface SiteSettings {
     accentColor?: string
     themeStyle?: 'opstar' | 'vip-holidays' | 'swiss-minimalism'
   }
+  /** Structural chrome variants — independent of brand themeStyle. */
+  layout?: {
+    footerVariant?: 'default' | 'contact-form'
+    // headerVariant?: string — reserved for future header layout switch
+  }
   cookieBanner?: {
     title?: string
     description?: string

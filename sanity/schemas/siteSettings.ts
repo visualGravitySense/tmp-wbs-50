@@ -139,6 +139,30 @@ export default defineType({
     }),
 
     defineField({
+      name: 'layout',
+      title: 'Layout',
+      type: 'object',
+      description:
+        'Structural chrome variants (footer/header layout), independent of brand theme (themeStyle).',
+      fields: [
+        defineField({
+          name: 'footerVariant',
+          title: 'Footer variant',
+          type: 'string',
+          options: {
+            list: [
+              { title: 'Default (legacy)', value: 'default' },
+              { title: 'Get in Touch (contact form)', value: 'contact-form' },
+            ],
+            layout: 'radio',
+          },
+          initialValue: 'default',
+        }),
+        // headerVariant — add later with the same radio pattern; do not invent until needed.
+      ],
+    }),
+
+    defineField({
       name: 'cookieBanner',
       title: 'Cookie Banner (GDPR)',
       type: 'object',

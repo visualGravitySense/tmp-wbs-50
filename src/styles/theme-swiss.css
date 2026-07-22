@@ -1123,3 +1123,35 @@
   background: #000 !important;
   border-color: #fff !important;
 }
+
+/* ═══════════════════════════════════════════════════════════
+   15. Contact-form footer layout (footerVariant: contact-form)
+   Rationale: Swiss Minimalism prefers pure black panels over blue-slate,
+   and Swiss red for the single accent (consultation CTA). Zero radius on
+   social chips / submit under this brand only.
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] {
+  --footer-contact-bg: 0 0 0;              /* pure black upper */
+  --footer-contact-bar-bg: 0 0 0;          /* pure black bar */
+  --footer-contact-accent: 227 6 19;       /* Swiss red #E30613 */
+}
+
+[data-brand="swiss-minimalism"] .footer-contact-submit {
+  border-radius: 0 !important; /* Swiss: no pills */
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+[data-brand="swiss-minimalism"] .footer-contact-social {
+  border-radius: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-contact-heading {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em;
+}
+
+[data-brand="swiss-minimalism"] .footer-contact-input:focus {
+  border-color: rgb(var(--footer-contact-accent)) !important;
+}
