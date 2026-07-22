@@ -100,6 +100,7 @@ export default defineType({
       name: 'certificationLink',
       title: 'Certification Link',
       type: 'url',
+      validation: (Rule) => Rule.uri({ allowRelative: true }),
     }),
   ],
   preview: {
