@@ -105,10 +105,10 @@ export default function Header({ data }: HeaderProps) {
     <>
     <header
       ref={headerRef}
-      className={`fixed inset-x-0 top-0 z-[100] w-full max-w-full overflow-x-hidden transition-all duration-400 ease-in-out ${
+      className={`site-header fixed inset-x-0 top-0 z-[100] w-full max-w-full overflow-x-hidden transition-all duration-400 ease-in-out ${
       scrolled 
-        ? `py-3 backdrop-blur-[12px] border-b ${isDark ? 'border-white/10' : 'border-black/10'} shadow-sm` 
-        : 'py-3 sm:py-4 bg-transparent'
+        ? `site-header--scrolled py-3 backdrop-blur-[12px] border-b ${isDark ? 'border-white/10' : 'border-black/10'} shadow-sm` 
+        : 'site-header--top py-3 sm:py-4 bg-transparent'
     }`}
     style={{
       backgroundColor: scrolled ? (isDark ? 'rgba(28, 27, 23, 0.8)' : 'rgba(249, 250, 251, 0.8)') : 'transparent'
@@ -133,12 +133,17 @@ export default function Header({ data }: HeaderProps) {
         </Link>
 
         {/* Desktop Navigation — hidden below lg */}
-        <nav className="hidden min-w-0 flex-1 items-center justify-center gap-5 px-2 xl:gap-10 lg:flex">
-          {navLinks.map((link) => (
+        <nav className="site-nav hidden min-w-0 flex-1 items-center justify-center gap-5 px-2 xl:gap-10 lg:flex">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href
+            return (
             <a
               key={link.name}
               href={link.href}
-              className={`text-[13px] font-bold tracking-wide transition-all duration-400 relative whitespace-nowrap ${
+              data-active={isActive ? 'true' : undefined}
+              className={`site-nav-link text-[13px] font-bold tracking-wide transition-all duration-400 relative whitespace-nowrap ${
+                isActive ? 'is-active' : ''
+              } ${
                 scrolled 
                   ? 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]' 
                   : isDark ? 'text-white hover:text-white/80' : 'text-[#1C1B17] hover:text-[#1C1B17]/80'
@@ -146,13 +151,14 @@ export default function Header({ data }: HeaderProps) {
               style={{
                 fontFamily: 'Gill Sans, Gill Sans MT, Calibri, sans-serif',
                 textShadow: scrolled ? 'none' : (isDark ? '0 1px 3px rgba(0,0,0,0.3)' : '0 1px 3px rgba(255,255,255,0.3)'),
-                borderBottom: pathname === link.href ? '2px solid #008DD2' : 'none',
-                paddingBottom: pathname === link.href ? '6px' : '0'
+                borderBottom: isActive ? '2px solid #008DD2' : 'none',
+                paddingBottom: isActive ? '6px' : '0'
               }}
             >
               {link.name}
             </a>
-          ))}
+            )
+          })}
         </nav>
 
         {/* Action Buttons */}

@@ -1,0 +1,1125 @@
+/**
+ * Swiss Minimalism — International Typographic Style theme scope.
+ * Applied when <body data-brand="swiss-minimalism"> (from Sanity siteSettings.theme.themeStyle).
+ *
+ * Design rules: pure B/W + Swiss red accent #E30613, zero radius, no glass/glow/gradients,
+ * single grotesk hierarchy, hairline rules, functional motion only.
+ */
+
+/* ═══════════════════════════════════════════════════════════
+   1. Design tokens (light)
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] {
+  /* Colors: pure black / white + Swiss red accent */
+  --color-primary: 0 0 0;
+  --color-primary-foreground: 255 255 255;
+  --color-secondary: 82 82 82;
+  --color-secondary-foreground: 255 255 255;
+  --color-background: 255 255 255;
+  --color-foreground: 0 0 0;
+  --color-muted: 245 245 245;
+  --color-muted-foreground: 82 82 82;
+  --color-border: 0 0 0;
+  --color-input: 255 255 255;
+  --color-ring: 227 6 19;
+  --color-accent: 227 6 19; /* Swiss red #E30613 */
+  --color-accent-hover: 180 5 15;
+  --color-accent-foreground: 255 255 255;
+  --color-destructive: 227 6 19;
+  --color-destructive-foreground: 255 255 255;
+
+  --text-primary: 0 0 0;
+  --text-secondary: 82 82 82;
+  --bg-primary: 255 255 255;
+  --bg-secondary: 255 255 255;
+  --bg-tertiary: 245 245 245;
+  --border: 0 0 0;
+
+  --color-text-heading: 0 0 0;
+  --card-bg: 255 255 255;
+  --card-border: 0 0 0;
+  --card-shadow: none;
+
+  /* Radii — Swiss does not round */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-full: 0;
+  --radius-glass-card: 0;
+  --radius-glass-inner: 0;
+  --radius-surface: 0;
+  --radius-glass-mobile: 0;
+  --radius-cta-pill: 0;
+  --radius-cta-dark: 0;
+
+  /* Kill glass */
+  --glass-blur-strong: 0px;
+  --glass-blur-medium: 0px;
+  --glass-blur-inner: 0px;
+  --glass-saturate-strong: 100%;
+  --glass-saturate-medium: 100%;
+  --glass-saturate-inner: 100%;
+  --glass-rim-light: 0 0 0;
+  --glass-rim-light-alpha: 1;
+  --glass-fill-light-alpha: 0;
+  --glass-fill-light-hover-alpha: 0;
+  --glass-inset-highlight-alpha: 0;
+  --glass-shadow-outer: none;
+  --glass-shadow-inset: none;
+  --glass-fill-dark: 0 0 0;
+  --glass-fill-dark-hover: 10 10 10;
+  --glass-rim-dark-alpha: 1;
+  --glass-primary-rim-alpha: 1;
+
+  /* Eyebrow — caps labels, Swiss catalog style */
+  --eyebrow-font-size: 0.6875rem;
+  --eyebrow-letter-spacing: 0.18em;
+  --eyebrow-font-weight: 700;
+  --eyebrow-pill-bg-light: 255 255 255;
+  --eyebrow-pill-text-light: 0 0 0;
+  --eyebrow-ink-light: 0 0 0;
+  --eyebrow-ink-dark: 255 255 255;
+
+  /* CTA tokens — flat black / Swiss red accents */
+  --cta-blue-from: 0 0 0;
+  --cta-blue-to: 0 0 0;
+  --cta-blue-dark-from: 255 255 255;
+  --cta-blue-dark-mid: 255 255 255;
+  --cta-blue-dark-to: 255 255 255;
+  --cta-blue-glow: 0 0 0;
+  --cta-blue-glow-dark: 0 0 0;
+  --cta-green-from: 0 0 0;
+  --cta-green-to: 0 0 0;
+  --cta-green-glow: 0 0 0;
+  --cta-white-fill-alpha: 1;
+  --cta-white-fill-hover-alpha: 1;
+  --cta-white-rim-alpha: 1;
+
+  /* Typography — one grotesk (Geist from layout --font-sans); mute decorative serif/script */
+  --font-serif: var(--font-sans);
+  --font-script: var(--font-sans);
+  --font-heading: var(--font-sans);
+  --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+
+  /* Shadows — none */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+
+  /* Motion — short, functional */
+  --duration-fast: 120ms;
+  --duration-normal: 180ms;
+  --duration-slow: 240ms;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   1b. Design tokens (dark) — invert B/W, keep Swiss red
+   ═══════════════════════════════════════════════════════════ */
+.dark [data-brand="swiss-minimalism"] {
+  --color-primary: 255 255 255;
+  --color-primary-foreground: 0 0 0;
+  --color-secondary: 163 163 163;
+  --color-secondary-foreground: 0 0 0;
+  --color-background: 0 0 0;
+  --color-foreground: 255 255 255;
+  --color-muted: 23 23 23;
+  --color-muted-foreground: 163 163 163;
+  --color-border: 255 255 255;
+  --color-input: 0 0 0;
+  --color-ring: 227 6 19;
+  --color-accent: 227 6 19;
+  --color-accent-hover: 255 40 50;
+  --color-accent-foreground: 255 255 255;
+  --color-destructive: 227 6 19;
+
+  --text-primary: 255 255 255;
+  --text-secondary: 163 163 163;
+  --bg-primary: 0 0 0;
+  --bg-secondary: 0 0 0;
+  --bg-tertiary: 23 23 23;
+  --border: 255 255 255;
+
+  --color-text-heading: 255 255 255;
+  --card-bg: 0 0 0;
+  --card-border: 255 255 255;
+  --card-shadow: none;
+
+  --glass-rim-light: 255 255 255;
+  --glass-fill-dark: 0 0 0;
+  --glass-fill-dark-hover: 23 23 23;
+
+  --cta-blue-from: 255 255 255;
+  --cta-blue-to: 255 255 255;
+  --cta-blue-dark-from: 255 255 255;
+  --cta-blue-dark-mid: 255 255 255;
+  --cta-blue-dark-to: 255 255 255;
+  --cta-green-from: 255 255 255;
+  --cta-green-to: 255 255 255;
+
+  --eyebrow-pill-bg-light: 0 0 0;
+  --eyebrow-pill-text-light: 255 255 255;
+}
+
+/* Base type: left-aligned, no decorative italics on body copy */
+[data-brand="swiss-minimalism"] {
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+  background-color: rgb(var(--bg-primary));
+  color: rgb(var(--text-primary));
+}
+
+[data-brand="swiss-minimalism"] p {
+  text-align: left;
+  text-wrap: pretty;
+}
+
+[data-brand="swiss-minimalism"] h1,
+[data-brand="swiss-minimalism"] h2,
+[data-brand="swiss-minimalism"] h3,
+[data-brand="swiss-minimalism"] h4,
+[data-brand="swiss-minimalism"] .font-serif,
+[data-brand="swiss-minimalism"] .font-script {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  letter-spacing: -0.02em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   2. Header / navigation
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .site-header {
+  background-color: rgb(var(--bg-primary) / 0.96) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgb(var(--border)) !important;
+  border-color: rgb(var(--border)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-header.site-header--top {
+  background-color: rgb(var(--bg-primary)) !important;
+  border-bottom: 1px solid rgb(var(--border)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-nav-link {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  font-size: 11px !important;
+  text-shadow: none !important;
+  border-bottom: none !important;
+  color: rgb(var(--text-primary)) !important;
+  transition: color var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-nav-link:hover {
+  color: rgb(var(--color-accent)) !important;
+  background: transparent !important;
+}
+
+[data-brand="swiss-minimalism"] .site-nav-link[data-active="true"],
+[data-brand="swiss-minimalism"] .site-nav-link.is-active {
+  color: rgb(var(--color-accent)) !important;
+  border-bottom: 1px solid rgb(var(--color-accent)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-logo-mark img {
+  filter: grayscale(1) contrast(1.15);
+  box-shadow: none;
+}
+
+[data-brand="swiss-minimalism"] .site-logo-mark {
+  border: 1px solid rgb(var(--border));
+  border-radius: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   3. Buttons / CTAs
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .btn-vibrant-blue,
+[data-brand="swiss-minimalism"] .btn-apple-green,
+[data-brand="swiss-minimalism"] .btn-soft-white {
+  background: rgb(var(--color-primary)) !important;
+  background-image: none !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  border: 1px solid rgb(var(--color-primary)) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  transform: none !important;
+  transition: color var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out) !important;
+}
+
+[data-brand="swiss-minimalism"] .btn-vibrant-blue:hover,
+[data-brand="swiss-minimalism"] .btn-apple-green:hover,
+[data-brand="swiss-minimalism"] .btn-soft-white:hover {
+  background: rgb(var(--bg-primary)) !important;
+  background-image: none !important;
+  color: rgb(var(--color-primary)) !important;
+  border-color: rgb(var(--color-primary)) !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  brightness: 1 !important;
+}
+
+[data-brand="swiss-minimalism"] .btn-vibrant-blue:active,
+[data-brand="swiss-minimalism"] .btn-apple-green:active,
+[data-brand="swiss-minimalism"] .btn-soft-white:active {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .btn-vibrant-blue::after,
+[data-brand="swiss-minimalism"] .btn-apple-green::after,
+[data-brand="swiss-minimalism"] .btn-soft-white::after {
+  display: none !important;
+}
+
+/* Accent CTA option: Swiss red fill */
+[data-brand="swiss-minimalism"] .btn-swiss-accent {
+  background: rgb(var(--color-accent)) !important;
+  color: rgb(var(--color-accent-foreground)) !important;
+  border: 1px solid rgb(var(--color-accent)) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .btn-swiss-accent:hover {
+  background: transparent !important;
+  color: rgb(var(--color-accent)) !important;
+}
+
+/* BrandVibrantButton left icon circle → square hairline */
+[data-brand="swiss-minimalism"] .btn-vibrant-blue span.rounded-full,
+[data-brand="swiss-minimalism"] .btn-apple-green span.rounded-full,
+[data-brand="swiss-minimalism"] .btn-soft-white span.rounded-full {
+  border-radius: 0 !important;
+  border-color: currentColor !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   4. Glass cards / panels
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .glass-card,
+[data-brand="swiss-minimalism"] .glass-pricing-card,
+[data-brand="swiss-minimalism"] .inner-glass-box,
+[data-brand="swiss-minimalism"] .glass-emerald {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid rgb(var(--color-border)) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .glass-card::before,
+[data-brand="swiss-minimalism"] .glass-pricing-card::before {
+  display: none !important;
+}
+
+[data-brand="swiss-minimalism"] .glass-card:hover,
+[data-brand="swiss-minimalism"] .glass-pricing-card:hover,
+[data-brand="swiss-minimalism"] .inner-glass-box:hover {
+  background: transparent !important;
+  border-color: rgb(var(--color-border)) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .hero-feature-card.glass-card,
+[data-brand="swiss-minimalism"] .hero-feature-card.glass-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--color-border)) !important;
+}
+
+/* Tailwind utility overrides commonly used as glass substitutes */
+[data-brand="swiss-minimalism"] .backdrop-blur-sm,
+[data-brand="swiss-minimalism"] .backdrop-blur,
+[data-brand="swiss-minimalism"] .backdrop-blur-md,
+[data-brand="swiss-minimalism"] .backdrop-blur-lg,
+[data-brand="swiss-minimalism"] .backdrop-blur-xl,
+[data-brand="swiss-minimalism"] .backdrop-blur-2xl,
+[data-brand="swiss-minimalism"] .backdrop-blur-3xl {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .shadow-sm,
+[data-brand="swiss-minimalism"] .shadow,
+[data-brand="swiss-minimalism"] .shadow-md,
+[data-brand="swiss-minimalism"] .shadow-lg,
+[data-brand="swiss-minimalism"] .shadow-xl,
+[data-brand="swiss-minimalism"] .shadow-2xl {
+  box-shadow: none !important;
+}
+
+/* Force zero radius on common rounded utilities under this theme */
+[data-brand="swiss-minimalism"] .rounded-sm,
+[data-brand="swiss-minimalism"] .rounded,
+[data-brand="swiss-minimalism"] .rounded-md,
+[data-brand="swiss-minimalism"] .rounded-lg,
+[data-brand="swiss-minimalism"] .rounded-xl,
+[data-brand="swiss-minimalism"] .rounded-2xl,
+[data-brand="swiss-minimalism"] .rounded-3xl,
+[data-brand="swiss-minimalism"] .rounded-full,
+[data-brand="swiss-minimalism"] .rounded-glass-card {
+  border-radius: 0 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   5. Luxury stat cards
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .luxury-stat-card {
+  background: transparent !important;
+  border: none !important;
+  border-top: 1px solid rgb(var(--color-border)) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  border-radius: 0 !important;
+  padding-top: 1.25rem !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .luxury-stat-card::before {
+  display: none !important;
+}
+
+[data-brand="swiss-minimalism"] .luxury-stat-card:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .luxury-stat-card .candy-stat,
+[data-brand="swiss-minimalism"] .luxury-stat-card .stat-suffix {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: rgb(var(--text-primary)) !important;
+  color: rgb(var(--text-primary)) !important;
+  text-shadow: none !important;
+  filter: none !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.04em !important;
+  animation: none !important;
+}
+
+[data-brand="swiss-minimalism"] .luxury-stat-card .candy-stat-shell {
+  filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .luxury-stat-label {
+  color: rgb(var(--text-secondary)) !important;
+  text-shadow: none !important;
+  letter-spacing: 0.18em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-family: var(--font-sans) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   6. Footer
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .footer-wrapper {
+  background: rgb(var(--bg-primary)) !important;
+  background-image: none !important;
+  border-top: 1px solid rgb(var(--border)) !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-glow-1,
+[data-brand="swiss-minimalism"] .footer-glow-2,
+[data-brand="swiss-minimalism"] .footer-glow-radial {
+  display: none !important;
+  opacity: 0 !important;
+  background: none !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-panel {
+  background: transparent !important;
+  border: 1px solid rgb(var(--border)) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-social-btn {
+  border: 1px solid rgb(var(--border)) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: rgb(var(--text-primary)) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-social-btn:hover {
+  background: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  border-color: rgb(var(--color-primary)) !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-link,
+[data-brand="swiss-minimalism"] .footer-contact-link {
+  text-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-link:hover,
+[data-brand="swiss-minimalism"] .footer-contact-link:hover {
+  color: rgb(var(--color-accent)) !important;
+  text-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-partner-badge {
+  background: transparent !important;
+  border: 1px solid rgb(var(--border)) !important;
+  border-radius: 0 !important;
+  color: rgb(var(--text-primary)) !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-partner-badge:hover {
+  background: rgb(var(--color-muted)) !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .footer-divider {
+  border-color: rgb(var(--border)) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   7. Day buttons / program UI / eyebrow pills
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .day-active-vibrant {
+  background: rgb(var(--color-primary)) !important;
+  background-image: none !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+
+[data-brand="swiss-minimalism"] .day-button-inactive {
+  border-radius: 0 !important;
+  border-color: rgb(var(--border)) !important;
+}
+
+[data-brand="swiss-minimalism"] .day-button-inactive:hover {
+  border-color: rgb(var(--color-accent)) !important;
+}
+
+[data-brand="swiss-minimalism"] .day-button-visited {
+  background: rgb(var(--color-accent)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .eyebrow-pill-badge {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border: 1px solid rgb(var(--border)) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .eyebrow-pill-badge-text {
+  color: rgb(var(--text-primary)) !important;
+  text-align: left !important;
+}
+
+[data-brand="swiss-minimalism"] .eyebrow-pill-badge .animate-ping {
+  animation: none !important;
+  display: none !important;
+}
+
+[data-brand="swiss-minimalism"] .eyebrow-pill-badge span.rounded-full {
+  border-radius: 0 !important;
+  background: rgb(var(--color-accent)) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* Section catalog numbers (optional helper class) */
+[data-brand="swiss-minimalism"] .swiss-section-index {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgb(var(--color-accent));
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   8. Forms — underline inputs
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]),
+[data-brand="swiss-minimalism"] textarea,
+[data-brand="swiss-minimalism"] select {
+  border-radius: 0 !important;
+  border-width: 0 0 1px 0 !important;
+  border-style: solid !important;
+  border-color: rgb(var(--border)) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+[data-brand="swiss-minimalism"] input:focus:not([type="checkbox"]):not([type="radio"]),
+[data-brand="swiss-minimalism"] textarea:focus,
+[data-brand="swiss-minimalism"] select:focus {
+  border-color: rgb(var(--color-accent)) !important;
+  box-shadow: none !important;
+  ring: none !important;
+  outline: none !important;
+}
+
+[data-brand="swiss-minimalism"] label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   9. Marketing page shell / ambient orbs / soft gradients
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .marketing-page-shell {
+  background: rgb(var(--bg-primary));
+}
+
+/* Hide decorative ambient blobs / glow orbs under Swiss */
+[data-brand="swiss-minimalism"] .marketing-ambient,
+[data-brand="swiss-minimalism"] .marketing-page-ambient,
+[data-brand="swiss-minimalism"] .marketing-page-ambient__orb {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Soft section bands → flat */
+[data-brand="swiss-minimalism"] section {
+  /* keep spacing; avoid imposing on all layouts */
+}
+
+/* Candy stat (global, outside luxury cards) */
+[data-brand="swiss-minimalism"] .candy-stat,
+[data-brand="swiss-minimalism"] .stat-suffix {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: rgb(var(--text-primary)) !important;
+  color: rgb(var(--text-primary)) !important;
+  filter: none !important;
+  animation: none !important;
+}
+
+/* Mega soft glass decorations */
+[data-brand="swiss-minimalism"] .mega-soft-glass-inner-glow,
+[data-brand="swiss-minimalism"] .mega-soft-glass-reflection {
+  display: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   10. Dark-mode component polish (inherits tokens above)
+   ═══════════════════════════════════════════════════════════ */
+.dark [data-brand="swiss-minimalism"] .site-header,
+.dark [data-brand="swiss-minimalism"] .site-header.site-header--top {
+  background-color: rgb(0 0 0 / 0.96) !important;
+  border-bottom-color: #fff !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .btn-vibrant-blue,
+.dark [data-brand="swiss-minimalism"] .btn-apple-green,
+.dark [data-brand="swiss-minimalism"] .btn-soft-white {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #fff !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .btn-vibrant-blue:hover,
+.dark [data-brand="swiss-minimalism"] .btn-apple-green:hover,
+.dark [data-brand="swiss-minimalism"] .btn-soft-white:hover {
+  background: transparent !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .footer-wrapper {
+  background: #000 !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .glass-card,
+.dark [data-brand="swiss-minimalism"] .glass-pricing-card,
+.dark [data-brand="swiss-minimalism"] .inner-glass-box,
+.dark [data-brand="swiss-minimalism"] .footer-panel {
+  border-color: #fff !important;
+  background: transparent !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   11. Hero sections (site-hero*)
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .site-hero {
+  background-color: rgb(var(--bg-primary));
+}
+
+[data-brand="swiss-minimalism"] .site-hero--about-split {
+  background: rgb(var(--bg-primary)) !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-overlay {
+  background: rgb(0 0 0 / 0.55) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-title {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  letter-spacing: -0.03em !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-sub {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-cta,
+[data-brand="swiss-minimalism"] a.site-hero-cta {
+  background: rgb(var(--color-primary)) !important;
+  background-image: none !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  border: 1px solid rgb(var(--color-primary)) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-cta:hover,
+[data-brand="swiss-minimalism"] a.site-hero-cta:hover {
+  background: transparent !important;
+  color: rgb(var(--color-primary)) !important;
+  border-color: rgb(var(--color-primary)) !important;
+  box-shadow: none !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+/* When CTA sits on photo hero, use white invert for contrast */
+[data-brand="swiss-minimalism"] .site-hero-media ~ .site-hero-content .site-hero-cta,
+[data-brand="swiss-minimalism"] .site-hero:has(.site-hero-media) .site-hero-cta {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #fff !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero:has(.site-hero-media) .site-hero-cta:hover {
+  background: transparent !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-cta-secondary {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border: 1px solid rgb(var(--border)) !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-cta-secondary:hover {
+  background: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-stats-divider {
+  background: rgb(var(--border)) !important;
+  background-image: none !important;
+  opacity: 1 !important;
+  height: 1px !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-global-stats {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: transparent !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-icon-container {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-icon-container > span {
+  display: none !important; /* gradient gloss */
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-arrow-btn {
+  border-radius: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card .absolute.rounded-full.blur-3xl,
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card [class*="blur-3xl"] {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .group:hover .text-\[var\(--text-primary\)\],
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card:hover .relative.z-10.mb-1 {
+  color: rgb(var(--color-accent)) !important;
+}
+
+/* Koolitus quick-facts glass card → flat Swiss panel */
+[data-brand="swiss-minimalism"] .site-hero-quick-facts {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: rgb(var(--bg-primary)) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-quick-facts:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: rgb(var(--border)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-quick-facts > .pointer-events-none,
+[data-brand="swiss-minimalism"] .site-hero-quick-facts .absolute.rounded-full,
+[data-brand="swiss-minimalism"] .site-hero-quick-facts [class*="blur-"] {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-quick-facts h2 {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  color: rgb(var(--text-primary)) !important;
+  -webkit-text-fill-color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-quick-facts .bg-gradient-to-r {
+  background: rgb(var(--color-accent)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  height: 2px !important;
+}
+
+/* Product / OPSTAR hero diagram */
+[data-brand="swiss-minimalism"] .site-hero-diagram {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  box-shadow: none !important;
+  background: rgb(var(--bg-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-diagram-glow {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/* Marketing split hero portrait cards / linkedin chip */
+[data-brand="swiss-minimalism"] .site-hero--marketing-split [class*="rounded-t-\[24px\]"],
+[data-brand="swiss-minimalism"] .site-hero--about-split [class*="rounded-t-\[24px\]"],
+[data-brand="swiss-minimalism"] .site-hero--about-split .rounded-t-\[24px\],
+[data-brand="swiss-minimalism"] .site-hero--about-split .rounded-b-\[24px\] {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero--about-split a[class*="border-\[\#0055E5\]"],
+[data-brand="swiss-minimalism"] .site-hero--marketing-split a[class*="border-\[\#0055E5\]"] {
+  border-radius: 0 !important;
+  border-color: rgb(var(--border)) !important;
+  background: transparent !important;
+  background-image: none !important;
+  color: rgb(var(--text-primary)) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero--kontakt h1 span.font-serif,
+[data-brand="swiss-minimalism"] .site-hero--about-split h2,
+[data-brand="swiss-minimalism"] .site-hero .font-serif,
+[data-brand="swiss-minimalism"] .site-hero .text-marketing-accent-shell {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  color: rgb(var(--color-accent)) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   12. Floating chat widget
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .chat-panel-container {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: rgb(var(--bg-primary)) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-panel-glow {
+  display: none !important;
+  opacity: 0 !important;
+  background: none !important;
+  filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-panel-eyebrow {
+  color: rgb(var(--color-accent)) !important;
+  letter-spacing: 0.18em !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-welcome-icon-box {
+  border-radius: 0 !important;
+  background: transparent !important;
+  border: 1px solid rgb(var(--border)) !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-message-bubble {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--border)) !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-message-input {
+  border-radius: 0 !important;
+  border-width: 0 0 1px 0 !important;
+  border-style: solid !important;
+  border-color: rgb(var(--border)) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-message-input:focus {
+  border-color: rgb(var(--color-accent)) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-send-btn {
+  border-radius: 0 !important;
+  background: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  border: 1px solid rgb(var(--color-primary)) !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-send-btn:hover {
+  background: transparent !important;
+  color: rgb(var(--color-primary)) !important;
+}
+
+/* Launcher may stay circular as a functional FAB; strip glow/gradient only */
+[data-brand="swiss-minimalism"] .chat-bubble-btn {
+  background: rgb(var(--bg-primary)) !important;
+  color: rgb(var(--text-primary)) !important;
+  border: 1px solid rgb(var(--border)) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-bubble-btn:hover {
+  background: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   13. Challenges / pain-points
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .challenges-card {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: rgb(var(--bg-primary)) !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .challenges-card:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .challenges-badge {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: transparent !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .challenges-dot {
+  /* functional bullet — keep circle, force Swiss red */
+  background: rgb(var(--color-accent)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   14. Blog article typography
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .blog-article-prose {
+  font-family: var(--font-sans) !important;
+  font-feature-settings: normal !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+  max-width: 42rem;
+  color: rgb(var(--text-primary));
+}
+
+[data-brand="swiss-minimalism"] .blog-article-prose h2,
+[data-brand="swiss-minimalism"] .blog-article-prose h3,
+[data-brand="swiss-minimalism"] .blog-article-prose h4,
+[data-brand="swiss-minimalism"] .blog-article-h2,
+[data-brand="swiss-minimalism"] .blog-article-h3,
+[data-brand="swiss-minimalism"] .blog-article-h4 {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h2 {
+  border-bottom: 1px solid rgb(var(--border)) !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h2::before {
+  font-family: var(--font-mono) !important;
+  color: rgb(var(--color-accent)) !important;
+  opacity: 1 !important;
+  letter-spacing: 0.16em !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h2::after {
+  background: rgb(var(--color-accent)) !important;
+  background-image: none !important;
+  height: 1px !important;
+  width: min(8rem, 40%) !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h3::before {
+  border-radius: 0 !important;
+  border-color: rgb(var(--color-accent)) !important;
+  box-shadow: none !important;
+  background: rgb(var(--color-accent)) !important;
+  width: 0.35rem !important;
+  height: 0.35rem !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h4 {
+  font-family: var(--font-mono) !important;
+  letter-spacing: 0.1em !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-display {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-figure {
+  border-radius: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-figure img,
+[data-brand="swiss-minimalism"] .blog-article-figure picture,
+[data-brand="swiss-minimalism"] .blog-article-figure video {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-figure::before,
+[data-brand="swiss-minimalism"] .blog-article-figure::after {
+  border-color: rgb(var(--border)) !important;
+  opacity: 1 !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-figure::before {
+  border-left-color: rgb(var(--border)) !important;
+  border-top-color: rgb(var(--border)) !important;
+}
+
+/* Hairline under figure instead of soft shadow */
+[data-brand="swiss-minimalism"] .blog-article-figure {
+  border-bottom: 1px solid rgb(var(--border));
+  padding-bottom: 0.75rem;
+}
+
+[data-brand="swiss-minimalism"] .ak-h1 {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  letter-spacing: -0.03em !important;
+  text-transform: uppercase !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+/* Dark blog polish */
+.dark [data-brand="swiss-minimalism"] .blog-article-h2::after {
+  background: rgb(var(--color-accent)) !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .chat-panel-container {
+  background: #000 !important;
+  border-color: #fff !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .chat-bubble-btn {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .challenges-card {
+  background: #000 !important;
+  border-color: #fff !important;
+}

@@ -81,6 +81,7 @@ export function SectionBadge({
   const pill = (
     <div
       className={cn(
+        'eyebrow-pill-badge',
         tone === 'default' && pillShellDefault,
         tone === 'onDark' && pillShellOnDark,
         tone === 'sky' && pillShellSky,

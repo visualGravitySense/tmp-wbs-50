@@ -3,6 +3,11 @@
  * Consumed via `globals.css` (@import) and `@theme inline` for Tailwind.
  *
  * Sections: colors · radii · glass · eyebrow · CTA · layout (section/container)
+ *
+ * Brand themes (data-brand on <body>):
+ * - default / opstar — these :root tokens
+ * - vip-holidays — component overrides in globals.css
+ * - swiss-minimalism — full token + component scope in theme-swiss.css
  */
 
 :root {

@@ -129,6 +129,7 @@ export default defineType({
             list: [
               { title: 'Opstar (Electric Blue)', value: 'opstar' },
               { title: 'VIP Holidays (Copper & Chrome)', value: 'vip-holidays' },
+              { title: 'Swiss Minimalism (Grid & Grotesk)', value: 'swiss-minimalism' },
             ],
             layout: 'radio'
           },

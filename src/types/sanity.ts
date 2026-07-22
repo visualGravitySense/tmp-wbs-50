@@ -33,6 +33,7 @@ export interface SiteSettings {
   theme: {
     primaryColor?: string
     accentColor?: string
+    themeStyle?: 'opstar' | 'vip-holidays' | 'swiss-minimalism'
   }
   cookieBanner?: {
     title?: string

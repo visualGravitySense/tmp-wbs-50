@@ -27,7 +27,7 @@ export default function HeroCtaButtons({
   return (
     <div
       className={cn(
-        'relative z-10 mb-2 flex w-full max-w-full flex-col gap-3 sm:mb-4 sm:gap-4',
+        'site-hero-cta-row relative z-10 mb-2 flex w-full max-w-full flex-col gap-3 sm:mb-4 sm:gap-4',
         isStart ? 'items-center md:items-start' : 'items-center',
         isStart ? 'justify-center md:justify-start' : 'justify-center',
       )}
@@ -41,7 +41,7 @@ export default function HeroCtaButtons({
         <BrandVibrantButton
           href={primaryCtaLink ? resolveLink(primaryCtaLink) : '/kontakt'}
           icon={CalendarCheck}
-          className="w-full sm:w-auto"
+          className="site-hero-cta w-full sm:w-auto"
         >
           {primaryCtaText?.replace(/\s*(?:->|=>|→|>|›)\s*$/, '') || 'Broneeri koht'}
         </BrandVibrantButton>
@@ -50,7 +50,7 @@ export default function HeroCtaButtons({
           <WhiteButton
             href={secondaryCtaLink ? resolveLink(secondaryCtaLink) : '#'}
             icon={Eye}
-            className="w-full cursor-pointer sm:w-auto"
+            className="site-hero-cta-secondary w-full cursor-pointer sm:w-auto"
           >
             {secondaryCtaText?.replace(/\s*(?:->|=>|→|>|›)\s*$/, '') || 'Vaata programmi'}
           </WhiteButton>
