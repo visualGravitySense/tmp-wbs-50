@@ -121,52 +121,26 @@ export default async function Home() {
       </div>
 
       {usePageBuilder ? (
-        <>
-          {/* Legacy fallback hero ONLY if hero isn't in sections array */}
-          {!builderBlockTypes.has("homeHeroBlock") ? (
-            <HeroSection
-              variant="centered"
-              eyebrow={(mainPageData as any)?.eyebrow}
-              headline={(mainPageData as any)?.headline || 'Tootmisjuhtimise koolitus'}
-              scriptLine={(mainPageData as any)?.scriptHeadline || 'ja LEAN-Agile arenguprogramm'}
-              description={(mainPageData as any)?.description}
-              primaryCTA={(mainPageData as any)?.primaryCta}
-              secondaryCTA={(mainPageData as any)?.secondaryCta}
-            />
-          ) : null}
-
-          {/* New Page Builder Sections */}
-          <PageSections
-            sections={sections}
-            reviewPool={reviewsResult}
-            isDraft={false}
-            disableBelowFoldDefer
-            globalFinalCtaBannerBackground={globalFinalCtaBannerBackground}
-            // Pass legacy fields down to specific blocks
-            legacy={legacy}
-            legacyFeaturedReviews={featured}
-            legacyTestimonials={
-              (mainPageData as { testimonials?: { title?: string } } | null)
-                ?.testimonials
-            }
-            partners={(mainPageData as any)?.partners}
-            partnersTitle={(mainPageData as any)?.partnersTitle}
-            globalStats={siteSettings?.globalStats?.stats}
-            globalNineDaysProgram={
-              siteSettings?.globalNineDaysProgramDoc ?? siteSettings?.nineDaysProgram
-            }
-          />
-          
-          {/* Legacy Below Fold with skips enabled */}
-          <HomeBelowFoldSections
-            data={mainPageData}
-            reviews={reviews}
-            globalFinalCtaBannerBackground={globalFinalCtaBannerBackground}
-            {...skipFlags}
-            skipPartners={true}
-            skipAbout={true} // Rendered separately now
-          />
-        </>
+        <PageSections
+          sections={sections}
+          reviewPool={reviewsResult}
+          isDraft={false}
+          disableBelowFoldDefer
+          globalFinalCtaBannerBackground={globalFinalCtaBannerBackground}
+          // Pass legacy fields down to specific blocks
+          legacy={legacy}
+          legacyFeaturedReviews={featured}
+          legacyTestimonials={
+            (mainPageData as { testimonials?: { title?: string } } | null)
+              ?.testimonials
+          }
+          partners={(mainPageData as any)?.partners}
+          partnersTitle={(mainPageData as any)?.partnersTitle}
+          globalStats={siteSettings?.globalStats?.stats}
+          globalNineDaysProgram={
+            siteSettings?.globalNineDaysProgramDoc ?? siteSettings?.nineDaysProgram
+          }
+        />
       ) : (
         <>
           <HeroSection
