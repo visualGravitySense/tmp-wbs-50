@@ -14,7 +14,7 @@ import type { MarketingSplitHeroBlock } from '@/types/mainPageSections'
 type RenderOptions = {
   imageFallback?: ReactNode
   ctx?: any
-  /** Suppress 4-metric strip under Andres photo card (used on /andres-kase). */
+  /** Suppress 4-metric strip under trainer photo card (used on /about). */
   hideHeroGlobalStatsStrip?: boolean
 }
 
@@ -123,7 +123,7 @@ export function renderMarketingSplitHeroBlock(
             {block.heroImage?.asset ? (
               <img
                 src={urlFor(block.heroImage).width(800).height(800).fit('crop').url()}
-                alt={block.heroImage.alt || block.headline || 'Andres Kase'}
+                alt={block.heroImage.alt || block.headline || 'Your Name'}
                 className="w-full h-full object-cover object-top filter-none"
               />
             ) : (
@@ -135,10 +135,10 @@ export function renderMarketingSplitHeroBlock(
             <div className="space-y-3 flex-1">
               <div className="space-y-0.5 text-left">
                 <h3 className="text-base font-black text-slate-900 dark:text-white leading-tight">
-                  Andres Kase
+                  Your Name
                 </h3>
                 <p className="text-[10px] text-slate-400 font-extrabold uppercase tracking-wider leading-none mt-1">
-                  LEAN · TPS koolitaja · OPSTAR PROFIT™
+                  LEAN · TPS koolitaja · Product Name
                 </p>
               </div>
               <div className="flex flex-wrap gap-1.5 pt-1">
@@ -154,14 +154,14 @@ export function renderMarketingSplitHeroBlock(
             </div>
 
             <a
-              href={block.linkedinUrl || "https://ee.linkedin.com/in/andres-kase-7833075"}
+              href={block.linkedinUrl || "https://www.linkedin.com/"}
               target="_blank"
               rel="noopener noreferrer"
               className="relative group flex items-center justify-center shrink-0 border-2 border-[#0055E5] bg-gradient-to-br from-[#EEF4FF] to-white text-[#0055E5] p-3 rounded-xl transition-all hover:scale-105 shadow-sm dark:border-sky-500/40 dark:from-sky-950/20 dark:to-slate-900/40 dark:text-sky-400 overflow-hidden"
               style={{
                 backgroundImage: 'repeating-linear-gradient(45deg, rgba(0, 85, 229, 0.04) 0px, rgba(0, 85, 229, 0.04) 2px, transparent 2px, transparent 8px)'
               }}
-              title="Andres Kase LinkedIn profiil"
+              title="Your Name LinkedIn profiil"
             >
               <div className="absolute inset-0 bg-[#0055E5]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

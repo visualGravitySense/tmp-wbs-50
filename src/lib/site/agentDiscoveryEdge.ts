@@ -6,20 +6,20 @@ export function markdownForPath(pathname: string): string | null {
   if (pathname !== '/') return null
 
   const siteUrl = getSiteUrl()
-  return `# Tootmisjuhtimine.ee
+  return `# Site Name
 
-Andres Kase — LEAN, TPS ja OPSTAR PROFIT™ koolitused ning konsultatsioon tootmisettevõtetele.
+Training, consulting, and product resources.
 
-## Peamised lehed
+## Main pages
 
-- [Koolitus](${siteUrl}/koolitus)
-- [OPSTAR Profit](${siteUrl}/opstar-profit)
-- [Andres Kase](${siteUrl}/andres-kase)
-- [Blogi](${siteUrl}/blog)
-- [Kontakt](${siteUrl}/kontakt)
-- [Registreerimine](${siteUrl}/register)
+- [Training](${siteUrl}/koolitus)
+- [Product](${siteUrl}/product)
+- [About](${siteUrl}/about)
+- [Blog](${siteUrl}/blog)
+- [Contact](${siteUrl}/kontakt)
+- [Register](${siteUrl}/register)
 
-## Avastamine
+## Discovery
 
 - Sitemap: ${siteUrl}/sitemap.xml
 - API catalog: ${siteUrl}/.well-known/api-catalog

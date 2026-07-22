@@ -6,7 +6,7 @@ import { defineField, defineType } from 'sanity'
  */
 export default defineType({
   name: 'opstarFrameworkBlock',
-  title: 'OPSTAR PROFIT™ raamistik (6 osa)',
+  title: 'Product Name raamistik (6 osa)',
   type: 'object',
   fields: [
     defineField({
@@ -25,7 +25,7 @@ export default defineType({
           name: 'title',
           title: 'Pealkiri',
           type: 'string',
-          initialValue: 'OPSTAR PROFIT™ — kuus osa',
+          initialValue: 'Product Name — kuus osa',
         }),
         defineField({
           name: 'subtitle',
@@ -97,8 +97,8 @@ export default defineType({
     select: { title: 'framework.title' },
     prepare({ title }: { title?: string }) {
       return {
-        title: title || 'OPSTAR PROFIT™ raamistik',
-        subtitle: 'OPSTAR Profit',
+        title: title || 'Product Name raamistik',
+        subtitle: 'Product Name',
       }
     },
   },

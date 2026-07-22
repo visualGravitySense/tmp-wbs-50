@@ -37,19 +37,19 @@ export default function Testimonials({ data }: TestimonialsProps) {
       name: "Margus Põld",
       role: "Tootmisjuht",
       company: "Tehnikum OÜ",
-      content: "Andrese koolitus oli mängu muutev. Õppisime praktilikke meetodeid, mida saime kohe tehases rakendada. OEE tõusis 35% esimese 3 kuuga.",
+      content: "Koolitus oli mängu muutev. Õppisime praktilikke meetodeid, mida saime kohe tehases rakendada. OEE tõusis 35% esimese 3 kuuga.",
     },
     {
       name: "Tiina Lepik",
       role: "Olemike juht",
       company: "Baltic Pack",
-      content: "Parim investeering meie meeskonnale. Andres ei õpeta ainult teooriat, vaid näitab kuidas asju tegelikult tehases toimima paneb.",
+      content: "Parim investeering meie meeskonnale. Treener ei õpeta ainult teooriat, vaid näitab kuidas asju tegelikult tehases toimima paneb.",
     },
     {
       name: "Jaan Tamm",
       role: "CEO",
       company: "MetalWorks AS",
-      content: "25+ aastat kogemust on näha. Andres räägib keelt, mida tootmisinimene mõistab ja usaldab. Soovitan kõigile tootmisjuhtidele.",
+      content: "25+ aastat kogemust on näha. Treener räägib keelt, mida tootmisinimene mõistab ja usaldab. Soovitan kõigile tootmisjuhtidele.",
     }
   ];
 

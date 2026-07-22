@@ -4,7 +4,7 @@ import type { MarketingSplitHeroBlock } from '@/types/mainPageSections'
 export const KOOLITUS_DEFAULT_HERO_BLOCK: MarketingSplitHeroBlock = {
   _type: 'marketingSplitHeroBlock',
   _key: 'fallback-koolitus-hero',
-  eyebrow: 'OPSTAR PROFIT™ • PRAKTILINE KOOLITUS',
+  eyebrow: 'Product Name • PRAKTILINE KOOLITUS',
   headline: '9 päeva. Üks süsteem',
   scriptHeadline: 'Tootmisjuhtimise arenguprogramm',
   description:
@@ -15,7 +15,7 @@ export const KOOLITUS_DEFAULT_HERO_BLOCK: MarketingSplitHeroBlock = {
     link: {
       _type: 'link',
       linkType: 'external',
-      url: 'https://andres-kase-tootmisjuhtimine.vercel.app/koolitus#pricing',
+      url: '/koolitus#pricing',
     },
   },
   secondaryCta: {
@@ -58,7 +58,7 @@ export const KOOLITUS_DEFAULT_HERO_BLOCK: MarketingSplitHeroBlock = {
         _key: 'qf4',
         icon: 'award',
         label: 'Mida omandad?',
-        value: 'LEAN-juhtimise ja OPSTAR PROFIT™ raamistiku',
+        value: 'LEAN-juhtimise ja Product Name raamistiku',
         hint: 'Õpid tundma nii LEAN juhtimist kui ka süsteemse juhtimise põhiaspekte',
       },
       {

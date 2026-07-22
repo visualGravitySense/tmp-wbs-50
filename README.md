@@ -1,180 +1,147 @@
-# Andres Kase Website v2 
+# Next.js + Sanity Website Template
 
-Professional training and consulting website built with Next.js 14, TypeScript, Tailwind CSS, and Sanity CMS.
+Reusable marketing / training-site template built with **Next.js (App Router) + TypeScript + Tailwind + Sanity CMS v3**.
 
-## 🚀 Features
+This repository was cleaned from a client project into a neutral agency template. Fill placeholders and env vars for each new client — do **not** reuse the original client’s Sanity project, tokens, or brand assets.
 
-- **Modern Stack**: Next.js 14 with App Router, TypeScript 5, Tailwind CSS 4
-- **Headless CMS**: Sanity v3 for content management
-- **Responsive Design**: Mobile-first approach with beautiful UI components
-- **SEO Optimized**: Built-in SEO optimization and meta tags
-- **Type Safety**: Full TypeScript support throughout the application
-- **Performance**: Optimized images, lazy loading, and Core Web Vitals
- 
-## 📁 Project Structure
+---
 
-```
-andres-kase-v2/
-├── src/
-│   ├── app/                    # Next.js App Router
-│   │   ├── (marketing)/        # Marketing pages
-│   │   │   ├── page.tsx       # Homepage
-│   │   │   ├── koolitus/      # Training page
-│   │   │   └── andres-kase/   # About page
-│   │   ├── globals.css        # Global styles
-│   │   └── layout.tsx         # Root layout
-│   ├── components/            # Reusable components
-│   │   ├── ui/               # Base UI components
-│   │   ├── sections/         # Page sections
-│   │   ├── Navigation.tsx    # Navigation component
-│   │   └── Footer.tsx        # Footer component
-│   ├── lib/                   # Utilities and configurations
-│   │   ├── sanity.ts         # Sanity client
-│   │   ├── validations.ts    # Form validations
-│   │   └── utils.ts          # Helper functions
-│   ├── styles/               # Design tokens and themes
-│   │   └── tokens.css        # CSS variables
-│   └── types/                # TypeScript types
-│       ├── sanity.ts         # Sanity types
-│       └── global.ts         # Global types
-├── sanity/                    # Sanity CMS configuration
-│   ├── schemas/              # Document schemas
-│   └── config.ts             # Sanity config
-└── public/                   # Static assets
-```
+## Stack
 
-## 🛠️ Tech Stack
+- Next.js App Router + TypeScript
+- Tailwind CSS + design tokens (`src/styles/tokens.css`)
+- Sanity CMS v3 (Studio at `/studio`)
+- Optional: Smaily (email), Telegram (leads), Google Calendar (ICS)
 
-- **Framework**: Next.js 14.2
-- **Language**: TypeScript 5
-- **Styling**: Tailwind CSS 4
-- **CMS**: Sanity v3
-- **Animations**: Framer Motion
-- **Forms**: React Hook Form + Zod
-- **Icons**: Lucide React
-- **Deployment**: Vercel
+---
 
-## 🚀 Getting Started
+## Deploy a new client in ~15 minutes
 
-### Prerequisites
+### 1. Clone / copy the template
 
-- Node.js 18+ installed
-- Sanity account (for CMS)
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd andres-kase-v2
-```
-
-2. Install dependencies:
-```bash
+git clone <this-template-repo> my-client-site
+cd my-client-site
 npm install
 ```
 
-3. Set up environment variables:
+### 2. Create a **new empty** Sanity project
+
 ```bash
-cp .env.example .env.local
+npx sanity@latest init
+# or create project in https://www.sanity.io/manage
 ```
 
-4. Configure environment variables:
-```env
-NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
-NEXT_PUBLIC_SANITY_DATASET=your_dataset
-SANITY_API_READ_TOKEN=your_read_token
-```
+Use a **new** `projectId` and dataset (e.g. `production`). Never point the template at a previous client’s project.
 
-### Running the Development Server
+### 3. Environment variables
+
+Copy `vercel-env-example.txt` into `.env.local` (and Vercel):
+
+| Variable | Required | Purpose |
+|----------|----------|---------|
+| `NEXT_PUBLIC_SITE_URL` | yes | Canonical site URL (no trailing slash) |
+| `NEXT_PUBLIC_SANITY_PROJECT_ID` | yes | New Sanity project id |
+| `NEXT_PUBLIC_SANITY_DATASET` | yes | e.g. `production` |
+| `SANITY_API_TOKEN` | yes (write ops) | Server-side Sanity token |
+| `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` | optional | Lead notifications |
+| `SMAILY_*` | optional | Email opt-in |
+| `NEXT_PUBLIC_NINE_DAYS_PROGRAM_PDF` | optional | Public PDF path under `/public` |
+
+### 4. Brand & contact placeholders
+
+Edit **one** central file first:
+
+- `src/lib/contact/businessInfo.ts` — name, role, emails, phone, address, product name, internal links
+
+Then replace assets:
+
+- `public/placeholder-logo.svg` → client logo
+- `public/placeholder-image.svg` → default image
+- Favicon: `src/app/icon.tsx` / `src/app/icon.svg`
+
+### 5. Run locally
 
 ```bash
 npm run dev
+# Studio: http://localhost:3000/studio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 6. Seed CMS content
 
-### Sanity CMS
+In Sanity Studio, create:
 
-Access the Sanity Studio at [http://localhost:3000/studio](http://localhost:3000/studio)
+- Site settings (header/footer/nav)
+- Main page sections
+- Contact page
+- Blog posts / testimonials as needed
 
-## 📝 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run sanity:export` - Export Sanity data
-- `npm run sanity:import` - Import Sanity data
-- `npm run sanity:validate` - Validate Sanity data
-
-## 🎨 Design System
-
-The project uses a comprehensive design system with:
-
-- **Color Palette**: Primary blue, accent green, semantic colors
-- **Typography**: System fonts with optimized loading
-- **Spacing**: Consistent spacing scale
-- **Components**: Reusable UI components with variants
-- **Tokens**: CSS custom properties for theming
-
-## 📱 Pages
-
-- **Homepage** (`/`) - Hero section with call-to-action
-- **Training** (`/koolitus`) - Training programs and courses
-- **About** (`/andres-kase`) - Personal page with bio and achievements
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Configure environment variables in Vercel dashboard
-4. Deploy automatically
-
-### Manual Deployment
+### 7. Build & deploy
 
 ```bash
 npm run build
-npm run start
+# Deploy to Vercel; set the same env vars in the dashboard
 ```
 
-## 🔧 Configuration
+---
 
-### Sanity CMS Setup
+## Key routes (template)
 
-1. Create a new Sanity project
-2. Configure schemas in `sanity/schemas/`
-3. Set up environment variables
-4. Deploy studio
+| Path | Purpose |
+|------|---------|
+| `/` | Home (page builder) |
+| `/about` | Generic about |
+| `/product` | Generic product / methodology |
+| `/koolitus` | Training landing |
+| `/kontakt` | Contact |
+| `/blog` | Blog |
+| `/register` | Registration |
+| `/studio` | Sanity Studio |
+| `/andres-kase`, `/opstar-profit` | Legacy redirects → `/about`, `/product` |
 
-### Environment Variables
+---
 
-```env
-# Sanity CMS
-NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
-NEXT_PUBLIC_SANITY_DATASET=production
-SANITY_API_READ_TOKEN=your_read_token
+## Cleanup checklist (if forking from a dirty copy)
 
-# Optional
-NEXT_PUBLIC_SITE_URL=https://your-domain.com
+```bash
+# Delete remaining brand assets + dumps + junk
+node scripts/template-cleanup.mjs
+
+# Verify no client strings remain in app source
+# (adjust patterns as needed)
+rg -n "Andres Kase|tootmisjuhtimine|andreskase\.ee|opstar\.ee|\+372 51 38 403" src sanity e2e
+
+npm run build
+npx playwright test
 ```
 
-## 🤝 Contributing
+After publishing the template as a new repo, **rewrite git history** (orphan branch or `git filter-repo`) so old client commits are not reachable. Do **not** force-push into the original client repository.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+---
 
-## 📄 License
+## Security — rotate client secrets
 
-This project is licensed under the MIT License.
+If this tree ever contained real tokens (even in history), the client must rotate:
 
-## 🆘 Support
+- Sanity API tokens
+- Telegram bot token + chat IDs
+- Smaily API keys
+- Any calendar / webhook secrets
+- Vercel / hosting tokens tied to the old project
 
-For support, please contact:
-- Email: andres@andreskase.com
-- Phone: +372 512 3456
+---
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Next dev server |
+| `npm run build` | Production build |
+| `npm run lint` | ESLint |
+| `node scripts/template-cleanup.mjs` | Delete dumps/assets/junk + scan brand strings |
+
+---
+
+## License / ownership
+
+Template code is for agency reuse. Client content, partner trademarks, personal photos, and certificates must not ship with the template.

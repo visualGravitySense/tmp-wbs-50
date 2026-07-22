@@ -2,7 +2,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'opstarProfitBlock',
-  title: 'Opstar Profit Block',
+  title: 'Product Name Block',
   type: 'document',
   groups: [
     { name: 'heading', title: 'Heading', default: true },
@@ -147,7 +147,7 @@ export default {
           title: 'Central hub text',
           type: 'string',
           validation: (Rule: any) => Rule.required(),
-          initialValue: 'OPSTAR PROFIT',
+          initialValue: 'Product Name',
           description: 'Text inside the circle in the middle.',
         },
         {
@@ -225,13 +225,13 @@ export default {
           name: 'eyebrowLabel',
           title: 'Eyebrow label',
           type: 'string',
-          initialValue: 'OPSTAR PROFIT™ • METOODIKA RAAMISTIK',
+          initialValue: 'Product Name • METOODIKA RAAMISTIK',
         },
         {
           name: 'cardTitle',
           title: 'Card title',
           type: 'string',
-          initialValue: 'OPSTAR PROFIT™ SÜSTEEMNE JUHTIMINE',
+          initialValue: 'Product Name SÜSTEEMNE JUHTIMINE',
         },
         {
           name: 'badgeText',

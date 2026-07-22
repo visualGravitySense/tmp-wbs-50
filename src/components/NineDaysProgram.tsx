@@ -344,7 +344,7 @@ const NineDaysProgramInner: React.FC<NineDaysProgramProps> = ({
     registerText: safeText(sidebarCtas?.registerText ?? undefined, 'Registreeru programmi'),
     registerUrl,
     readMoreText: safeText(sidebarCtas?.readMoreText ?? undefined, 'Loe lähemalt'),
-    readMoreUrl: safeText(sidebarCtas?.readMoreUrl ?? undefined, '/opstar-profit'),
+    readMoreUrl: safeText(sidebarCtas?.readMoreUrl ?? undefined, '/product'),
   }
 
   const registerHrefIsInternal = /^\/(?!\/)/.test(effectiveSidebarCtas.registerUrl)

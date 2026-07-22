@@ -22,7 +22,7 @@ import {
 
 export default {
   name: 'opstarProfit',
-  title: 'Opstar Profit',
+  title: 'Product Name',
   type: 'document',
   fields: [
     {
@@ -34,13 +34,13 @@ export default {
     definePageSectionsField({
       allowedTypes: [...pageBuilderPresets.opstarProfit],
       description:
-        'Ühised marketingu blokid. Tühi = legacy OPSTAR väljad allpool.',
+        'Ühised marketingu blokid. Tühi = legacy Product väljad allpool.',
     }),
     {
       name: 'featuredReviews',
-      title: 'OPSTAR lehe tagasiside (Review dokumendid)',
+      title: 'Product lehe tagasiside (Review dokumendid)',
       description:
-        'Vali Review dokumendid — kuvatakse OPSTAR lehel (esimesed 3; ülejäänu /testimonials). Järjekord = kuvamine. Tühi = uusimad Review automaatselt.',
+        'Vali Review dokumendid — kuvatakse Product lehel (esimesed 3; ülejäänu /testimonials). Järjekord = kuvamine. Tühi = uusimad Review automaatselt.',
       type: 'array',
       hidden: true,
       of: [{ type: 'reference', to: [{ type: 'review' }] }],

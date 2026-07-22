@@ -21,7 +21,7 @@ export default function OpstarProfitIllustration({
   className = '' 
 }: OpstarProfitIllustrationProps) {
   const {
-    centralText = 'OPSTAR PROFIT',
+    centralText = 'Product Name',
     illustrationItems = [],
     backgroundColor = 'from-blue-50 to-white',
     centralCircleColor = 'from-blue-400 to-blue-600'

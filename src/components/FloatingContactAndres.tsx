@@ -459,7 +459,7 @@ export default function FloatingContactAndres({ hidden = false }: FloatingContac
               if (!chatActive) setSendState('idle')
             }}
             className="chat-bubble-btn relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-slate-200/80 bg-white/95 text-blue-600 shadow-[0_8px_30px_-12px_rgba(37,99,235,0.45)] backdrop-blur-md transition-all duration-200 hover:scale-[1.03] hover:shadow-[0_12px_36px_-10px_rgba(37,99,235,0.5)] active:scale-[0.97] dark:border-white/12 dark:bg-white/[0.08] dark:text-blue-300 dark:shadow-[0_12px_40px_-16px_rgba(0,0,0,0.75)]"
-            aria-label={open ? 'Sulge kontaktaken' : 'Ava kontaktaken — küsi Andresele'}
+            aria-label={open ? 'Sulge kontaktaken' : 'Ava kontaktaken — küsi meeskonnalt'}
           >
             <span className="absolute inset-0 rounded-full ring-1 ring-blue-500/10 dark:ring-blue-400/15" />
             {open ? (

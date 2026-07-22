@@ -10,7 +10,7 @@ export default function PrivacyPolicyStaticArticle() {
           1. Ülevaade
         </h2>
         <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
-          Käesolev privaatsuspoliitika kirjeldab, kuidas Andres Kase (edaspidi &quot;meie&quot;, &quot;ettevõte&quot;)
+          Käesolev privaatsuspoliitika kirjeldab, kuidas Site Name (edaspidi &quot;meie&quot;, &quot;ettevõte&quot;)
           töötleb isikuandmeid, kui külastate meie veebilehte, kasutate meie teenuseid või võtate meiega ühendust.
           Me austame teie privaatsust ja töötleme isikuandmeid kooskõlas Euroopa Liidu üldise andmekaitsemäärusega
           (GDPR) ja Eesti isikuandmete kaitse seadusega.
@@ -29,10 +29,10 @@ export default function PrivacyPolicyStaticArticle() {
         </p>
         <ul className="list-inside list-disc space-y-2 text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
           <li>
-            <span className="font-semibold text-[rgb(var(--text-primary))]">Andres Kase</span>
+            <span className="font-semibold text-[rgb(var(--text-primary))]">Site Name</span>
           </li>
-          <li>E-post: andreskase@tootmisjuhtimine.ee</li>
-          <li>Telefon: +372 51 38 403</li>
+          <li>E-post: hello@example.com</li>
+          <li>Telefon: +372 000 0000</li>
           <li>Asukoht: Eesti</li>
         </ul>
         <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
@@ -230,7 +230,7 @@ export default function PrivacyPolicyStaticArticle() {
         </ul>
         <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
           Nõusolekul põhineva töötluse puhul on teil õigus nõusolek igal ajal tagasi võtta. Taotluste esitamiseks
-          kirjutage palun aadressile andreskase@tootmisjuhtimine.ee. Vastame mõistliku aja jooksul ja hiljemalt 30 päeva jooksul,
+          kirjutage palun aadressile hello@example.com. Vastame mõistliku aja jooksul ja hiljemalt 30 päeva jooksul,
           kui seadus ei nõua lühemaid tähtaegu.
         </p>
       </section>
@@ -288,10 +288,10 @@ export default function PrivacyPolicyStaticArticle() {
         <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
           Kõikide isikuandmete ja privaatsusega seotud küsimuste korral võtke ühendust:{' '}
           <a
-            href="mailto:andreskase@tootmisjuhtimine.ee"
+            href="mailto:hello@example.com"
             className="font-semibold text-blue-600 underline-offset-2 hover:underline dark:text-blue-400"
           >
-            andreskase@tootmisjuhtimine.ee
+            hello@example.com
           </a>
           . Kaebuste korral võite pöörduda ka Andmekaitse Inspektsiooni poole (
           <a

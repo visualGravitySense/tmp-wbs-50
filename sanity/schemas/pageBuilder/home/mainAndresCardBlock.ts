@@ -2,20 +2,20 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'mainAndresCardBlock',
-  title: '[VANA - ÄRA KASUTA] Andres Kase (Avalehe kaart)',
+  title: '[VANA - ÄRA KASUTA] Trainer (Avalehe kaart)',
   type: 'object',
   fields: [
     defineField({
       name: 'badge',
       title: 'Pildiriba (Badge)',
       type: 'string',
-      initialValue: 'KOOLITAJA ANDRES',
+      initialValue: 'KOOLITAJA',
     }),
     defineField({
       name: 'title',
       title: 'Pealkiri',
       type: 'string',
-      initialValue: 'Andres Kase',
+      initialValue: 'Your Name',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -29,7 +29,7 @@ export default defineType({
       title: 'Kirjeldus',
       type: 'text',
       rows: 4,
-      initialValue: 'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.',
+      initialValue: 'Meie treener ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagame kogemust 100+ Eesti tehase põrandalt. Teeme puust ja punaselt ette ja asi saab selgeks.',
     }),
     defineField({
       name: 'image',
@@ -64,8 +64,8 @@ export default defineType({
     },
     prepare({ title, subtitle }) {
       return {
-        title: title || 'Andres Kase Kaart',
-        subtitle: subtitle || 'Avalehe Andres Kase tutvustus',
+        title: title || 'Trainer Kaart',
+        subtitle: subtitle || 'Avalehe treeneri tutvustus',
       }
     },
   },

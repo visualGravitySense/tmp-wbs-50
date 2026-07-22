@@ -84,7 +84,7 @@ export async function GET(
               color: '#ffffff',
             }}
           >
-            Andres Kase
+            Site Name
           </div>
         </div>
       </div>

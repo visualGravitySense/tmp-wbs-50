@@ -21,10 +21,10 @@ export const structure: StructureResolver = (S) =>
         .id('mainPage')
         .icon(() => '🏠'),
       
-      // Andres Profile
+      // Trainer Profile
       S.documentListItem()
         .schemaType('andresProfile')
-        .title('Andres Profile')
+        .title('Trainer Profile')
         .id('andresProfile')
         .icon(() => '👤'),
 

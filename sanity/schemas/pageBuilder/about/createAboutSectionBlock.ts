@@ -9,7 +9,7 @@ export function createAboutSectionBlock(options: {
   previewTitlePath: string
   previewSubtitle?: string
 }) {
-  const { name, title, fieldName, previewTitlePath, previewSubtitle = 'Andres Kase' } =
+  const { name, title, fieldName, previewTitlePath, previewSubtitle = 'Your Name' } =
     options
 
   return defineType({

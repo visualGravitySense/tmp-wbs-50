@@ -1,8 +1,8 @@
-/** Avalik PDF peale e-posti vormi (pane fail `public/downloads/` alla). */
+/** Public PDF after email form (place file under `public/downloads/`). */
 export const NINE_DAYS_PROGRAM_PDF_PATH =
-  process.env.NEXT_PUBLIC_NINE_DAYS_PROGRAM_PDF ?? '/downloads/9-paeva-programm.pdf'
+  process.env.NEXT_PUBLIC_NINE_DAYS_PROGRAM_PDF ?? '/downloads/program-outline.pdf'
 
-export const NINE_DAYS_PROGRAM_PDF_FILENAME = '9-paeva-programm-andres-kase.pdf'
+export const NINE_DAYS_PROGRAM_PDF_FILENAME = 'program-outline.pdf'
 
 function startDownload(url: string): void {
   const a = document.createElement('a')

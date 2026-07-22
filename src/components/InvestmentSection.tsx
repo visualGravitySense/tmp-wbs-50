@@ -156,8 +156,8 @@ export default function InvestmentSection({
 
   const effectivePeerText = safeText(peerProof?.text, 'Sertifitseeritud')
   const effectivePeerHighlight = safeText(peerProof?.highlight, '150+ tootmisjuhti')
-  const effectiveContactPhone = safeText(contactInfo?.phone, '+3725138403')
-  const effectiveContactEmail = safeText(contactInfo?.email, 'andreskase@tootmisjuhtimine.ee')
+  const effectiveContactPhone = safeText(contactInfo?.phone, '+3720000000')
+  const effectiveContactEmail = safeText(contactInfo?.email, 'hello@example.com')
   const effectiveContemplationLabel = safeText(contemplationLabel, 'Mõtle hetkeks:')
   const effectiveContemplationQuestion = safeText(
     contemplationQuestion,

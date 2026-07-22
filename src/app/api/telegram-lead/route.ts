@@ -73,7 +73,7 @@ export async function POST(req: Request) {
     const phoneLine = !hasValidEmail && hasValidPhone ? contactRaw : '—'
     
     const introLines = [
-      'Küsimus saidilt (Andres)',
+      'Küsimus saidilt (Site Name)',
       '',
       messageRaw,
       '',

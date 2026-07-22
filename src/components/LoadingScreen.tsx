@@ -7,7 +7,7 @@ export default function LoadingScreen() {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[rgb(var(--bg-primary))] transition-colors duration-500">
       {/* Центральный контейнер с логотипом */}
       <div className="relative">
-        {/* Декоративные фоновые элементы для OPSTAR PROFIT */}
+        {/* Декоративные фоновые элементы для Product Name */}
         <div className="absolute inset-0 flex items-center justify-center">
           {/* Вращающиеся кольца */}
           <div className="absolute w-32 h-32 border-4 border-blue-500/20 rounded-full animate-spin" />
@@ -17,12 +17,12 @@ export default function LoadingScreen() {
         
         {/* Основной контент */}
         <div className="relative z-10 flex flex-col items-center">
-          {/* Логотип OPSTAR PROFIT */}
+          {/* Логотип Product Name */}
           <div className="mb-8">
             {/* Plain <img>: avoids next/image hydration mismatch with styled-jsx in this client overlay. */}
             <img
-              src="/opstar-brand-logo.webp"
-              alt="OPSTAR PROFIT"
+              src="/placeholder-logo.svg"
+              alt="Site logo"
               width={128}
               height={128}
               className="h-24 w-24 animate-pulse md:h-32 md:w-32"
@@ -33,12 +33,12 @@ export default function LoadingScreen() {
           
           {/* Заголовок */}
           <h1 className="text-2xl md:text-3xl font-black text-[rgb(var(--text-primary))] tracking-tighter mb-4 text-center">
-            OPSTAR PROFIT
+            Loading
           </h1>
           
           {/* Подзаголовок */}
           <p className="text-sm md:text-base text-[rgb(var(--text-secondary))] font-medium text-center max-w-xs">
-            Professional Training & Consulting
+            Please wait
           </p>
           
           {/* Индикатор загрузки */}
@@ -52,7 +52,7 @@ export default function LoadingScreen() {
         {/* Брендовые элементы */}
         <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-center">
           <p className="text-xs text-[rgb(var(--text-secondary))] font-medium tracking-widest uppercase">
-            Andres Kase © 2026
+            © {new Date().getFullYear()}
           </p>
         </div>
       </div>

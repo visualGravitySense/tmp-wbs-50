@@ -85,9 +85,9 @@ export default defineType({
     }),
     defineField({
       name: 'showOnAndresPage',
-      title: 'Näita Andrese lehel',
+      title: 'Näita about lehel',
       type: 'boolean',
-      description: 'Lülita sisse, et kuvada see lõputöö Andrese alamlehel esiletõstetud projektide all.',
+      description: 'Lülita sisse, et kuvada see lõputöö about alamlehel esiletõstetud projektide all.',
       initialValue: false,
     }),
     defineField({

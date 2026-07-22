@@ -2,11 +2,11 @@ import { defineField, defineType } from 'sanity'
 
 /**
  * Standalone LEAN vs OPSTAR block — inline fields only (no opstarCoreFields
- * references) to prevent Studio form freeze on /opstar-profit.
+ * references) to prevent Studio form freeze on /product.
  */
 export default defineType({
   name: 'opstarLeanVsOpstarBlock',
-  title: 'LEAN vs OPSTAR PROFIT™',
+  title: 'LEAN vs Product Name',
   type: 'object',
   fields: [
     defineField({
@@ -19,7 +19,7 @@ export default defineType({
           name: 'title',
           title: 'Pealkiri',
           type: 'string',
-          initialValue: 'LEAN vs OPSTAR PROFIT™',
+          initialValue: 'LEAN vs Product Name',
         }),
         defineField({
           name: 'eyebrow',
@@ -33,7 +33,7 @@ export default defineType({
           type: 'text',
           rows: 2,
           initialValue:
-            'Vali tuttav valu — vaata, kuidas Lean ja OPSTAR PROFIT™ seda erinevalt lahendavad.',
+            'Vali tuttav valu — vaata, kuidas Lean ja Product Name seda erinevalt lahendavad.',
         }),
         defineField({
           name: 'comparisonItems',
@@ -59,13 +59,13 @@ export default defineType({
                 }),
                 defineField({
                   name: 'opstarValue',
-                  title: 'Kuidas OPSTAR PROFIT™ seda käsitleb',
+                  title: 'Kuidas Product Name seda käsitleb',
                   type: 'text',
                   rows: 3,
                 }),
                 defineField({
                   name: 'opstarHasAdvantage',
-                  title: 'OPSTAR eelis',
+                  title: 'Product eelis',
                   type: 'boolean',
                   initialValue: true,
                 }),
@@ -110,7 +110,7 @@ export default defineType({
         }),
         defineField({
           name: 'opstarColumnColor',
-          title: 'OPSTAR veeru värv',
+          title: 'Product veeru värv',
           type: 'string',
           initialValue: 'bg-blue-50 border-blue-200',
         }),
@@ -121,8 +121,8 @@ export default defineType({
     select: { title: 'leanVsOpstar.title' },
     prepare({ title }: { title?: string }) {
       return {
-        title: title || 'LEAN vs OPSTAR PROFIT™',
-        subtitle: 'OPSTAR Profit',
+        title: title || 'LEAN vs Product Name',
+        subtitle: 'Product Name',
       }
     },
   },

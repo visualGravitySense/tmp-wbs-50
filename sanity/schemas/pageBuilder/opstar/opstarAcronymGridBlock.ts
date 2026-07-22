@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'opstarAcronymGridBlock',
-  title: 'OPSTAR akronüümide ruudustik',
+  title: 'Product akronüümide ruudustik',
   type: 'object',
   fields: [
     defineField({
@@ -18,11 +18,11 @@ export default defineType({
     select: { enabled: 'enabled' },
     prepare({ enabled }: { enabled?: boolean }) {
       return {
-        title: 'OPSTAR akronüümide ruudustik',
+        title: 'Product akronüümide ruudustik',
         subtitle:
           enabled === false
             ? 'Hidden'
-            : 'OPSTAR · OP, ST, STAR, PRO, FIT (static)',
+            : 'Product · OP, ST, STAR, PRO, FIT (static)',
       }
     },
   },

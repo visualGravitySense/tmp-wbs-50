@@ -36,9 +36,9 @@ export function resolveLink(link?: SanityLink): string {
       case 'koolitusPage':
         return '/koolitus';
       case 'aboutPage':
-        return '/andres-kase';
+        return '/about';
       case 'opstarProfit':
-        return '/opstar-profit';
+        return '/product';
       case 'galleryPage':
         return '/galerii';
       case 'blogPage':

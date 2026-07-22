@@ -35,15 +35,15 @@ interface BlogPageProps {
 
 const FALLBACK_SETTINGS: BlogPageSettings = {
   seo: {
-    metaTitle: 'Blogi — tootmisjuhtimine.ee',
-    metaDescription: 'Praktilised artiklid LEAN, TPS ja OPSTAR PROFIT™ meetoditest.',
+    metaTitle: 'Blog — Site Name',
+    metaDescription: 'Articles and practical insights for your audience.',
   },
   hero: {
     pillText: 'Praktilised artiklid tootmisjuhtidele',
     title: 'Tootmisjuhtimise blogi',
     titleAccent: 'ja praktilised teadmised',
     description:
-      'Praktilised artiklid LEAN, TPS ja OPSTAR PROFIT™ meetoditest. Kõik põhineb päris tehastest saadud kogemusel.',
+      'Praktilised artiklid LEAN, TPS ja Product Name meetoditest. Kõik põhineb päris tehastest saadud kogemusel.',
   },
   filterBar: {
     allLabel: 'Kõik',
@@ -107,7 +107,7 @@ async function getPosts(): Promise<BlogPostPreview[]> {
         featured: Boolean(r.featured),
         author: r.author?.name
           ? r.author
-          : { name: 'Andres Kase', role: 'Tootmisjuhtimise koolitaja' },
+          : { name: 'Your Name', role: 'Tootmisjuhtimise koolitaja' },
       }),
     )
 }
@@ -136,11 +136,11 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 
   return buildPageMetadata({
-    title: settings.seo?.metaTitle || FALLBACK_SETTINGS.seo?.metaTitle || 'Blogi — Andres Kase',
+    title: settings.seo?.metaTitle || FALLBACK_SETTINGS.seo?.metaTitle || 'Blogi — Site Name',
     description:
       settings.seo?.metaDescription ||
       FALLBACK_SETTINGS.seo?.metaDescription ||
-      'Praktilised artiklid LEAN, TPS ja OPSTAR PROFIT™ meetoditest.',
+      'Praktilised artiklid LEAN, TPS ja Product Name meetoditest.',
     keywords: settings.seo?.metaKeywords,
     path: '/blog',
     ogImage,

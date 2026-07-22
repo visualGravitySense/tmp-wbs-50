@@ -28,7 +28,7 @@ export default defineType({
       title: 'Tekst pärast linki',
       type: 'string',
       initialValue:
-        '. Vastutav töötleja kontaktandmete suhtes on Andres Kase (andreskase@tootmisjuhtimine.ee).',
+        '. Vastutav töötleja kontaktandmete suhtes on Site Name (hello@example.com).',
     }),
   ],
   preview: {

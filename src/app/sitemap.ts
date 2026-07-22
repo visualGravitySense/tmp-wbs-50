@@ -19,7 +19,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${siteUrl}${path === '/' ? '' : path}`,
     lastModified: now,
     changeFrequency: path === '/' || path === '/blog' ? 'weekly' : 'monthly',
-    priority: path === '/' ? 1 : path === '/koolitus' || path === '/opstar-profit' ? 0.9 : 0.7,
+    priority: path === '/' ? 1 : path === '/koolitus' || path === '/product' ? 0.9 : 0.7,
   }))
 
   let postEntries: MetadataRoute.Sitemap = []

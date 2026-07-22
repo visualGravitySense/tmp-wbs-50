@@ -52,22 +52,22 @@ export default defineType({
         },
       ],
       initialValue: [
-        { label: 'Üldine', address: 'andreskase@tootmisjuhtimine.ee' },
-        { label: 'Koolitus ja pakkumised', address: 'andres@tootmisjuhtimine.ee' },
+        { label: 'Üldine', address: 'hello@example.com' },
+        { label: 'Koolitus ja pakkumised', address: 'hello@example.com' },
       ],
     }),
     defineField({
       name: 'phoneDisplay',
       title: 'Telefon (kuvatav)',
       type: 'string',
-      initialValue: '+372 51 38 403',
+      initialValue: '+372 000 0000',
     }),
     defineField({
       name: 'phoneTel',
       title: 'Telefon (tel: link)',
-      description: 'Ilma tühikuteta, nt +3725138403',
+      description: 'Ilma tühikuteta, nt +3720000000',
       type: 'string',
-      initialValue: '+3725138403',
+      initialValue: '+3720000000',
     }),
     defineField({
       name: 'addressStreet',

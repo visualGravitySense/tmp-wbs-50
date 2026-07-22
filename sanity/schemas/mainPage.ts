@@ -97,7 +97,7 @@ export default defineType({
 
     defineField({
       name: 'aboutAndres',
-      title: 'About Andres Section',
+      title: 'About Trainer Section',
       type: 'aboutAndresSectionContent',
       hidden: true,
     }),
@@ -159,7 +159,7 @@ export default defineType({
         eyebrow: 'Personaalne tagasiside',
         title: 'Vasta mõnele küsimusele — vaata, millega saan sind aidata',
         description:
-          'Vastuste eest võid lisada oma e-posti — Andres saab ette valmistada asjakohasemaid soovitusi.',
+          'Vastuste eest võid lisada oma e-posti — meie meeskond saab ette valmistada asjakohasemaid soovitusi.',
         buttonText: 'Ava küsitlus',
         formUrl: 'https://forms.gle/RFhukyrDW4daufys9',
       },

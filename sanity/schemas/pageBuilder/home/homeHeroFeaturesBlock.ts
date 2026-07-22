@@ -5,7 +5,7 @@ const TEENUSED_INITIAL = {
   title: 'Mida pakume',
   scriptSubtitle: 'praktiliselt',
   description:
-    'Koolitus, konsultatsioon ja OPSTAR PROFIT™ — kolm veergu, staatiline paigutus (mitte vahelehed).',
+    'Koolitus, konsultatsioon ja Product Name — kolm veergu, staatiline paigutus (mitte vahelehed).',
   features: [
     {
       title: 'Tootmisjuhtimise koolitus',
@@ -18,7 +18,7 @@ const TEENUSED_INITIAL = {
       icon: 'orange',
     },
     {
-      title: 'OPSTAR PROFIT™',
+      title: 'Product Name',
       description: '8-komponentne süsteem Eesti tootmise jaoks — strateegiast põrandani.',
       icon: 'purple',
     },

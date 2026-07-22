@@ -31,7 +31,7 @@ const TOOLS = [
   },
   {
     name: 'get_contact_info',
-    description: 'Get contact email, phone number, and website links for Andres Kase.',
+    description: 'Get contact email, phone number, and website links.',
     inputSchema: {
       type: 'object',
       properties: {}
@@ -83,8 +83,9 @@ export async function POST(request: Request) {
           })
         }
 
+        const siteBase = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://example.com'
         const text = cleaned
-          .map((r) => `- [${r.title}](https://tootmisjuhtimine.ee${r.href}): ${r.description ?? 'No description available.'}`)
+          .map((r) => `- [${r.title}](${siteBase}${r.href}): ${r.description ?? 'No description available.'}`)
           .join('\n')
 
         return NextResponse.json({
@@ -98,16 +99,17 @@ export async function POST(request: Request) {
       }
 
       if (name === 'get_contact_info') {
+        const siteBase = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://example.com'
         const contactInfo = {
-          name: 'Andres Kase',
-          email: 'andreskase@tootmisjuhtimine.ee',
-          phone: '+372 513 8403',
-          website: 'https://tootmisjuhtimine.ee',
+          name: 'Your Name',
+          email: 'hello@example.com',
+          phone: '+372 000 0000',
+          website: siteBase,
           pages: {
-            contact: 'https://tootmisjuhtimine.ee/kontakt',
-            registration: 'https://tootmisjuhtimine.ee/register',
-            blog: 'https://tootmisjuhtimine.ee/blog',
-            courses: 'https://tootmisjuhtimine.ee/koolitus'
+            contact: `${siteBase}/kontakt`,
+            registration: `${siteBase}/register`,
+            blog: `${siteBase}/blog`,
+            courses: `${siteBase}/koolitus`
           }
         }
 

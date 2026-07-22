@@ -16,11 +16,11 @@ const mainDocuments = defineDocuments([
     filter: `_type == "koolitusPage" && _id == "koolitusPage"`,
   },
   {
-    route: '/opstar-profit',
+    route: '/product',
     filter: `_type == "opstarProfit"`,
   },
   {
-    route: '/andres-kase',
+    route: '/about',
     filter: `_type == "aboutPage"`,
   },
   {
@@ -53,8 +53,8 @@ export const resolve: PresentationPluginOptions['resolve'] = {
             title:
               (doc?.headline as string)?.trim() ||
               (doc?.title as string)?.trim() ||
-              'Andres Kase',
-            href: '/andres-kase',
+              'Your Name',
+            href: '/about',
           },
         ],
       }),
@@ -114,8 +114,8 @@ export const resolve: PresentationPluginOptions['resolve'] = {
       resolve: (doc) => ({
         locations: [
           {
-            title: (doc?.title as string) || 'Opstar Profit',
-            href: '/opstar-profit',
+            title: (doc?.title as string) || 'Product Name',
+            href: '/product',
           },
         ],
       }),

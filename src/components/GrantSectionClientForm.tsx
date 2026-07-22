@@ -120,14 +120,14 @@ export default function GrantSectionClientForm({
             <div className="space-y-2 text-left">
               <p className="text-base font-bold text-blue-700 dark:text-blue-300">Aitäh!</p>
               <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))]">
-                Andres vaatab sinu andmed üle ja vastab 24 tunni jooksul, kas Töötukassa toetus on sinu
+                Meie meeskond vaatab sinu andmed üle ja vastab 24 tunni jooksul, kas Töötukassa toetus on sinu
                 olukorras võimalik.
               </p>
             </div>
           ) : (
             <form onSubmit={handleInquirySubmit} className="space-y-4">
               <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))]">
-                Sisesta oma andmed — Andres saab täpsemalt öelda, kas riigi koolitustoetus on sinu jaoks
+                Sisesta oma andmed — Meie meeskond saab täpsemalt öelda, kas riigi koolitustoetus on sinu jaoks
                 võimalik. Isikukood on valikuline, kuid aitab kiiremini kontrollida.
               </p>
               <FormField>

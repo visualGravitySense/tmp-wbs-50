@@ -93,7 +93,7 @@ const CertificateSection: React.FC<CertificateSectionProps> = ({
     "Iseseisva projekti edukas kaitsmine",
     "Praktiliste harjumuste demonstreerimine tehasevisiidil"
   ],
-  certName = "Andres Õunapuu",
+  certName = "Your Name",
   certTitle = "LEAN PRAKTIK",
   certSubtitle = "TOOTMISJUHTIDE ARENGUPROGRAMM",
   certMeta = [
@@ -115,7 +115,7 @@ const CertificateSection: React.FC<CertificateSectionProps> = ({
 }) => {
   const [activeMeaning, setActiveMeaning] = useState(meaningPills?.[0]?.value || 'employer')
 
-  const imageUrl = certificateImage?.asset?.url || "/tunnistus2026.png"
+  const imageUrl = certificateImage?.asset?.url || "/placeholder-image.svg"
 
   const resolvedBg = 'bg-transparent';
 

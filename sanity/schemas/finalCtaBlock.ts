@@ -11,7 +11,7 @@ export default defineType({
       title: 'Pealkiri',
       type: 'string',
       description: 'Suur valge pealkiri bänneri keskel.',
-      initialValue: 'Õpi otse Andreselt',
+      initialValue: 'Õpi otse treenerilt',
     }),
     defineField({
       name: 'subtitle',

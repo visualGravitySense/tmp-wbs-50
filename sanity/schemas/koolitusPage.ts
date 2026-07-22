@@ -1751,7 +1751,7 @@ export default {
               features: [
                 '9-päevane programm täies mahus',
                 'Kõik materjalid ja mallid',
-                'OPSTAR PROFIT™ tunnistus',
+                'Product Name tunnistus',
                 'Toitlustus kõik päevad'
               ],
               buttonText: 'Registreeru →',
@@ -1767,7 +1767,7 @@ export default {
               eisSupport: '✓ EIS toetus kuni 50%',
               features: [
                 'Kõik eelmises paketis sisalduv',
-                '12 kuud järeltuge Andreselt',
+                '12 kuud järeltuge meeskonnalt',
                 'Individuaalsed coachingu sessioonid',
                 'Arve ettevõttele, EIS menetlus kaetud'
               ],
@@ -1787,7 +1787,7 @@ export default {
                 'Paindlik ajakava'
               ],
               buttonText: 'Võta ühendust →',
-              buttonLink: 'mailto:andres@tootmisjuhtimine.ee',
+              buttonLink: 'mailto:hello@example.com',
               buttonStyle: 'secondary',
               isFeatured: false
             }

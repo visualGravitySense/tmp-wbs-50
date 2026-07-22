@@ -44,7 +44,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'invalid_email' }, { status: 400 })
   }
 
-  // Construct a detailed, highly readable Telegram notification for Andres
+  // Construct a detailed, highly readable Telegram notification for the team
   let telegramMessage = `📊 UUS TEHASE TOOTMISAUDIT (QUIZ)\n\n`
   telegramMessage += `👤 Nimi: ${name}\n`
   telegramMessage += `✉️ E-post: ${email}\n`

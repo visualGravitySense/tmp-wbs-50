@@ -2,12 +2,12 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'homeAboutBlock',
-  title: '[VANA - ÄRA KASUTA] Andres Kase vana',
+  title: '[VANA - ÄRA KASUTA] Trainer vana',
   type: 'object',
   fields: [
     defineField({
       name: 'aboutAndres',
-      title: 'About Andres Section',
+      title: 'About Trainer Section',
       type: 'aboutAndresSectionContent',
     }),
   ],
@@ -18,7 +18,7 @@ export default defineType({
     },
     prepare({ title, subtitle }) {
       return {
-        title: title || 'Andres Kase',
+        title: title || 'Your Name',
         subtitle: subtitle || 'About',
       }
     },

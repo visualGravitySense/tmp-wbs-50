@@ -85,8 +85,8 @@ export default function BlogCard({
               {/* Ultra-clean minimalist circular glass badge with brand logo */}
               <div className="relative flex h-14 w-14 items-center justify-center rounded-full border border-white/25 bg-white/10 backdrop-blur-md shadow-[0_8px_32px_0_rgba(0,0,0,0.06)] dark:border-white/10 dark:bg-white/5 dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]">
                 <img
-                  src="/opstar-brand-logo.webp"
-                  alt="OPSTAR Logo"
+                  src="/placeholder-logo.svg"
+                  alt="Logo"
                   className="h-7 w-7 object-contain opacity-90 transition-all duration-500 group-hover:scale-110"
                 />
               </div>

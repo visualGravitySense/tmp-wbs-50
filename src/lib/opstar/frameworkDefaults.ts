@@ -18,7 +18,7 @@ export const DEFAULT_OPSTAR_FRAMEWORK: Required<
   Pick<OpstarFrameworkData, 'eyebrow' | 'title' | 'subtitle' | 'parts'>
 > = {
   eyebrow: 'Raamistik',
-  title: 'OPSTAR PROFIT™ — kuus osa',
+  title: 'Product Name — kuus osa',
   subtitle: 'Iga osa vastab konkreetsele juhtimisvalule ja viib sind lahenduseni.',
   parts: [
     {

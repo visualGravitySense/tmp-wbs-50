@@ -2,7 +2,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { faqQuestionsField } from './fields/faqQuestionsField'
 
-/** Standalone FAQ document schema (registered in Studio). Primary content for /opstar-profit lives inside the `opstarProfit` document → KKK Section. Keep fields aligned with that object. */
+/** Standalone FAQ document schema (registered in Studio). Primary content for /product lives inside the `opstarProfit` document → KKK Section. Keep fields aligned with that object. */
 export default {
   name: 'kkk',
   title: 'KKK (FAQ) — standalone',

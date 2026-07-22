@@ -56,7 +56,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
       company: "ABB Estonia",
     },
     {
-      quote: "Andres praktiline lähenemine ja reaalsed näited aitasid meil kiiresti rakendada LEAN põhimõtteid. Tulemused nähtavad kohe pärast esimesi treeninguid.",
+      quote: "Praktiline lähenemine ja reaalsed näited aitasid meil kiiresti rakendada LEAN põhimõtteid. Tulemused nähtavad kohe pärast esimesi treeninguid.",
       author: "Katrin Lõhmus",
       role: "Operatsioonijuht",
       company: "Cleveron",
@@ -74,7 +74,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
       company: "Ericsson",
     },
     {
-      quote: "LEAN süsteemi juurutamine meie ettevõttes oli lihtne ja tulemusrikas. Andresi kogemus oli hindamatu.",
+      quote: "LEAN süsteemi juurutamine meie ettevõttes oli lihtne ja tulemusrikas. Treeneri kogemus oli hindamatu.",
       author: "Jaan Saar",
       role: "Tegevjuht",
       company: "Põltsamaa Fabrikel",

@@ -56,7 +56,7 @@ const DEFAULT_NODES: HeroDiagramNode[] = [
     title: 'INTEGREERITUS',
     position: { x: 82, y: 35 },
     description:
-      'Sobivus, sidusus ja seostatus — kõik komponendid töötavad koos ühtse OPSTAR PROFIT süsteemina.',
+      'Sobivus, sidusus ja seostatus — kõik komponendid töötavad koos ühtse Product Name süsteemina.',
   },
   {
     title: 'PROFESSIONAALSUS',
@@ -136,11 +136,11 @@ function getNodeDescription(node: HeroDiagramNode): string {
 // ── Component ──────────────────────────────────────────────────────────────
 
 export default function OpstarProfitHeroDiagram({
-  eyebrowLabel = 'OPSTAR PROFIT™ • METOODIKA RAAMISTIK',
-  cardTitle    = 'OPSTAR PROFIT™ SÜSTEEMNE JUHTIMINE',
+  eyebrowLabel = 'Product Name • METOODIKA RAAMISTIK',
+  cardTitle    = 'Product Name SÜSTEEMNE JUHTIMINE',
   badgeText    = 'BAASRAAMISTIK',
   tagPills     = DEFAULT_TAG_PILLS,
-  centralText  = 'OPSTAR PROFIT',
+  centralText  = 'Product Name',
   nodes,
   metrics,
 }: OpstarProfitHeroDiagramProps) {

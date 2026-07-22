@@ -37,7 +37,7 @@ export type MarketingSplitHeroProps = {
   /** Second headline line — italic accent (Koolitus / Blog) */
   scriptHeadline?: string
   scriptHeadlineClassName?: string
-  /** e.g. OPSTAR PROFIT™ */
+  /** e.g. Product Name */
   headlineTrademark?: boolean
   /** Extra classes on the first headline line (e.g. uppercase italic) */
   headlineMainClassName?: string

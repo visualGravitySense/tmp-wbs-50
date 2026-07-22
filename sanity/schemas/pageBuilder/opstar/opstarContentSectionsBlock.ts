@@ -5,5 +5,5 @@ export default createOpstarSectionBlock({
   title: 'Sisublokid',
   fieldName: 'contentSections',
   previewTitlePath: 'contentSections.0.title',
-  previewSubtitle: 'OPSTAR · teksti sektsioonid',
+  previewSubtitle: 'Product · teksti sektsioonid',
 })

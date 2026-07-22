@@ -40,13 +40,13 @@ export const LEGACY_BLOCKS = [
   'opstarKoImSammastBlock',
 ] as const
 
-/** Hero blocks for /andres-kase (aboutPage) — listed first in preset for Studio. */
+/** Hero blocks for /about (aboutPage) — listed first in preset for Studio. */
 export const ABOUT_PAGE_HERO_BLOCKS = [
   'marketingSplitHeroBlock',
   'homeHeroBlock',
 ] as const
 
-/** Home blocks commonly composed on /andres-kase and other about-style pages. */
+/** Home blocks commonly composed on /about and other about-style pages. */
 export const ABOUT_SHARED_HOME_BLOCKS = [
   'homePartnersBlock',
   'homeTestimonialsBlock',
@@ -54,7 +54,7 @@ export const ABOUT_SHARED_HOME_BLOCKS = [
   'homePhotoMarqueeBlock',
 ] as const
 
-/** Cross-page blocks already used on /andres-kase in production CMS. */
+/** Cross-page blocks already used on /about in production CMS. */
 export const ABOUT_CROSS_PAGE_BLOCKS = [
   'koolitusStatsBlock',
   'opstarFrameworkBlock',
@@ -117,7 +117,7 @@ export const KOOLITUS_CROSS_PAGE_BLOCKS = [
   ...WORLD_MANUFACTURING_VISITS_BLOCKS,
 ] as const
 
-/** Comparison blocks on /opstar-profit (Mis on OPSTAR + LEAN vs OPSTAR). */
+/** Comparison blocks on /product (Mis on Product + LEAN vs Product). */
 export const OPSTAR_COMPARISON_BLOCKS = [
   'opstarComparisonBlock',
   'opstarLeanVsOpstarBlock',
@@ -137,11 +137,11 @@ export const OPSTAR_BLOCKS = [
   'opstarContentSectionsBlock',
 ] as const
 
-/** Cross-page blocks from other singleton pages already used on /opstar-profit in production CMS. */
+/** Cross-page blocks from other singleton pages already used on /product in production CMS. */
 export const OPSTAR_CROSS_PAGE_BLOCKS = [
   'aboutNarrativeBlock',
   'koolitusCohortsBlock',
-  /** LEAN maja diagram — shared koolitus block, used on /opstar-profit */
+  /** LEAN maja diagram — shared koolitus block, used on /product */
   'koolitusLeanHouseBlock',
   ...WORLD_MANUFACTURING_VISITS_BLOCKS,
 ] as const
@@ -251,10 +251,10 @@ export const pageBuilderPresets = {
     WORLD_MANUFACTURING_VISITS_BLOCKS,
     KKK_BLOCKS,
   ),
-  /** /andres-kase — full page-builder library so Studio copy-paste from Esileht/Koolitus works. */
+  /** /about — full page-builder library so Studio copy-paste from Esileht/Koolitus works. */
   aboutPage: MAIN_PAGE_BLOCKS,
   kontaktPage: uniqueBlockTypes(SHARED_BLOCKS, KONTAKT_BLOCKS),
-  /** /opstar-profit — includes LEAN vs OPSTAR comparison + framework blocks (deduped). */
+  /** /product — includes LEAN vs OPSTAR comparison + framework blocks (deduped). */
   opstarProfit: uniqueBlockTypes(
     SHARED_BLOCKS,
     HOME_BLOCKS,

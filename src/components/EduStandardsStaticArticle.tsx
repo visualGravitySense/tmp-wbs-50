@@ -11,7 +11,7 @@ export default function EduStandardsStaticArticle() {
           Info osalejatele ja tööandjatele
         </h2>
         <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
-          Lean tootmisjuhtimise koolitus: praktilised õppematerjalid, tehasekülastused ja seminarid Viljandis – koolitaja Andres Kase
+          Lean tootmisjuhtimise koolitus: praktilised õppematerjalid, tehasekülastused ja seminarid Viljandis – koolitaja Your Name
         </p>
         <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
           Tööandja saab töötajate koolitamiseks valida{' '}
@@ -70,7 +70,7 @@ export default function EduStandardsStaticArticle() {
       {/* Section 2: Õppekava */}
       <section className="space-y-6">
         <h2 className="text-xl font-black tracking-tight text-[rgb(var(--text-primary))] sm:text-2xl border-b border-slate-100 pb-2 dark:border-slate-800">
-          Opstar Profit Lean-Agile tootmisjuhtimise täiendkoolituse õppekava
+          Product Name Lean-Agile tootmisjuhtimise täiendkoolituse õppekava
         </h2>
         <p className="text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
           Lean-Agile Tootmisjuhtimise täiendkoolitus kombineerib teoreetilisi teadmisi, praktilisi oskusi strateegilise, taktikalise planeerimise (nõudlusest tulenevalt), kui ka operatiivtasandi igapäevatöö tõhusa teostamise asjus – Tagamaks pikaajaline järjepidevus ja tulemuslikkus. Seome eesmärgi, inimhinge, protsessid, logistika ja seadmed, kui ka digitaalse maailma.
@@ -125,7 +125,7 @@ export default function EduStandardsStaticArticle() {
             Tootmisjuhtimise täiendkoolituse kontakttundide maht on 64 akadeemilist tundi, millest teoreetiline 48 ja praktiline 16 tundi(ettevõtete külastused) + iseseisvad tööd ja individuaalne parendusprojekt. Hinnanguline maht 32 akadeemilist tundi. Koolituse kogumaht koos iseseisva tööga on orienteeruvalt 96 akadeemilist tundi. Koolitus sisaldab järgmisi teemasid:
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-sm text-[rgb(var(--text-secondary))] pl-2 pt-2">
-            <div>1. „OPSTAR PROFIT“ lähenemine. Süsteemne Juhtimine = Juhtimissüsteem.</div>
+            <div>1. „Product Name“ lähenemine. Süsteemne Juhtimine = Juhtimissüsteem.</div>
             <div>2. Miks LEAN ja AGILE? Millest tegelikult räägime – Eesti keeles.</div>
             <div>3. Tootmiskorraldus strateegilisel, taktikalisel, operatiivsel tasandil.</div>
             <div>4. Tootmissüsteemide ülevaade. LEAN tootmissüsteem, Toyota tootmissüsteem(TPS), jt.</div>
@@ -185,7 +185,7 @@ export default function EduStandardsStaticArticle() {
         <div className="space-y-3">
           <h3 className="text-base font-bold text-[rgb(var(--text-primary))]">Koolituse läbiviimiseks vajaliku kvalifikatsiooni, õpi- või töökogemuse kirjeldus:</h3>
           <ul className="list-disc list-inside space-y-1.5 text-sm text-[rgb(var(--text-secondary))] pl-2">
-            <li>Tootmisjuhtimise täiendkoolituse koostaja ja koolitaja on Andres Kase, kes omab pikaajalist, ainulaadselt terviklikku teadmiste ja praktilise kogemuse pagasit tootmis- ja tööstusjuhtimise alal.</li>
+            <li>Tootmisjuhtimise täiendkoolituse koostaja ja koolitaja on Your Name, kes omab pikaajalist, ainulaadselt terviklikku teadmiste ja praktilise kogemuse pagasit tootmis- ja tööstusjuhtimise alal.</li>
             <li>Omades kogemust ja tundes põhjalikult organisatsiooni toimet, juhtimist, LEAN tootmist, kui ka “mitte LEAN” tootmist, teab, mis on tegelikult õige “ravim” ja kuidas organisatsiooni arendada.</li>
             <li>LEAN’ga kokkupuude alates 2003. aastast. Rakendanud aastakümnete jooksul mitmes suuremas tehases nii spetsialisti, kesk-, kui ka tippjuhina.</li>
             <li>Üle 25 aasta praktilist tootmis- ja tööstusjuhtimist, mille osaks on alati teenus ja teenindusjuhtimine, sest tööstust ilma ei turunda.</li>
@@ -200,20 +200,20 @@ export default function EduStandardsStaticArticle() {
 
           <div className="mt-4 flex flex-wrap gap-4 text-xs">
             <a
-              href="https://www.etis.ee/CV/Andres_Kase/est"
+              href="https://www.etis.ee/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-blue-600 dark:text-blue-400 hover:underline"
             >
-              Koolitaja Andres Kase CV Eesti Teadusinfosüsteemis →
+              Koolitaja CV Eesti Teadusinfosüsteemis →
             </a>
             <a
-              href="https://www.linkedin.com/in/andres-kase-a93352b/"
+              href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-blue-600 dark:text-blue-400 hover:underline"
             >
-              Koolitaja Andres Kase LinkedIn profiil →
+              Koolitaja LinkedIn profiil →
             </a>
           </div>
         </div>
@@ -236,7 +236,7 @@ export default function EduStandardsStaticArticle() {
           <h3 className="text-base font-bold text-[rgb(var(--text-primary))]">Täienduskoolitusele vastuvõtu ja koolituselt väljaarvamise tingimused ja kord</h3>
           <ul className="list-disc list-inside space-y-1.5 text-sm text-[rgb(var(--text-secondary))] pl-2">
             <li>Koolitusele saab registreeruda koolituse kodulehel sätestatud korra alusel kasutades mugavat registreerimisvormi.</li>
-            <li>Registreeruda saab ka telefoni 5138403 ja e-kirja <a href="mailto:andreskase@tootmisjuhtimine.ee" className="text-blue-600 dark:text-blue-400 hover:underline">andreskase@tootmisjuhtimine.ee</a> teel.</li>
+            <li>Registreeruda saab ka telefoni +372 000 0000 ja e-kirja <a href="mailto:hello@example.com" className="text-blue-600 dark:text-blue-400 hover:underline">hello@example.com</a> teel.</li>
             <li>Peale vormikohast registreerumist saab osaleja koheselt kinnituse ja esmase teabe toimumisaegade kohta.</li>
             <li>Vajadusel täpsustab koolitaja osaleja tausta, sobivust ja valmidust e-kirja või telefoni teel.</li>
             <li>Koolituse toimumisajad on algselt määratud kalendris nädala täpsusega. Täpsed kuupäevad selguvad orienteeruvalt 2-4 nädalat enne koolituse algselt määratud algust.</li>

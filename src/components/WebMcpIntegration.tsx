@@ -35,17 +35,17 @@ export default function WebMcpIntegration() {
           },
           {
             name: 'get_contact_info',
-            description: 'Get contact email, phone number, and social media links for Andres Kase.',
+            description: 'Get contact email, phone number, and social media links.',
             inputSchema: {
               type: 'object',
               properties: {}
             },
             execute: async () => {
               return {
-                name: 'Andres Kase',
-                email: 'andreskase@tootmisjuhtimine.ee',
-                phone: '+372 513 8403',
-                website: 'https://tootmisjuhtimine.ee',
+                name: 'Your Name',
+                email: 'hello@example.com',
+                phone: '+372 000 0000',
+                website: process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com',
                 pages: {
                   contact: '/kontakt',
                   registration: '/register',

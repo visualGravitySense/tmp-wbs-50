@@ -2,14 +2,14 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'kontaktOpstarBlock',
-  title: 'Kontakt OPSTAR PROFIT',
+  title: 'Kontakt Product Name',
   type: 'object',
   fields: [
     defineField({
       name: 'name',
       title: 'Pealkiri',
       type: 'string',
-      initialValue: 'OPSTAR PROFIT™',
+      initialValue: 'Product Name',
     }),
     defineField({
       name: 'tagline',
@@ -23,7 +23,7 @@ export default defineType({
       type: 'text',
       rows: 4,
       initialValue:
-        'Kaheksa komponendiga süsteem, mis on loodud Eesti tootmisettevõtete vajadustest — kiirem rakendamine kui abstraktne LEAN, selged tööriistad ja mõõdetavad tulemused. Koolitused ja sertifikaadid viivad läbi Andres Kase.',
+        'Kaheksa komponendiga süsteem, mis on loodud Eesti tootmisettevõtete vajadustest — kiirem rakendamine kui abstraktne LEAN, selged tööriistad ja mõõdetavad tulemused. Koolitused ja sertifikaadid viib läbi meie meeskond.',
     }),
     defineField({
       name: 'bullets',
@@ -40,19 +40,19 @@ export default defineType({
       name: 'linkLabel',
       title: 'Lingi tekst',
       type: 'string',
-      initialValue: 'Tutvu OPSTAR PROFIT™ raamistikuga →',
+      initialValue: 'Tutvu Product Name raamistikuga →',
     }),
     defineField({
       name: 'linkHref',
       title: 'Link',
       type: 'string',
-      initialValue: '/opstar-profit',
+      initialValue: '/product',
     }),
   ],
   preview: {
     select: { title: 'name' },
     prepare({ title }) {
-      return { title: title || 'OPSTAR PROFIT', subtitle: 'Lühike tutvustav plokk kontaktlehel' }
+      return { title: title || 'Product Name', subtitle: 'Lühike tutvustav plokk kontaktlehel' }
     },
   },
 })

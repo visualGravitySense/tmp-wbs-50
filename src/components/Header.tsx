@@ -33,11 +33,11 @@ interface HeaderProps {
 }
 
 const DEFAULT_NAV_LINKS: NavLink[] = [
-  { name: 'Pealeht', href: '/' },
-  { name: 'Koolitus', href: '/koolitus' },
-  { name: 'Opstar Profit', href: '/opstar-profit' },
-  { name: 'Andres Kase', href: '/andres-kase' },
-  { name: 'Blogi', href: '/blog' },
+  { name: 'Home', href: '/' },
+  { name: 'Training', href: '/koolitus' },
+  { name: 'Product', href: '/product' },
+  { name: 'About', href: '/about' },
+  { name: 'Blog', href: '/blog' },
 ]
 
 export default function Header({ data }: HeaderProps) {
@@ -120,7 +120,7 @@ export default function Header({ data }: HeaderProps) {
           href="/"
           prefetch={linkPrefetch}
           className="group min-w-0 max-w-[62%] shrink cursor-pointer rounded-md outline-none [-webkit-tap-highlight-color:transparent] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/35 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent sm:max-w-[68%] lg:max-w-none lg:shrink-0"
-          aria-label={data?.logo || 'Andres Kase'}
+          aria-label={data?.logo || 'Site Name'}
           onClick={() => {
             if (pathname === '/') {
               window.scrollTo({ top: 0, behavior: 'smooth' })

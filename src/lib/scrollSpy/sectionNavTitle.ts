@@ -28,7 +28,7 @@ const SECTION_NAV_LABELS: Record<string, string> = {
   homeChallengesBlock: 'Väljakutsed',
   homeNineDaysMiniBlock: 'Mini-programm',
   homeGrantBlock: 'Toetus',
-  homeAboutBlock: 'Andres Kase',
+  homeAboutBlock: 'About',
   homePhotoMarqueeBlock: 'Galerii',
   homeBeforeAfterBlock: 'Tulemused',
   homePricingBlock: 'Hinnakiri',
@@ -62,22 +62,22 @@ const SECTION_NAV_LABELS: Record<string, string> = {
   koolitusPhotoGalleryBlock: 'Galerii',
   koolitusLocationBlock: 'Asukoht',
 
-  // OPSTAR Profit
-  opstarHeroBlock: 'OPSTAR',
+  // Product
+  opstarHeroBlock: 'Product',
   opstarAcronymGridBlock: 'Süsteem',
   opstarOrbitBlock: 'Mudel',
   opstarComparisonBlock: 'Võrdlus',
   opstarKolmSammastBlock: '3 sammast',
   opstarFrameworkBlock: 'Raamistik',
   opstarEightComponentsBlock: '8 osa',
-  opstarLeanVsOpstarBlock: 'LEAN vs OPSTAR',
+  opstarLeanVsOpstarBlock: 'LEAN vs Product',
   opstarMeasuredResultsBlock: 'Tulemused',
   opstarCasesBlock: 'Kogemus',
   opstarKkkBlock: 'KKK',
   opstarCtaBlock: 'Alusta',
   opstarContentSectionsBlock: 'Loe edasi',
 
-  // Andres Kase
+  // About
   aboutHeroBlock: 'Minust',
   aboutQuoteBlock: 'Moto',
   aboutNarrativeBlock: 'Lugu',

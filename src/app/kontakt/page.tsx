@@ -47,7 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 
   return buildPageMetadata({
-    title: page.seo.metaTitle || 'Kontakt — Andres Kase',
+    title: page.seo.metaTitle || 'Contact — Site Name',
     description:
       page.seo.metaDescription ||
       'Võta ühendust tootmisjuhtimise koolituste ja konsultatsioonide osas.',

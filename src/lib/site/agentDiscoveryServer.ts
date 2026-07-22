@@ -5,8 +5,8 @@ import { getSiteUrl } from '@/lib/site/siteUrl'
 export const PUBLIC_MARKETING_PATHS = [
   '/',
   '/koolitus',
-  '/opstar-profit',
-  '/andres-kase',
+  '/product',
+  '/about',
   '/kontakt',
   '/blog',
   '/register',
@@ -14,7 +14,6 @@ export const PUBLIC_MARKETING_PATHS = [
   '/galerii',
   '/tagasiside',
   '/privacy-policy',
-  '/taienduskoolituse-standard',
 ] as const
 
 function sha256Digest(content: string): string {
@@ -65,12 +64,12 @@ export function apiCatalogLinkset() {
 
   const pages = [
     { path: '/', title: 'Home' },
-    { path: '/koolitus', title: 'Koolitus' },
-    { path: '/opstar-profit', title: 'OPSTAR Profit' },
-    { path: '/andres-kase', title: 'Andres Kase' },
-    { path: '/kontakt', title: 'Kontakt' },
-    { path: '/blog', title: 'Blogi' },
-    { path: '/register', title: 'Registreerimine' },
+    { path: '/koolitus', title: 'Training' },
+    { path: '/product', title: 'Product' },
+    { path: '/about', title: 'About' },
+    { path: '/kontakt', title: 'Contact' },
+    { path: '/blog', title: 'Blog' },
+    { path: '/register', title: 'Register' },
   ]
 
   return {

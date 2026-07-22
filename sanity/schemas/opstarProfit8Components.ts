@@ -2,7 +2,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'opstarProfit8Components',
-  title: 'Opstar Profit 8 Components',
+  title: 'Product Name 8 Components',
   type: 'document',
   fields: [
     {

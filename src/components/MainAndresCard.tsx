@@ -12,10 +12,10 @@ export interface MainAndresCardProps {
 
 export default function MainAndresCard({ data }: MainAndresCardProps) {
   const {
-    badge = 'KOOLITAJA ANDRES',
-    title = 'Andres Kase',
+    badge = 'KOOLITAJA',
+    title = 'Your Name',
     subtitle = 'Programmi juht ja peakoolitaja • 25+ aastat tootmises',
-    description = 'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.',
+    description = 'Meie treener ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagame kogemust 100+ Eesti tehase põrandalt. Teeme puust ja punaselt ette ja asi saab selgeks.',
     image,
     ctaButton,
   } = data
@@ -40,7 +40,7 @@ export default function MainAndresCard({ data }: MainAndresCardProps) {
                 />
               ) : (
                 <Image
-                  src="/andres-koolitus-1.png"
+                  src="/placeholder-image.svg"
                   alt={title}
                   fill
                   sizes="(max-width: 1024px) 100vw, 38vw"

@@ -2,7 +2,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'leanVsOpstar',
-  title: 'LEAN vs OPSTAR PROFIT™',
+  title: 'LEAN vs Product Name',
   type: 'document',
   fields: [
     {
@@ -45,13 +45,13 @@ export default {
             },
             {
               name: 'opstarValue',
-              title: 'OPSTAR PROFIT™',
+              title: 'Product Name',
               type: 'string',
               validation: (Rule: any) => Rule.required(),
             },
             {
               name: 'opstarHasAdvantage',
-              title: 'OPSTAR has Advantage',
+              title: 'Product has Advantage',
               type: 'boolean',
               initialValue: true,
             },
@@ -111,7 +111,7 @@ export default {
     },
     {
       name: 'opstarColumnColor',
-      title: 'OPSTAR Column Color',
+      title: 'Product Column Color',
       type: 'string',
       initialValue: 'bg-blue-50 border-blue-200',
     },

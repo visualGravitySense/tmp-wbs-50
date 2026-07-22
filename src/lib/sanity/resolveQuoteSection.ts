@@ -3,12 +3,12 @@ import type { AboutQuoteSectionData } from '@/components/about/AboutQuoteCarouse
 
 const DEFAULT_QUOTES: AboutQuoteSectionData = {
   eyebrow: 'Tsitaat',
-  cardLabel: 'Andres Kase',
+  cardLabel: 'Your Name',
   quotes: [
     {
       quote:
         'Tootmisjuht ei pea olema see, kes kustutab tulesid. Ta peab ehitama süsteemi kus tulekahju ei toimu.',
-      author: 'Andres Kase',
+      author: 'Your Name',
     },
   ],
   backgroundColor: 'gray',

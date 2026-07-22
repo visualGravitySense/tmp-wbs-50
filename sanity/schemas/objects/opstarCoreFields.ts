@@ -26,7 +26,7 @@ export const opstarOrbitBlockRefField: OpstarFieldDefinition = {
 
 export const opstarComparisonPartnerLogosField: OpstarFieldDefinition = {
   name: 'comparisonPartnerLogos',
-  title: 'Lean vs OPSTAR — partner initials',
+  title: 'Lean vs Product — partner initials',
   type: 'array',
   of: [
     {
@@ -409,7 +409,7 @@ export const opstarKolmSammastField: OpstarFieldDefinition = {
 
 export const opstarFrameworkField: OpstarFieldDefinition = {
   name: 'framework',
-  title: 'OPSTAR PROFIT™ Framework (6 parts)',
+  title: 'Product Name Framework (6 parts)',
   type: 'object',
   fields: [
     {
@@ -423,7 +423,7 @@ export const opstarFrameworkField: OpstarFieldDefinition = {
       title: 'Section Title',
       type: 'string',
       validation: (Rule: any) => Rule.required(),
-      initialValue: 'OPSTAR PROFIT™ — kuus osa',
+      initialValue: 'Product Name — kuus osa',
     },
     {
       name: 'subtitle',
@@ -608,7 +608,7 @@ export const opstarEightComponentsField: OpstarFieldDefinition = {
 
 export const opstarLeanVsOpstarField: OpstarFieldDefinition = {
   name: 'leanVsOpstar',
-  title: 'LEAN vs OPSTAR PROFIT™ Section',
+  title: 'LEAN vs Product Name Section',
   type: 'object',
   fields: [
     {
@@ -655,14 +655,14 @@ export const opstarLeanVsOpstarField: OpstarFieldDefinition = {
             },
             {
               name: 'opstarValue',
-              title: 'How OPSTAR PROFIT™ handles this',
+              title: 'How Product Name handles this',
               type: 'text',
               rows: 3,
               validation: (Rule: any) => Rule.required(),
             },
             {
               name: 'opstarHasAdvantage',
-              title: 'OPSTAR has Advantage',
+              title: 'Product has Advantage',
               type: 'boolean',
               initialValue: true,
             },
@@ -722,7 +722,7 @@ export const opstarLeanVsOpstarField: OpstarFieldDefinition = {
     },
     {
       name: 'opstarColumnColor',
-      title: 'OPSTAR Column Color',
+      title: 'Product Column Color',
       type: 'string',
       initialValue: 'bg-blue-50 border-blue-200',
     },
@@ -1092,7 +1092,7 @@ export const opstarKkkField: OpstarFieldDefinition = {
   title: 'KKK Section (FAQ)',
   type: 'object',
   description:
-    'Accordion block on page /opstar-profit. Heading, pill label, subtitle, then question/answer pairs.',
+    'Accordion block on page /product. Heading, pill label, subtitle, then question/answer pairs.',
   fields: [
     {
       name: 'title',

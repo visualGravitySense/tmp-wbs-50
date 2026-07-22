@@ -1,11 +1,11 @@
 import { defineField, defineType } from 'sanity'
 
 /**
- * Standalone "Mis on OPSTAR?" comparison block — inline fields only.
+ * Standalone "Mis on Product?" comparison block — inline fields only.
  */
 export default defineType({
   name: 'opstarComparisonBlock',
-  title: 'Mis on OPSTAR? (võrdlus)',
+  title: 'Mis on Product? (võrdlus)',
   type: 'object',
   fields: [
     defineField({
@@ -18,7 +18,7 @@ export default defineType({
           name: 'title',
           title: 'Pealkiri',
           type: 'string',
-          initialValue: 'Mis on OPSTAR PROFIT™?',
+          initialValue: 'Mis on Product Name?',
         }),
         defineField({
           name: 'eyebrow',
@@ -96,8 +96,8 @@ export default defineType({
     select: { title: 'comparison.title' },
     prepare({ title }: { title?: string }) {
       return {
-        title: title || 'Mis on OPSTAR? (võrdlus)',
-        subtitle: 'OPSTAR Profit',
+        title: title || 'Mis on Product? (võrdlus)',
+        subtitle: 'Product Name',
       }
     },
   },

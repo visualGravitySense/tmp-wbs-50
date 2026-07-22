@@ -90,7 +90,7 @@ export default defineType({
             defineField({
               name: 'label',
               title: 'Ligipääsetavuse silt (valikuline)',
-              description: 'Nt "Facebook — Andres Kase". Kui tühi, kasutatakse platvormi nime.',
+              description: 'Nt "Facebook — Site Name". Kui tühi, kasutatakse platvormi nime.',
               type: 'string',
             }),
           ],
@@ -133,7 +133,7 @@ export default defineType({
       of: [linkItem],
       initialValue: [
         { label: 'Tootmisjuhtimise koolitus', href: '/koolitus' },
-        { label: 'Opstar Profit', href: '/opstar-profit' },
+        { label: 'Product Name', href: '/product' },
         { label: 'Juhendatud lõputööd', href: '/juhendatud-loputood' },
         { label: 'Koolitused', href: '/koolitus' },
       ],
@@ -152,7 +152,7 @@ export default defineType({
       fieldset: 'nav',
       of: [linkItem],
       initialValue: [
-        { label: 'Andres Kase', href: '/andres-kase' },
+        { label: 'About', href: '/about' },
         { label: 'Blogi', href: '/blog' },
         { label: 'Tagasiside', href: '/testimonials' },
         { label: 'Privaatsuspoliitika', href: '/privacy-policy' },
@@ -179,7 +179,7 @@ export default defineType({
       title: 'E-post',
       type: 'string',
       fieldset: 'contact',
-      initialValue: 'andreskase@tootmisjuhtimine.ee',
+      initialValue: 'hello@example.com',
     }),
     defineField({
       name: 'phoneLabel',
@@ -228,21 +228,21 @@ export default defineType({
       title: 'Roheline bänner — tekst',
       type: 'string',
       fieldset: 'contact',
-      initialValue: 'OPSTAR PROFIT RAAMISTIK',
+      initialValue: 'PRODUCT FRAMEWORK',
     }),
     defineField({
       name: 'partnerBadgeLink',
       title: 'Roheline bänner — link',
       type: 'string',
       fieldset: 'contact',
-      initialValue: '/opstar-profit',
+      initialValue: '/product',
     }),
     defineField({
       name: 'copyrightText',
       title: 'Autoriõigus',
       type: 'string',
       fieldset: 'legal',
-      initialValue: '© 2026 Andres Kase. Kõik õigused kaitstud.',
+      initialValue: '© 2026 Site Name. Kõik õigused kaitstud.',
     }),
     defineField({
       name: 'bottomTagline',

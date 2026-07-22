@@ -58,7 +58,7 @@ async function getPrivacyPolicyPage(): Promise<PrivacyPolicyDoc | null> {
 
 export async function generateMetadata(): Promise<Metadata> {
   const doc = await getPrivacyPolicyPage()
-  const title = (doc?.seo?.metaTitle ?? '').trim() || 'Privaatsuspoliitika — Andres Kase'
+  const title = (doc?.seo?.metaTitle ?? '').trim() || 'Privacy Policy — Site Name'
   const description = (doc?.seo?.metaDescription ?? '').trim() || FALLBACK_META_DESCRIPTION
 
   let ogImage: string | undefined

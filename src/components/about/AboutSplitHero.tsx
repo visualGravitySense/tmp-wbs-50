@@ -61,11 +61,11 @@ export default function AboutSplitHero({
           {/* Left Side Content */}
           <div className="order-last flex w-full flex-col items-center justify-center text-center lg:order-first lg:col-span-7 lg:items-start lg:text-left">
             <SectionBadge flow>
-              {sanitizeEyebrowText(eyebrow || 'Koolitaja Andres')}
+              {sanitizeEyebrowText(eyebrow || 'Koolitaja')}
             </SectionBadge>
             
             <h1 className="mb-2 mt-4 font-sans text-3xl font-extrabold leading-[1.05] tracking-tight text-[#122136] dark:text-white sm:text-4xl md:text-5xl lg:text-6xl">
-              {headline || 'Andres Kase'}
+              {headline || 'Your Name'}
             </h1>
             
             <h2 className="text-blue-600 dark:text-blue-400 font-[600] text-base lg:text-lg xl:text-xl mt-2">
@@ -180,7 +180,7 @@ export default function AboutSplitHero({
                 {image?.src ? (
                   <Image
                     src={image.src}
-                    alt={image.alt || 'Andres Kase'}
+                    alt={image.alt || 'Your Name'}
                     fill
                     sizes="(max-w-768px) 384px, 450px"
                     className="w-full h-full object-cover object-top filter-none"
@@ -196,10 +196,10 @@ export default function AboutSplitHero({
                 <div className="space-y-3 flex-1">
                   <div className="space-y-0.5 text-left">
                     <h3 className="text-base font-black text-slate-900 dark:text-white leading-tight">
-                      Andres Kase
+                      Your Name
                     </h3>
                     <p className="text-[10px] text-slate-400 font-extrabold uppercase tracking-wider leading-none mt-1">
-                      LEAN · TPS koolitaja · OPSTAR PROFIT™
+                      LEAN · TPS koolitaja · Product Name
                     </p>
                   </div>
 
@@ -218,14 +218,14 @@ export default function AboutSplitHero({
 
                 {/* Premium LinkedIn Social Icon Link */}
                 <Link
-                  href={linkedinUrl || "https://ee.linkedin.com/in/andres-kase-7833075"}
+                  href={linkedinUrl || "https://www.linkedin.com/"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group flex items-center justify-center shrink-0 border-2 border-[#0055E5] bg-gradient-to-br from-[#EEF4FF] to-white text-[#0055E5] p-3 rounded-xl transition-all hover:scale-105 shadow-sm dark:border-sky-500/40 dark:from-sky-950/20 dark:to-slate-900/40 dark:text-sky-400 overflow-hidden"
                   style={{
                     backgroundImage: 'repeating-linear-gradient(45deg, rgba(0, 85, 229, 0.04) 0px, rgba(0, 85, 229, 0.04) 2px, transparent 2px, transparent 8px)'
                   }}
-                  title="Andres Kase LinkedIn profiil"
+                  title="Your Name LinkedIn profiil"
                 >
                   {/* Premium Hover Glow Effect */}
                   <div className="absolute inset-0 bg-[#0055E5]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />

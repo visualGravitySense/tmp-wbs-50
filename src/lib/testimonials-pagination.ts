@@ -2,7 +2,7 @@
 export const TESTIMONIALS_INITIAL_LIMIT = 5
 export const TESTIMONIALS_SCROLL_BATCH = 15
 
-/** Koolitus, OPSTAR, About — cards before “Vaata kõik tagasisideid”. */
+/** Koolitus, Product, About — cards before “Vaata kõik tagasisideid”. */
 export const MARKETING_PAGE_TESTIMONIALS_PREVIEW = 9
 
 /** @deprecated Use `MARKETING_PAGE_TESTIMONIALS_PREVIEW`. */

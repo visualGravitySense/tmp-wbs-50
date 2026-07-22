@@ -1,22 +1,7 @@
-# auth.md — Authentication for tootmisjuhtimine.ee
+# Authentication notes
 
-This is a **public marketing and training information** website operated by Andres Kase / OPSTAR.
+This is a **public marketing** site template. There is no end-user login by default.
 
-## Agent access
-
-- There are **no OAuth-protected agent APIs** on this domain.
-- Public HTML pages may be crawled per `robots.txt` **Content-Signal** policy.
-- Machine-readable discovery:
-  - [/.well-known/api-catalog](/.well-known/api-catalog) — RFC 9727 linkset of public pages
-  - [/.well-known/agent-skills/index.json](/.well-known/agent-skills/index.json) — agent skills index
-  - [/sitemap.xml](/sitemap.xml) — canonical URL list
-
-## Human contact
-
-- Contact: [/kontakt](/kontakt)
-- Training registration: [/register](/register)
-- Email and phone are listed on the contact page.
-
-## Content usage
-
-See `Content-Signal` directives in [/robots.txt](/robots.txt).
+- Sanity Studio (`/studio`) uses Sanity’s own auth for content editors.
+- Protect admin API routes with server-side secrets / deployment access controls.
+- Do not commit API tokens or editor credentials.
