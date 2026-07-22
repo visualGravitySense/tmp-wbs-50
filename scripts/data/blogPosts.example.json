@@ -1,16 +1,16 @@
 [
   {
-    "title": "Näidisblogi: LEAN juhtimine tehases",
-    "slug": "lean-juhtimine-tehases",
+    "title": "Sample blog: process improvement",
+    "slug": "sample-process-improvement",
     "publishedAt": "2026-01-15T09:00:00.000Z",
-    "excerpt": "Lühike sissejuhatus — max 200 märki.",
-    "category": "juhtimine",
+    "excerpt": "Short intro — max 200 characters.",
+    "category": "management",
     "readTime": 6,
     "featured": false,
     "author": {
-      "name": "Andres Kase",
-      "role": "Konsultant"
+      "name": "Your Name",
+      "role": "Consultant"
     },
-    "body": "Esimene lõik.\n\nTeine lõik — tekstist tehakse Portable Text."
+    "body": "First paragraph.\n\nSecond paragraph — converted to Portable Text."
   }
 ]

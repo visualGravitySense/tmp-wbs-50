@@ -116,9 +116,9 @@ export type PageSectionsProps = {
   opstarContext?: OpstarSectionRenderContext
   globalStats?: any
   globalNineDaysProgram?: any
-  /** Andres Kase / about page. */
+  /** About page. */
   aboutContext?: AboutSectionRenderContext
-  /** Hide 4-metric strip under Andres photo card (e.g. /andres-kase). */
+  /** Hide 4-metric strip under trainer photo card (e.g. /about). */
   hideHeroGlobalStatsStrip?: boolean
   /** Homepage: render all sections immediately to avoid scroll jumps from deferred mounts. */
   disableBelowFoldDefer?: boolean

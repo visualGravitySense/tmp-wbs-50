@@ -9,7 +9,7 @@ export const REVIEWS_LIST_QUERY = `*[_type == "review"] | order(_createdAt desc)
   ${REVIEW_FIELDS}
 }`
 
-/** Oldest first — used on About / Andres page so default picks differ from `REVIEWS_LIST_QUERY` (home, etc.). */
+/** Oldest first — used on About page so default picks differ from `REVIEWS_LIST_QUERY` (home, etc.). */
 export const REVIEWS_LIST_QUERY_ASC = `*[_type == "review"] | order(_createdAt asc) {
   ${REVIEW_FIELDS}
 }`
@@ -19,7 +19,7 @@ export const REVIEWS_LIST_QUERY_AUTHOR_ASC = `*[_type == "review"] | order(autho
   ${REVIEW_FIELDS}
 }`
 
-/** Author Z→A — Opstar Profit page pool (differs from Koolitus + home + About). */
+/** Author Z→A — Product page pool (differs from Koolitus + home + About). */
 export const REVIEWS_LIST_QUERY_AUTHOR_DESC = `*[_type == "review"] | order(author desc) {
   ${REVIEW_FIELDS}
 }`

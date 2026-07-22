@@ -26,7 +26,7 @@ export const DEFAULT_LEAN_VS_OPSTAR_SCENARIOS: LeanVsOpstarScenario[] = [
     leanValue:
       'Lean annab tööriistad kaardistamiseks ja raiskamise vähendamiseks, kuid rakendamine jääb sageli sundkorras ja sõltub üksikust konsultandist.',
     opstarValue:
-      'OPSTAR PROFIT™ seob protsessid juhtimissüsteemiga — igapäevane rütm, vastutus ja mõõdikud hoiavad protsessid töös ilma pidevate eranditeta.',
+      'Product Name seob protsessid juhtimissüsteemiga — igapäevane rütm, vastutus ja mõõdikud hoiavad protsessid töös ilma pidevate eranditeta.',
     opstarHasAdvantage: true,
   },
   {
@@ -50,23 +50,23 @@ export const DEFAULT_LEAN_VS_OPSTAR_SCENARIOS: LeanVsOpstarScenario[] = [
     leanValue:
       'Osakonnad teevad oma Lean-projekte eraldi — tervikpilt puudub ja strateegia ei jõua põrandani ühtselt.',
     opstarValue:
-      'OPSTAR PROFIT™ annab ühtse raamistiku kogu organisatsioonile — strateegia, protsessid ja inimesed liiguvad samas suunas.',
+      'Product Name annab ühtse raamistiku kogu organisatsioonile — strateegia, protsessid ja inimesed liiguvad samas suunas.',
     opstarHasAdvantage: true,
   },
 ]
 
 export const DEFAULT_LEAN_VS_OPSTAR_CTA: LeanVsOpstarCta = {
-  text: 'Valmis OPSTAR PROFIT™ rakendama?',
+  text: 'Valmis Product Name rakendama?',
   subtitle: 'Järgmine grupp oktoobris 2026 · 3 kohta vabad',
   buttonText: 'Vaata programmi',
   buttonUrl: '/koolitus#registreeru',
 }
 
 export const DEFAULT_LEAN_VS_OPSTAR_DATA: LeanVsOpstarData = {
-  title: 'LEAN vs OPSTAR PROFIT™',
+  title: 'LEAN vs Product Name',
   eyebrow: 'Võrdlus',
   subtitle:
-    'Vali tuttav valu — vaata, kuidas Lean ja OPSTAR PROFIT™ seda erinevalt lahendavad.',
+    'Vali tuttav valu — vaata, kuidas Lean ja Product Name seda erinevalt lahendavad.',
   comparisonItems: DEFAULT_LEAN_VS_OPSTAR_SCENARIOS,
   cta: DEFAULT_LEAN_VS_OPSTAR_CTA,
 }

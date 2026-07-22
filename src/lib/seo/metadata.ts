@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 
 const TITLE_MAX = 60
 const DESCRIPTION_MAX = 160
-export const SITE_NAME = 'Andres Kase'
-export const DEFAULT_OG_IMAGE = '/opstar-brand-logo.webp'
+export const SITE_NAME = 'Site Name'
+export const DEFAULT_OG_IMAGE = '/placeholder-logo.svg'
 
 export const DEFAULT_HOME_SEO = {
-  title: 'Andres Kase — Tootmisjuhtimise koolitus',
+  title: 'Site Name — Training and consulting',
   description:
-    '9-päevane tootmisjuhtimise koolitus ja LEAN-Agile programm. Praktilised tööriistad, tehasekülastused ja mõõdetavad tulemused juhtidele.',
+    'Practical training, consulting, and product resources. Replace this default SEO text for each client.',
 } as const
 
 function truncateAtWord(text: string, max: number): string {
@@ -69,7 +69,7 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
       description,
       url: canonicalPath,
       siteName: SITE_NAME,
-      locale: 'et_EE',
+      locale: 'en_US',
       type: input.ogType ?? 'website',
       images: images.map((url) => ({ url })),
     },

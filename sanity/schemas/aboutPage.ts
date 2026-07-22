@@ -41,7 +41,7 @@ export default {
       name: 'featuredReviews',
       title: 'Lehe tagasiside (Review dokumendid)',
       description:
-        'Vali Review dokumendid — kuvatakse /andres-kase lehel (esimesed 3; ülejäänu /testimonials). Järjekord = kuvamine. Tühi = uusimad Review automaatselt.',
+        'Vali Review dokumendid — kuvatakse /about lehel (esimesed 3; ülejäänu /testimonials). Järjekord = kuvamine. Tühi = uusimad Review automaatselt.',
       type: 'array',
       hidden: true,
       of: [{ type: 'reference', to: [{ type: 'review' }] }],

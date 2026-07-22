@@ -73,7 +73,7 @@ export const DEFAULT_ABOUT_MARKETING_SPLIT_HERO = {
   scriptHeadline: 'Lean-Agile ekspert',
   description:
     '25 aastat tootmispõrandal — õpetan seda, mida olen ise teinud, mitte seda, mida raamatutest lugesin.',
-  linkedinUrl: 'https://www.linkedin.com/in/andres-kase-a93352b/',
+  linkedinUrl: 'https://www.linkedin.com/',
   floatingBadges: [
     {
       _key: 'fb1',

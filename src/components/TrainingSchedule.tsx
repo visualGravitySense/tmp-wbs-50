@@ -123,8 +123,8 @@ export default function TrainingSchedule({ data }: { data?: KoolitusTrainingSche
                   />
                 ) : (
                   <img 
-                    src="/opstar-logo-glass.png" 
-                    alt="OPSTAR Logo" 
+                    src="/placeholder-image.svg" 
+                    alt="Training" 
                     className="absolute inset-0 w-full h-full object-cover" 
                   />
                 )}

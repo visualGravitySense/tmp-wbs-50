@@ -13,7 +13,7 @@ import type { MainPageSection } from '@/types/mainPageSections'
 export const revalidate = 60
 
 export const metadata: Metadata = {
-  title: 'Kliendid ja Partnerid | Andres Kase',
+  title: 'Clients and Partners | Site Name',
   description: 'Tutvu ettevõtetega, kellega oleme teinud koostööd tootmise, logistika ja juhtimise valdkonnas.',
 }
 

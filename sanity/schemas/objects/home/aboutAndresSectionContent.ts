@@ -2,18 +2,18 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'aboutAndresSectionContent',
-  title: 'About Andres Section',
+  title: 'About Trainer Section',
   type: 'object',
   fields: [
     defineField({
       name: 'eyebrow',
       title: 'Eyebrow Text',
       type: 'string',
-      initialValue: 'Koolitaja Andres',
+      initialValue: 'Koolitaja',
     }),
     defineField({
       name: 'mainImage',
-      title: 'Main Image (Andres Meeting)',
+      title: 'Main Image (Trainer Meeting)',
       type: 'image',
       options: {
         hotspot: true,
@@ -63,7 +63,7 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      initialValue: 'Andres Kase',
+      initialValue: 'Your Name',
     }),
     defineField({
       name: 'subtitle',
@@ -83,7 +83,7 @@ export default defineType({
       title: 'Description',
       type: 'text',
       initialValue:
-        'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.',
+        'Meie treener ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagame kogemust 100+ Eesti tehase põrandalt. Teeme puust ja punaselt ette ja asi saab selgeks.',
     }),
     defineField({
       name: 'tags',

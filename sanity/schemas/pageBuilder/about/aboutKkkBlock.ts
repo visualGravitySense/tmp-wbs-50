@@ -15,7 +15,7 @@ export default defineType({
     prepare({ title, refTitle }: { title?: string; refTitle?: string }) {
       return {
         title: refTitle || title || 'KKK',
-        subtitle: 'Andres Kase · FAQ',
+        subtitle: 'Your Name · FAQ',
       }
     },
   },

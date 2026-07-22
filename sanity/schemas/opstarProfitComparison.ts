@@ -2,7 +2,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'opstarProfitComparison',
-  title: 'Opstar Profit Comparison',
+  title: 'Product Name Comparison',
   type: 'document',
   fields: [
     {

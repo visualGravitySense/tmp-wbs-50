@@ -13,7 +13,7 @@ export default defineType({
     prepare() {
       return {
         title: 'Orbit intro block',
-        subtitle: 'OPSTAR · kolm veergu + illustratsioon',
+        subtitle: 'Product · kolm veergu + illustratsioon',
       }
     },
   },

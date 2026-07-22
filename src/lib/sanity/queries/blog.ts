@@ -18,7 +18,7 @@ export const BLOG_INDEX_POSTS_QUERY = `*[_type in ${BLOG_TYPES} && defined(slug.
   "category": coalesce(category, "juhtimine"),
   "readTime": coalesce(readTime, 5),
   "featured": coalesce(featured, false),
-  "author": coalesce(author, {"name": "Andres Kase", "role": "Tootmisjuhtimise koolitaja"})
+  "author": coalesce(author, {"name": "Your Name", "role": "Trainer"})
 }`
 
 export const ALL_POSTS_QUERY = `*[_type in ${BLOG_TYPES}] | order(publishedAt desc) {
@@ -32,7 +32,7 @@ export const ALL_POSTS_QUERY = `*[_type in ${BLOG_TYPES}] | order(publishedAt de
   "category": coalesce(category, "juhtimine"),
   "readTime": coalesce(readTime, 5),
   "featured": coalesce(featured, false),
-  "author": coalesce(author, {"name": "Andres Kase", "role": "Tootmisjuhtimise koolitaja"})
+  "author": coalesce(author, {"name": "Your Name", "role": "Trainer"})
 }`
 
 export const POST_BY_SLUG_QUERY = `*[_type in ${BLOG_TYPES} && slug.current == $slug][0] {
@@ -46,7 +46,7 @@ export const POST_BY_SLUG_QUERY = `*[_type in ${BLOG_TYPES} && slug.current == $
   "category": coalesce(category, "juhtimine"),
   "readTime": coalesce(readTime, 5),
   "featured": coalesce(featured, false),
-  "author": coalesce(author, {"name": "Andres Kase", "role": "Tootmisjuhtimise koolitaja"}),
+  "author": coalesce(author, {"name": "Your Name", "role": "Trainer"}),
   "body": coalesce(body, content)
 }`
 
@@ -61,7 +61,7 @@ export const FEATURED_POSTS_QUERY = `*[_type in ${BLOG_TYPES} && coalesce(featur
   "category": coalesce(category, "juhtimine"),
   "readTime": coalesce(readTime, 5),
   "featured": coalesce(featured, false),
-  "author": coalesce(author, {"name": "Andres Kase", "role": "Tootmisjuhtimise koolitaja"})
+  "author": coalesce(author, {"name": "Your Name", "role": "Trainer"})
 }`
 
 export const POSTS_BY_CATEGORY_QUERY = `*[_type in ${BLOG_TYPES} && coalesce(category, "juhtimine") == $category] | order(publishedAt desc) {
@@ -75,7 +75,7 @@ export const POSTS_BY_CATEGORY_QUERY = `*[_type in ${BLOG_TYPES} && coalesce(cat
   "category": coalesce(category, "juhtimine"),
   "readTime": coalesce(readTime, 5),
   "featured": coalesce(featured, false),
-  "author": coalesce(author, {"name": "Andres Kase", "role": "Tootmisjuhtimise koolitaja"})
+  "author": coalesce(author, {"name": "Your Name", "role": "Trainer"})
 }`
 
 export const RELATED_POSTS_QUERY = `*[_type in ${BLOG_TYPES} && coalesce(category, "juhtimine") == $category && _id != $currentId && defined(slug.current)] | order(publishedAt desc) [0...3] {
@@ -89,7 +89,7 @@ export const RELATED_POSTS_QUERY = `*[_type in ${BLOG_TYPES} && coalesce(categor
   "category": coalesce(category, "juhtimine"),
   "readTime": coalesce(readTime, 5),
   "featured": coalesce(featured, false),
-  "author": coalesce(author, {"name": "Andres Kase", "role": "Tootmisjuhtimise koolitaja"})
+  "author": coalesce(author, {"name": "Your Name", "role": "Trainer"})
 }`
 
 export const ALL_SLUGS_QUERY = `*[_type in ${BLOG_TYPES} && defined(slug.current)] {

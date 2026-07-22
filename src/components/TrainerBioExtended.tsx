@@ -21,13 +21,13 @@ const DEFAULT_QUOTE =
   '"Õpetab seda, mida on ise tehases teinud — ja ka seda, mida tegid Henry Ford sajand tagasi ja Jaapani juhid Toyotas."'
 
 const DEFAULT_BIO_1 =
-  'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.'
+  'Meie treener ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagame kogemust 100+ Eesti tehase põrandalt. Teeme puust ja punaselt ette ja asi saab selgeks.'
 
 const DEFAULT_BIO_2 =
   'Konsultatsioonid ja koolitused on toimunud autotööstuses, toiduainete ja metallitööstuses, logistikaettevõtetes ning meditsiini- ja masinatööstuses. Tehaseid on aidatud üle Eesti, Lätis ja Leedus — alati kohapeal, kus töö tegelikult toimub.'
 
 const DEFAULT_BIO_3 =
-  'LEAN ebaõnnestub enamasti siis, kui keskendutakse ainult tööriistadele ilma inimesteta. Andrese lähenemine on inimene-esimesena: selged rutiinid, juhtimise nähtavus ja meeskonna kaasamine, et muutus jääks ellu pärast koolitust — mitte ei jääks seinale riputatud plaaniks.'
+  'LEAN ebaõnnestub enamasti siis, kui keskendutakse ainult tööriistadele ilma inimesteta. Meie lähenemine on inimene-esimesena: selged rutiinid, juhtimise nähtavus ja meeskonna kaasamine, et muutus jääks ellu pärast koolitust — mitte ei jääks seinale riputatud plaaniks.'
 
 const DEFAULT_STATS = [
   { value: '147+', label: 'Lõpetajat' },
@@ -41,7 +41,7 @@ function PortraitImage({ data }: { data?: TrainerBioExtendedData }) {
     return (
       <Image
         src={urlForImage(data.mainImage).width(900).quality(90).url()}
-        alt={data.mainImage.alt || 'Andres Kase'}
+        alt={data.mainImage.alt || 'Your Name'}
         fill
         sizes="(max-width: 1024px) 100vw, 38vw"
         className="object-cover object-[center_15%] grayscale"
@@ -52,8 +52,8 @@ function PortraitImage({ data }: { data?: TrainerBioExtendedData }) {
 
   return (
     <Image
-      src="/andres-koolitus-1.png"
-      alt="Andres Kase"
+      src="/placeholder-image.svg"
+      alt="Team member"
       fill
       sizes="(max-width: 1024px) 100vw, 38vw"
       className="object-cover object-[center_15%] grayscale"
@@ -77,8 +77,8 @@ function FactoryImage({ data }: { data?: TrainerBioExtendedData }) {
 
   return (
     <Image
-      src="/andres-factory.jpg"
-      alt="Tehase külastus"
+      src="/placeholder-image.svg"
+      alt="Workplace"
       fill
       sizes="(max-width: 640px) 90vw, 280px"
       className="object-cover"
@@ -101,8 +101,8 @@ function ClassroomImage({ data }: { data?: TrainerBioExtendedData }) {
 
   return (
     <Image
-      src="/img-20190214-143143-scaled-e1772988026412.jpg"
-      alt="Koolitus"
+      src="/placeholder-image.svg"
+      alt="Training"
       fill
       sizes="(max-width: 640px) 90vw, 280px"
       className="object-cover"
@@ -136,7 +136,7 @@ export default function TrainerBioExtended({ data }: TrainerBioExtendedProps) {
 
           {/* Top bar */}
           <header className="relative flex flex-col gap-3 border-b border-[rgb(var(--border))]/60 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-8 sm:py-5">
-            <EyebrowPillBadge text={data?.eyebrow || 'Koolitaja Andres'} className="self-start sm:self-center" />
+            <EyebrowPillBadge text={data?.eyebrow || 'Koolitaja'} className="self-start sm:self-center" />
             <div className="flex flex-wrap gap-2">
               {headerTags.map((tag) => (
                 <span
@@ -152,7 +152,7 @@ export default function TrainerBioExtended({ data }: TrainerBioExtendedProps) {
           {/* Mobile-only header at the very top of the card body */}
           <div className="px-5 pt-8 sm:px-8 lg:hidden">
             <SplitHeader
-              title={data?.title || 'Andres Kase'}
+              title={data?.title || 'Your Name'}
               subtitle={data?.subtitle || 'Programmi juht ja peakoolitaja • 25+ aastat tootmises'}
               align="left"
               className="mb-2"
@@ -184,7 +184,7 @@ export default function TrainerBioExtended({ data }: TrainerBioExtendedProps) {
             {/* Copy column */}
             <div className="flex flex-col px-5 py-8 sm:px-8 lg:col-span-7 lg:py-10 lg:pl-10 lg:pr-10">
               <SplitHeader
-                title={data?.title || 'Andres Kase'}
+                title={data?.title || 'Your Name'}
                 subtitle={data?.subtitle || 'Programmi juht ja peakoolitaja • 25+ aastat tootmises'}
                 align="left"
                 className="hidden lg:flex mb-6 lg:mb-8"

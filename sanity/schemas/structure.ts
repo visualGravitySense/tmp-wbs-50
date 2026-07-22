@@ -68,7 +68,7 @@ export const structure: StructureResolver = (S) =>
         ),
       S.listItem()
         .id('nav-aboutPage')
-        .title('Andres Kase')
+        .title('About')
         .child(
           S.document().schemaType('aboutPage').documentId('aboutPage'),
         ),
@@ -92,13 +92,13 @@ export const structure: StructureResolver = (S) =>
         ),
       S.listItem()
         .id('nav-opstarProfit')
-        .title('Opstar Profit')
+        .title('Product Name')
         .child(
           S.document().schemaType('opstarProfit').documentId('opstarProfit'),
         ),
       S.listItem()
         .id('nav-opstarProfitBlock')
-        .title('Opstar Profit — orbit block')
+        .title('Product Name — orbit block')
         .child(
           S.document()
             .schemaType('opstarProfitBlock')

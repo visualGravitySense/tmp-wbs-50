@@ -5,5 +5,5 @@ export default createAboutSectionBlock({
   title: 'Riskivaba osalemine (garantii)',
   fieldName: 'guaranteeSection',
   previewTitlePath: 'guaranteeSection.headline',
-  previewSubtitle: 'Andres Kase · garantii',
+  previewSubtitle: 'Your Name · garantii',
 })

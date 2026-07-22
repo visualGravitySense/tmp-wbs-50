@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 /**
  * Standalone LEAN maja diagram block — inline fields only (no koolitusPage import)
- * to prevent circular schema deps and Studio form freeze on /opstar-profit.
+ * to prevent circular schema deps and Studio form freeze on /product.
  */
 export default defineType({
   name: 'koolitusLeanHouseBlock',

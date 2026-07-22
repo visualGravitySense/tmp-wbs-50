@@ -160,7 +160,7 @@ function ComparisonPanel({
         />
         <ComparisonColumn
           variant="opstar"
-          label="OPSTAR PROFIT™"
+          label="Product Name"
           body={scenario.opstarValue}
           showAdvantage={scenario.opstarHasAdvantage !== false}
         />

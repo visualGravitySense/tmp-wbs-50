@@ -2,7 +2,7 @@ import { defineType, defineField } from 'sanity'
 
 export default defineType({
   name: 'andresBlock',
-  title: 'Andres Block (Unified)',
+  title: 'Trainer Block (Unified)',
   type: 'object',
   fields: [
     defineField({
@@ -148,7 +148,7 @@ export default defineType({
       name: 'name',
     },
     prepare({ variant, name }) {
-      const displayTitle = name || 'Andres Block'
+      const displayTitle = name || 'Trainer Block'
       const capitalizedVariant = variant ? variant.charAt(0).toUpperCase() + variant.slice(1) : 'Compact'
       return {
         title: displayTitle,

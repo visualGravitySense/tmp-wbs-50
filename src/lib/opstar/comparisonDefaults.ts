@@ -14,9 +14,9 @@ export type OpstarComparisonData = {
   isColor?: string
 }
 
-/** Production copy from `andres-prod` / sanity-text-export (Mis on OPSTAR? võrdlus). */
+/** Default comparison copy (Mis on Product? võrdlus). */
 export const DEFAULT_OPSTAR_COMPARISON: OpstarComparisonData = {
-  title: 'Mis on OPSTAR PROFIT™?',
+  title: 'Mis on Product Name?',
   subtitle: 'Lihtne seletus — ilma žargoonita. Mis see on ja mis see ei ole.',
   comparisonItems: [
     {

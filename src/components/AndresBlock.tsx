@@ -32,7 +32,7 @@ function PortraitImage({ photo }: { photo?: any }) {
     return (
       <Image
         src={urlForImage(photo).width(900).quality(90).url()}
-        alt="Andres Kase"
+        alt="Team member"
         fill
         sizes="(max-width: 1024px) 100vw, 38vw"
         className="object-cover object-[center_15%] grayscale"
@@ -43,8 +43,8 @@ function PortraitImage({ photo }: { photo?: any }) {
 
   return (
     <Image
-      src="/andres-koolitus-1.png"
-      alt="Andres Kase"
+      src="/placeholder-image.svg"
+      alt="Team member"
       fill
       sizes="(max-width: 1024px) 100vw, 38vw"
       className="object-cover object-[center_15%] grayscale"
@@ -65,7 +65,7 @@ function DefaultImage({ index, photo }: { index: number, photo?: any }) {
       />
     )
   }
-  const fallbackSrc = index === 0 ? "/andres-factory.jpg" : "/img-20190214-143143-scaled-e1772988026412.jpg"
+  const fallbackSrc = "/placeholder-image.svg"
   return (
     <Image
       src={fallbackSrc}
@@ -81,8 +81,8 @@ export default function AndresBlock({ variant, data }: AndresBlockProps) {
   const isCompact = variant === 'compact'
   const isFull = variant === 'full'
 
-  const title = data?.name || 'Andres Kase'
-  const eyebrow = data?.eyebrow || 'Koolitaja Andres'
+  const title = data?.name || 'Your Name'
+  const eyebrow = data?.eyebrow || 'Expert'
   const subtitle = data?.subtitle || 'Programmi juht ja peakoolitaja • 25+ aastat tootmises'
   const tags = data?.tags || ['LEAN', 'TOYOTA TPS', 'KAIZEN']
   
@@ -94,7 +94,7 @@ export default function AndresBlock({ variant, data }: AndresBlockProps) {
   ]
 
   const defaultQuote = '"Õpetab seda, mida on ise tehases teinud — ja ka seda, mida tegid Henry Ford sajand tagasi ja Jaapani juhid Toyotas."'
-  const defaultShortBio = 'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.'
+  const defaultShortBio = 'Replace this short bio with your expert introduction. Focus on practical experience and outcomes for clients.'
 
   // The Compact variant is simpler
   if (isCompact) {

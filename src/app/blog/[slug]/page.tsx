@@ -159,7 +159,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Andres Kase',
+      name: 'Your Name',
     },
   }
 
@@ -180,7 +180,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const fallbackGradient =
     fallbackGradientByCategory[post.category] || 'from-[#dce8f8] to-[#b8d4f5]'
   const authorImg = post.author.avatar?.asset?._ref
-  const profileHref = '/andres-kase'
+  const profileHref = '/about'
   /** Stable absolute URL for share buttons (same on SSR + client → no hydration mismatch). */
   const shareUrl = `${getSiteUrl()}/blog/${slug}`
 
@@ -316,15 +316,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 {/* Premium Glassmorphic Badge for single page cover fallback with brand logo */}
                 <div className="flex h-20 w-20 items-center justify-center rounded-full border border-white/25 bg-white/10 backdrop-blur-md shadow-[0_12px_40px_0_rgba(0,0,0,0.08)] dark:border-white/10 dark:bg-white/5 dark:shadow-[0_12px_40px_0_rgba(0,0,0,0.3)]">
                   <img
-                    src="/opstar-brand-logo.webp"
-                    alt="OPSTAR Logo"
+                    src="/placeholder-logo.svg"
+                    alt="Logo"
                     className="h-10 w-10 object-contain opacity-90 transition-all duration-500 group-hover:scale-110"
                   />
                 </div>
               </div>
               
               <span className="absolute bottom-6 left-6 sm:left-10 lg:left-[60px] text-xs font-semibold uppercase tracking-wider text-slate-400/80 dark:text-slate-500/80">
-                Opstar Profit
+                Site Name
               </span>
             </div>
           )}

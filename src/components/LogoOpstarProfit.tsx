@@ -18,8 +18,8 @@ export const LogoOpstarProfit = ({ variant = 'centered', theme = 'light', scroll
     <div className="relative w-7 h-7 md:w-8 md:h-8 flex items-center justify-center">
       {/* Plain <img>: next/image here caused SSR/client src mismatch inside client Header (hydration). */}
       <img
-        src="/opstar-brand-logo.webp"
-        alt="OPSTAR Logo"
+        src="/placeholder-logo.svg"
+        alt="Site logo"
         width={32}
         height={32}
         className="h-full w-full object-contain drop-shadow-sm"
@@ -38,7 +38,7 @@ export const LogoOpstarProfit = ({ variant = 'centered', theme = 'light', scroll
             className={`truncate text-[11px] font-serif leading-none tracking-tight sm:text-sm md:text-base ${isDark ? 'text-white' : 'text-[#1C1B17]'}`}
             style={{ fontFamily: '"Optima", "URW Classico", sans-serif', fontWeight: 700 }}
           >
-            OPSTAR PROFIT™
+            Site Name
           </p>
           <div className="my-0.5 h-px w-full bg-gradient-to-r from-[#008DD2] to-transparent" />
           <p
@@ -47,7 +47,7 @@ export const LogoOpstarProfit = ({ variant = 'centered', theme = 'light', scroll
             }`}
             style={{ fontFamily: '"Gill Sans", "Myriad Pro", sans-serif' }}
           >
-            Always Better Than Before!
+            Your tagline here
           </p>
         </div>
       </div>
@@ -60,13 +60,12 @@ export const LogoOpstarProfit = ({ variant = 'centered', theme = 'light', scroll
       <div className="mt-6">
         <p className={`text-4xl md:text-6xl font-serif tracking-tighter ${isDark ? 'text-white' : 'text-[#1C1B17]'}`}
             style={{ fontFamily: '"Optima", "URW Classico", sans-serif', fontWeight: 800 }}>
-          OPSTAR PROFIT™
+          Site Name
         </p>
-        {/* Разделительная линия из паспорта логотипа[cite: 1] */}
         <div className="w-full h-[1px] bg-[#008DD2] mt-2 mb-3" />
         <p className={`text-xl md:text-2xl italic tracking-wide ${isDark ? 'text-blue-100' : 'text-[#2B2A29]'}`}
            style={{ fontFamily: '"Gill Sans", "Myriad Pro", sans-serif' }}>
-          Always better than before!
+          Your tagline here
         </p>
       </div>
     </div>

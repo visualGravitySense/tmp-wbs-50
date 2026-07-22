@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
   
   // Image optimization for Vercel
   images: {
+    // Local neutral SVG placeholders used as image/logo fallbacks after rebrand cleanup.
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: 'https',

@@ -2,7 +2,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'opstarProfitIllustration',
-  title: 'Opstar Profit Illustration',
+  title: 'Product Name Illustration',
   type: 'document',
   fields: [
     {
@@ -16,7 +16,7 @@ export default {
       title: 'Central Text',
       type: 'string',
       validation: (Rule: any) => Rule.required(),
-      initialValue: 'OPSTAR PROFIT',
+      initialValue: 'Product Name',
     },
     {
       name: 'illustrationItems',

@@ -10,7 +10,7 @@ import CourseRegistrationClient from '@/components/CourseRegistrationClient'
 import RegistrationBackLink from '@/components/RegistrationBackLink'
 
 export const metadata: Metadata = buildPageMetadata({
-  title: 'Registreeru kursusele | Andres Kase',
+  title: 'Register for course | Site Name',
   description: 'Kursusele registreerumine — privaatsus ja õppetingimused.',
   path: '/register',
 })

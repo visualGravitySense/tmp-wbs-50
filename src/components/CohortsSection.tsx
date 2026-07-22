@@ -27,13 +27,13 @@ function generateIcsDataUri(cohort: CohortRow): string | null {
   const icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Andres Kase//NONSGML v1.0//EN',
+    'PRODID:-//Site Name//NONSGML v1.0//EN',
   ]
 
   cohort.trainingDates.forEach((day, index) => {
     if (!day.date) return
     const dateStr = day.date.replace(/-/g, '')
-    const uid = `${cohort.id || 'koolitus'}-day-${index}-${dateStr}@andreskase.ee`
+    const uid = `${cohort.id || 'koolitus'}-day-${index}-${dateStr}@example.com`
 
     const startTimeStr = day.startTime ? day.startTime.replace(':', '') + '00' : '090000'
     const endTimeStr = day.endTime ? day.endTime.replace(':', '') + '00' : '170000'

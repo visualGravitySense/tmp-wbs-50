@@ -83,7 +83,7 @@ function MainPortrait({ data }: { data?: TrainerBioCardData }) {
         <div className="relative aspect-[4/5] w-full">
           <Image
             src={urlForImage(data.mainImage).width(1000).quality(90).url()}
-            alt={data.mainImage.alt || 'Andres Kase'}
+            alt={data.mainImage.alt || 'Your Name'}
             fill
             sizes="(max-width: 1024px) 100vw, 42vw"
             className="object-cover"
@@ -92,8 +92,8 @@ function MainPortrait({ data }: { data?: TrainerBioCardData }) {
       ) : (
         <div className="relative aspect-[4/5] w-full">
           <Image
-            src="/andres-koolitus-1.png"
-            alt="Andres Kase"
+            src="/placeholder-image.svg"
+            alt="Team member"
             fill
             sizes="(max-width: 1024px) 100vw, 42vw"
             className="object-cover"
@@ -120,8 +120,8 @@ function FactoryThumb({ data, className }: { data?: TrainerBioCardData; classNam
       ) : (
         <div className="relative aspect-[4/3] h-full min-h-[5rem] w-full">
           <Image
-            src="/andres-factory.jpg"
-            alt="Tehase külastus"
+            src="/placeholder-image.svg"
+            alt="Workplace"
             fill
             sizes="112px"
             className="object-cover"
@@ -154,8 +154,8 @@ export default function TrainerBioCard({ data, variant = 'compact' }: TrainerBio
 
           {/* Mobile-only header at the very top of the card */}
           <SplitHeader
-            title={data?.title || 'Andres Kase'}
-            eyebrow={<EyebrowPillBadge text={data?.eyebrow || 'Koolitaja Andres'} />}
+            title={data?.title || 'Your Name'}
+            eyebrow={<EyebrowPillBadge text={data?.eyebrow || 'Koolitaja'} />}
             subtitle={data?.subtitle || 'Programmi juht ja peakoolitaja • 25+ aastat tootmises'}
             align="left"
             className="mb-8 lg:hidden"
@@ -199,8 +199,8 @@ export default function TrainerBioCard({ data, variant = 'compact' }: TrainerBio
             {/* Right content */}
             <div className="lg:col-span-7 lg:pt-2">
               <SplitHeader
-                title={data?.title || 'Andres Kase'}
-                eyebrow={<EyebrowPillBadge text={data?.eyebrow || 'Koolitaja Andres'} />}
+                title={data?.title || 'Your Name'}
+                eyebrow={<EyebrowPillBadge text={data?.eyebrow || 'Koolitaja'} />}
                 subtitle={data?.subtitle || 'Programmi juht ja peakoolitaja • 25+ aastat tootmises'}
                 align="left"
                 className="hidden lg:flex mb-8"
@@ -215,7 +215,7 @@ export default function TrainerBioCard({ data, variant = 'compact' }: TrainerBio
 
               <div className="mt-7 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)]">
                 {renderTextWithLinks(data?.description ||
-                  'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.')}
+                  'Meie treener ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagame kogemust 100+ Eesti tehase põrandalt. Teeme puust ja punaselt ette ja asi saab selgeks.')}
               </div>
 
               {isExtended ? (

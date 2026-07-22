@@ -102,7 +102,7 @@ export default function LeanHouse({
     if (title?.includes('40%')) {
       return (
         <img 
-          src="/raiskamine.png" 
+          src="/placeholder-image.svg" 
           alt={title} 
           className="w-full h-full object-cover z-10" 
         />
@@ -111,7 +111,7 @@ export default function LeanHouse({
     if (title?.includes('Kvaliteedi')) {
       return (
         <img 
-          src="/kvaliteet.png" 
+          src="/placeholder-image.svg" 
           alt={title} 
           className="w-full h-full object-cover z-10" 
         />
@@ -120,7 +120,7 @@ export default function LeanHouse({
     if (title?.includes('50%')) {
       return (
         <img 
-          src="/kiirem-tarne.png" 
+          src="/placeholder-image.svg" 
           alt={title} 
           className="w-full h-full object-cover z-10" 
         />

@@ -2,20 +2,20 @@ import { defineType, defineField } from 'sanity'
 
 export default defineType({
   name: 'andresProfile',
-  title: 'Andres Profile Settings',
+  title: 'Expert Profile Settings',
   type: 'document',
   fields: [
     defineField({
       name: 'name',
       title: 'Name',
       type: 'string',
-      initialValue: 'Andres Kase',
+      initialValue: 'Your Name',
     }),
     defineField({
       name: 'eyebrow',
       title: 'Eyebrow',
       type: 'string',
-      initialValue: 'Koolitaja Andres',
+      initialValue: 'Expert',
     }),
     defineField({
       name: 'subtitle',
@@ -33,7 +33,7 @@ export default defineType({
       name: 'shortBio',
       title: 'Short Bio (Compact Variant)',
       type: 'text',
-      initialValue: 'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.',
+      initialValue: 'Replace this short bio with your expert introduction and practical experience.',
     }),
     defineField({
       name: 'fullBio',
@@ -46,16 +46,7 @@ export default defineType({
           children: [
             {
               _type: 'span',
-              text: 'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.',
-            },
-          ],
-        },
-        {
-          _type: 'block',
-          children: [
-            {
-              _type: 'span',
-              text: 'Konsultatsioonid ja koolitused on toimunud autotööstuses, toiduainete ja metallitööstuses, logistikaettevõtetes ning meditsiini- ja masinatööstuses. Tehaseid on aidatud üle Eesti, Lätis ja Leedus — alati kohapeal, kus töö tegelikult toimub.',
+              text: 'Replace this full bio with your background, industries served, and approach.',
             },
           ],
         },
@@ -65,14 +56,14 @@ export default defineType({
       name: 'methodology',
       title: 'Methodology (Medium/Full Variants)',
       type: 'text',
-      initialValue: 'LEAN ebaõnnestub enamasti siis, kui keskendutakse ainult tööriistadele ilma inimesteta. Andrese lähenemine on inimene-esimesena: selged rutiinid, juhtimise nähtavus ja meeskonna kaasamine, et muutus jääks ellu pärast koolitust — mitte ei jääks seinale riputatud plaaniks.',
+      initialValue: 'Describe your methodology in plain language: how you work with teams and how change sticks after training.',
     }),
     defineField({
       name: 'tags',
       title: 'Tags / Badges',
       type: 'array',
       of: [{ type: 'string' }],
-      initialValue: ['LEAN', 'TOYOTA TPS', 'KAIZEN', '100+ TEHAST', '25A KOGEMUST', 'JIPM SERTIFITSEERITUD'],
+      initialValue: ['TRAINING', 'CONSULTING', 'RESULTS'],
     }),
     defineField({
       name: 'statistics',
@@ -88,10 +79,9 @@ export default defineType({
         },
       ],
       initialValue: [
-        { _key: '1', value: '147+', label: 'Lõpetajat' },
-        { _key: '2', value: '+31%', label: 'Kesk. OEE kasv' },
-        { _key: '3', value: '4.9/5', label: 'Hinnang' },
-        { _key: '4', value: '100+', label: 'Tehast' },
+        { _key: '1', value: '100+', label: 'Clients' },
+        { _key: '2', value: '10+', label: 'Years' },
+        { _key: '3', value: '4.9/5', label: 'Rating' },
       ],
     }),
     defineField({
@@ -121,9 +111,9 @@ export default defineType({
         },
       ],
       initialValue: [
-        { _key: 't1', year: '1998', title: 'Tootmisjuht, AS Norma', description: 'Esimesed sammud LEAN ja TPS meetodite juurutamisel.' },
-        { _key: 't2', year: '2005', title: 'Tehasejuht, Enics Eesti', description: 'OEE tõstmine ja protsesside optimeerimine elektroonikatööstuses.' },
-        { _key: 't3', year: '2015', title: 'Koolitaja ja konsultant', description: 'Alustas ettevõtete nõustamist, aidates üle 100 tehase.' }
+        { _key: 't1', year: '2010', title: 'Role / company', description: 'Career milestone description.' },
+        { _key: 't2', year: '2015', title: 'Role / company', description: 'Career milestone description.' },
+        { _key: 't3', year: '2020', title: 'Trainer & consultant', description: 'Started independent consulting and training.' },
       ]
     }),
     defineField({

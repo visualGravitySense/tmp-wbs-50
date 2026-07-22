@@ -30,8 +30,8 @@ export default defineType({
     { name: 'hero', title: 'Hero' },
     { name: 'quick', title: 'Otsekontakt' },
     { name: 'form', title: 'Sõnumivorm' },
-    { name: 'andres', title: 'Andres Kase plokk' },
-    { name: 'opstar', title: 'OPSTAR PROFIT plokk' },
+    { name: 'andres', title: 'Trainer plokk' },
+    { name: 'opstar', title: 'Product Name plokk' },
     { name: 'services', title: 'Teenused' },
     { name: 'legal', title: 'Jalus' },
   ],
@@ -69,7 +69,7 @@ export default defineType({
           name: 'metaTitle',
           title: 'Meta pealkiri',
           type: 'string',
-          initialValue: 'Kontakt — Andres Kase',
+          initialValue: 'Kontakt — Site Name',
         }),
         defineField({
           name: 'metaDescription',
@@ -77,13 +77,13 @@ export default defineType({
           type: 'text',
           rows: 3,
           initialValue:
-            'Võta ühendust Andresega: e-post, telefon, aadress Viljandis. OPSTAR PROFIT™ koolitused, konsultatsioonid ja tootmisjuhtimine.',
+            'Võta ühendust meeskonnaga: e-post, telefon, aadress. Product Name koolitused, konsultatsioonid ja tootmisjuhtimine.',
         }),
         defineField({
           name: 'metaKeywords',
           title: 'Võtmesõnad (komadega eraldatud)',
           type: 'string',
-          initialValue: 'kontakt, andres kase, tootmisjuhtimine, opstar profit, konsultatsioon',
+          initialValue: 'kontakt, koolitus, tootmisjuhtimine, product name, konsultatsioon',
         }),
         defineField({
           name: 'ogImage',
@@ -119,7 +119,7 @@ export default defineType({
           type: 'text',
           rows: 4,
           initialValue:
-            'Kõik koolitused, konsultatsioonid ja OPSTAR PROFIT™ programmid on seotud Andres Kase ja tema praktilise tootmisjuhtimise kogemusega. Kirjuta, helista või täida vorm — leiame koos järgmise sammu.',
+            'Kõik koolitused, konsultatsioonid ja Product Name programmid on seotud meie meeskonna praktilise tootmisjuhtimise kogemusega. Kirjuta, helista või täida vorm — leiame koos järgmise sammu.',
         }),
         defineField({
           name: 'image',
@@ -183,22 +183,22 @@ export default defineType({
             },
           ],
           initialValue: [
-            { label: 'Üldine', address: 'andreskase@tootmisjuhtimine.ee' },
-            { label: 'Koolitus ja pakkumised', address: 'andres@tootmisjuhtimine.ee' },
+            { label: 'Üldine', address: 'hello@example.com' },
+            { label: 'Koolitus ja pakkumised', address: 'hello@example.com' },
           ],
         }),
         defineField({
           name: 'phoneDisplay',
           title: 'Telefon (kuvatav)',
           type: 'string',
-          initialValue: '+372 51 38 403',
+          initialValue: '+372 000 0000',
         }),
         defineField({
           name: 'phoneTel',
           title: 'Telefon (tel: link)',
-          description: 'Ilma tühikuteta, nt +3725138403',
+          description: 'Ilma tühikuteta, nt +3720000000',
           type: 'string',
-          initialValue: '+3725138403',
+          initialValue: '+3720000000',
         }),
         defineField({
           name: 'addressStreet',
@@ -281,7 +281,7 @@ export default defineType({
           type: 'text',
           rows: 3,
           initialValue:
-            'Kirjelda lühidalt oma olukorda — koolitus, konsultatsioon või OPSTAR PROFIT™. Lisa e-post või telefon, et saaksime vastata samale kanalile.',
+            'Kirjelda lühidalt oma olukorda — koolitus, konsultatsioon või Product Name. Lisa e-post või telefon, et saaksime vastata samale kanalile.',
         }),
         defineField({
           name: 'contactFieldLabel',
@@ -312,7 +312,7 @@ export default defineType({
           title: 'Väli: sõnum — placeholder',
           type: 'string',
           initialValue:
-            'Kirjelda lühidalt, millega saame aidata — koolitus, konsultatsioon või OPSTAR PROFIT™…',
+            'Kirjelda lühidalt, millega saame aidata — koolitus, konsultatsioon või Product Name…',
         }),
         defineField({
           name: 'messageHint',
@@ -350,7 +350,7 @@ export default defineType({
           type: 'text',
           rows: 2,
           initialValue:
-            'Andres vastab esimesel võimalusel, tavaliselt sama või järgmise tööpäeva jooksul.',
+            'Meie meeskond vastab esimesel võimalusel, tavaliselt sama või järgmise tööpäeva jooksul.',
         }),
         defineField({
           name: 'formAriaTitle',
@@ -362,12 +362,12 @@ export default defineType({
     }),
     defineField({
       name: 'andresBlock',
-      title: 'Andres Kase plokk',
+      title: 'Trainer plokk',
       type: 'object',
       hidden: true,
       group: 'andres',
       fields: [
-        defineField({ name: 'name', title: 'Nimi', type: 'string', initialValue: 'Andres Kase' }),
+        defineField({ name: 'name', title: 'Nimi', type: 'string', initialValue: 'Your Name' }),
         defineField({
           name: 'role',
           title: 'Roll',
@@ -399,32 +399,32 @@ export default defineType({
           initialValue: [
             { label: 'Koolitused:', text: '9-päevane tootmisjuhtide programm ja ettevõttesisesed lahendused' },
             { label: 'Konsultatsioon:', text: 'protsessid, KPI, Gemba, meeskonna areng' },
-            { label: 'Veeb:', text: 'tootmisjuhtimine.ee' },
+            { label: 'Veeb:', text: 'example.com' },
           ],
         }),
         defineField({
           name: 'websiteUrl',
           title: 'Veebilehe URL',
           type: 'string',
-          initialValue: 'https://tootmisjuhtimine.ee',
+          initialValue: 'https://example.com',
         }),
         defineField({
           name: 'linkLabel',
           title: 'Lingi tekst',
           type: 'string',
-          initialValue: 'Loe lähemalt Andresest →',
+          initialValue: 'Loe lähemalt →',
         }),
         defineField({
           name: 'linkHref',
           title: 'Link',
           type: 'string',
-          initialValue: '/andres-kase',
+          initialValue: '/about',
         }),
       ],
     }),
     defineField({
       name: 'opstarBlock',
-      title: 'OPSTAR PROFIT plokk',
+      title: 'Product Name plokk',
       type: 'object',
       hidden: true,
       group: 'opstar',
@@ -433,7 +433,7 @@ export default defineType({
           name: 'name',
           title: 'Pealkiri',
           type: 'string',
-          initialValue: 'OPSTAR PROFIT™',
+          initialValue: 'Product Name',
         }),
         defineField({
           name: 'tagline',
@@ -447,7 +447,7 @@ export default defineType({
           type: 'text',
           rows: 4,
           initialValue:
-            'Kaheksa komponendiga süsteem, mis on loodud Eesti tootmisettevõtete vajadustest — kiirem rakendamine kui abstraktne LEAN, selged tööriistad ja mõõdetavad tulemused. Koolitused ja sertifikaadid viivad läbi Andres Kase.',
+            'Kaheksa komponendiga süsteem, mis on loodud Eesti tootmisettevõtete vajadustest — kiirem rakendamine kui abstraktne LEAN, selged tööriistad ja mõõdetavad tulemused. Koolitused ja sertifikaadid viib läbi meie meeskond.',
         }),
         defineField({
           name: 'bullets',
@@ -464,13 +464,13 @@ export default defineType({
           name: 'linkLabel',
           title: 'Lingi tekst',
           type: 'string',
-          initialValue: 'Tutvu OPSTAR PROFIT™ raamistikuga →',
+          initialValue: 'Tutvu Product Name raamistikuga →',
         }),
         defineField({
           name: 'linkHref',
           title: 'Link',
           type: 'string',
-          initialValue: '/opstar-profit',
+          initialValue: '/product',
         }),
       ],
     }),
@@ -513,13 +513,13 @@ export default defineType({
               title: 'Konsultatsioon',
               text: 'Tehase külastus, audit või juhtimise arendus.',
               label: 'Konsultatsioonid',
-              href: '/andres-kase',
+              href: '/about',
             },
             {
-              title: 'OPSTAR PROFIT™',
+              title: 'Product Name',
               text: 'Raamistiku tutvustus ja rakendamine ettevõttes.',
-              label: 'OPSTAR leht',
-              href: '/opstar-profit',
+              label: 'Product leht',
+              href: '/product',
             },
           ],
         }),
@@ -575,7 +575,7 @@ export default defineType({
           title: 'Tekst pärast linki',
           type: 'string',
           initialValue:
-            '. Vastutav töötleja kontaktandmete suhtes on Andres Kase (andreskase@tootmisjuhtimine.ee).',
+            '. Vastutav töötleja kontaktandmete suhtes on Site Name (hello@example.com).',
         }),
       ],
     }),

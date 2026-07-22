@@ -2,7 +2,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'opstarProfitCta',
-  title: 'Opstar Profit CTA',
+  title: 'Product Name CTA',
   type: 'document',
   fields: [
     {
@@ -82,7 +82,7 @@ export default {
       const { title, subtitle } = selection
       return {
         title: title,
-        subtitle: subtitle || 'Opstar Profit CTA',
+        subtitle: subtitle || 'Product Name CTA',
       }
     },
   },

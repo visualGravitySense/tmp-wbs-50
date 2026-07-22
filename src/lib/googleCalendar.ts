@@ -90,7 +90,7 @@ export function generateAllModulesIcs(modules: Array<{
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Opstar Profit//Koolitusprogramm//ET',
+    'PRODID:-//Product Name//Koolitusprogramm//ET',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH'
   ]
@@ -110,9 +110,9 @@ export function generateAllModulesIcs(modules: Array<{
     const startStr = `${dateStr}T090000`
     const endStr = `${dateStr}T160000`
 
-    const uid = `opstar-profit-module-${mod.num || 'x'}-${dateStr}@opstar.ee`
+    const uid = `training-module-${mod.num || 'x'}-${dateStr}@example.com`
     
-    const summary = `OPSTAR PROFIT™ · Moodul ${mod.num || ''}`
+    const summary = `Product Name · Moodul ${mod.num || ''}`
     const description = mod.title || ''
     const location = 'Grand Hotel Viljandi'
 

@@ -30,7 +30,7 @@ export default defineType({
       title: 'Alapealkiri (valikuline)',
       type: 'text',
       rows: 2,
-      initialValue: 'Lühivastused Andrese kogemuse, koostöö ja koolituste kohta.',
+      initialValue: 'Lühivastused treeneri kogemuse, koostöö ja koolituste kohta.',
     }),
     faqQuestionsField,
   ],

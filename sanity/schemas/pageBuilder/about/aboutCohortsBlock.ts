@@ -18,7 +18,7 @@ export default defineType({
     prepare() {
       return {
         title: 'Kohordid (Grupid ja koolituspäevad)',
-        subtitle: 'Andres Kase',
+        subtitle: 'Your Name',
       }
     },
   },

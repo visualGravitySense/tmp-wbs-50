@@ -2,20 +2,20 @@ import { defineType, defineField } from 'sanity'
 
 export default defineType({
   name: 'andresProfile',
-  title: 'Andres Kase (Profile)',
+  title: 'Trainer (Profile)',
   type: 'document',
   fields: [
     defineField({
       name: 'name',
       title: 'Name',
       type: 'string',
-      initialValue: 'Andres Kase',
+      initialValue: 'Your Name',
     }),
     defineField({
       name: 'eyebrow',
       title: 'Eyebrow Text',
       type: 'string',
-      initialValue: 'Koolitaja Andres',
+      initialValue: 'Koolitaja',
     }),
     defineField({
       name: 'subtitle',
@@ -33,7 +33,7 @@ export default defineType({
       name: 'description',
       title: 'Description',
       type: 'text',
-      initialValue: 'Andres ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagan kogemust 100+ Eesti tehase põrandalt. Teen puust ja punaselt ette ja asi saab selgeks.',
+      initialValue: 'Meie treener ei õpeta lihtsalt teooriat. Õpetab seda, millele tugineb tugev teooria — ehk töötavat praktikat. Jagame kogemust 100+ Eesti tehase põrandalt. Teeme puust ja punaselt ette ja asi saab selgeks.',
     }),
     defineField({
       name: 'tags',

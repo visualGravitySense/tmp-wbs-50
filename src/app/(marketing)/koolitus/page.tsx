@@ -69,7 +69,7 @@ export async function generateMetadata(): Promise<Metadata> {
     stega: false,
   })
 
-  const fallbackTitle = 'Tootmisjuhtimise koolitus — Andres Kase'
+  const fallbackTitle = 'Training — Site Name'
   const fallbackDescription =
     '9-päevane intensiivprogramm tootmisjuhtidele: LEAN, TPS ja praktilised tööriistad reaalsest tootmisest.'
 

@@ -8,7 +8,7 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-900">
-              Andres Kase
+              Site Name
             </Link>
           </div>
           
@@ -32,16 +32,16 @@ export function Navigation() {
               Training
             </Link>
             <Link 
-              href="/andres-kase" 
+              href="/about" 
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
               About
             </Link>
             <Link 
-              href="/opstar-profit" 
+              href="/product" 
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
-              Opstar Profit
+              Product Name
             </Link>
           </div>
           

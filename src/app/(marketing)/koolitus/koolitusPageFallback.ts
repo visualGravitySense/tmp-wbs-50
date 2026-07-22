@@ -12,7 +12,7 @@ export const KOOLITUS_PAGE_DATA_FALLBACK = {
     headline: 'Lean-Agile',
     scriptHeadline: 'Tootmisjuhtimise arenguprogramm',
     subtitle: '9 päevaga saad meeskonnale süsteemi, mis töötab ilma sinuta.',
-    description: 'Lean-Agile tootmisjuhtimise arenguprogramm — LEAN · TPS · OPSTAR PROFIT™.',
+    description: 'Lean-Agile tootmisjuhtimise arenguprogramm — LEAN · TPS · Product Name.',
     eyebrow: 'OpStar Profit™ · Programm',
     badges: [] as { text: string; color: string; size: string }[],
   },

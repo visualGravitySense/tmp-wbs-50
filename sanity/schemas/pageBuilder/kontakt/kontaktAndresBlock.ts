@@ -2,10 +2,10 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'kontaktAndresBlock',
-  title: '[VANA - ÄRA KASUTA] Kontakt Andres Kase',
+  title: '[VANA - ÄRA KASUTA] Kontakt Trainer',
   type: 'object',
   fields: [
-    defineField({ name: 'name', title: 'Nimi', type: 'string', initialValue: 'Andres Kase' }),
+    defineField({ name: 'name', title: 'Nimi', type: 'string', initialValue: 'Your Name' }),
     defineField({
       name: 'role',
       title: 'Roll',
@@ -37,32 +37,32 @@ export default defineType({
       initialValue: [
         { label: 'Koolitused:', text: '9-päevane tootmisjuhtide programm ja ettevõttesisesed lahendused' },
         { label: 'Konsultatsioon:', text: 'protsessid, KPI, Gemba, meeskonna areng' },
-        { label: 'Veeb:', text: 'tootmisjuhtimine.ee' },
+        { label: 'Veeb:', text: 'example.com' },
       ],
     }),
     defineField({
       name: 'websiteUrl',
       title: 'Veebilehe URL',
       type: 'string',
-      initialValue: 'https://tootmisjuhtimine.ee',
+      initialValue: 'https://example.com',
     }),
     defineField({
       name: 'linkLabel',
       title: 'Lingi tekst',
       type: 'string',
-      initialValue: 'Loe lähemalt Andresest →',
+      initialValue: 'Loe lähemalt →',
     }),
     defineField({
       name: 'linkHref',
       title: 'Link',
       type: 'string',
-      initialValue: '/andres-kase',
+      initialValue: '/about',
     }),
   ],
   preview: {
     select: { title: 'name' },
     prepare({ title }) {
-      return { title: title || 'Andres Kase', subtitle: 'Lühike tutvustav plokk kontaktlehel' }
+      return { title: title || 'Your Name', subtitle: 'Lühike tutvustav plokk kontaktlehel' }
     },
   },
 })

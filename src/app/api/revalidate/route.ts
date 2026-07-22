@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
     const { _type, slug, paths } = body
     const tagsToRevalidate: string[] = ['mainPage', 'aboutPage', 'koolitusPage', 'opstarPage', 'kontaktPage', 'global', 'layout']
-    const pathsToRevalidate: string[] = paths || ['/', '/andres-kase', '/blog', '/koolitus', '/opstar-profit', '/kontakt']
+    const pathsToRevalidate: string[] = paths || ['/', '/about', '/blog', '/koolitus', '/product', '/kontakt']
 
     if (slug?.current) {
       pathsToRevalidate.push(slug.current.startsWith('/') ? slug.current : `/${slug.current}`)

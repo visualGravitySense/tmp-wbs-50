@@ -65,8 +65,8 @@ export default function BlogPostRelatedSidebar({
                   >
                     <div className="absolute inset-0 bg-white/20 dark:bg-black/10 backdrop-blur-[1px]" />
                     <img
-                      src="/opstar-brand-logo.webp"
-                      alt="OPSTAR Logo"
+                      src="/placeholder-logo.svg"
+                      alt="Logo"
                       className="relative z-10 h-5 w-5 object-contain opacity-80 group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>

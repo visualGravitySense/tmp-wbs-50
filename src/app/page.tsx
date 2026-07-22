@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
   
   if (!seo) {
     return {
-      title: "Andres Kase - Tootmisjuhtimise koolitused ja konsultatsioonid",
+      title: "Site Name — Training and consulting",
       description: "Praktilised tootmisjuhtimise ja LEAN koolitused ning konsultatsioonid Eesti ettevõtetele. Paneme asjad juhtuma!",
     };
   }
@@ -45,7 +45,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }
   }
 
-  let title = seo.metaTitle || "Andres Kase - Tootmisjuhtimise koolitused ja konsultatsioonid";
+  let title = seo.metaTitle || "Site Name — Training and consulting";
   // Convert hyphens to clean dashes
   title = title.replace(/\s*[—–]\s*/g, ' - ').trim();
 
@@ -104,7 +104,7 @@ export default async function Home() {
     : undefined;
 
   const seo = (mainPageData as { seo?: any } | null)?.seo;
-  let pageTitle = seo?.metaTitle || "Andres Kase - Tootmisjuhtimise koolitused ja konsultatsioonid";
+  let pageTitle = seo?.metaTitle || "Site Name — Training and consulting";
   pageTitle = pageTitle.replace(/\s*[—–]\s*/g, ' - ').trim();
 
   return (
@@ -117,7 +117,7 @@ export default async function Home() {
 
       {/* SEO keywords alignment helper */}
       <div className="sr-only">
-        {pageTitle} — tootmisjuhtimine, koolitused, konsultatsioonid ja LEAN-Agile arenguprogramm.
+        {pageTitle} — training, consulting, and product resources.
       </div>
 
       {usePageBuilder ? (

@@ -119,7 +119,7 @@ export default function AboutNarrativeSection({ data }: Props) {
                       className="w-full h-auto max-h-[450px] object-contain"
                     />
                   ) : (
-                    <img src="/andres-koolitus-1.png" alt="Praktiline kogemus ja õpetamine" className="w-full h-auto max-h-[450px] object-contain" />
+                    <img src="/placeholder-image.svg" alt="About image" className="w-full h-auto max-h-[450px] object-contain" />
                   )}
                 </div>
 

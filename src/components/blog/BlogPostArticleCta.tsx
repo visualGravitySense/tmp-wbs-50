@@ -16,7 +16,7 @@ export default function BlogPostArticleCta() {
         Õpi LEAN-i rakendama päriselt — 9 päevaga
       </h3>
       <p className="relative z-[1] mb-6 max-w-xl text-[15px] leading-relaxed text-white/88">
-        OPSTAR PROFIT™ programm ühendab teooria päris tehasekülastustega. Vaata järgmisi gruppe ja vabu kohti.
+        Product Name programm ühendab teooria päris tehasekülastustega. Vaata järgmisi gruppe ja vabu kohti.
       </p>
       <Link
         href="/koolitus#registreeru"

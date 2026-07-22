@@ -459,7 +459,7 @@ export default defineType({
           name: 'logo',
           title: 'Logo Text',
           type: 'string',
-          initialValue: 'Andres Kase',
+          initialValue: 'Site Name',
         }),
         defineField({
           name: 'navLinks',
@@ -487,8 +487,8 @@ export default defineType({
           initialValue: [
             { name: 'Pealeht', href: '/' },
             { name: 'Koolitus', href: '/koolitus' },
-            { name: 'Andres Kase', href: '/andres-kase' },
-            { name: 'Opstar Profit', href: '/opstar-profit' },
+            { name: 'About', href: '/about' },
+            { name: 'Product Name', href: '/product' },
             { name: 'Blogi', href: '/blog' },
             { name: 'Galerii', href: '/galerii' },
           ],

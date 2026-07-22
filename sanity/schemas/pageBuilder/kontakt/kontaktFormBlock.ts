@@ -17,7 +17,7 @@ export default defineType({
       type: 'text',
       rows: 3,
       initialValue:
-        'Kirjelda lühidalt oma olukorda — koolitus, konsultatsioon või OPSTAR PROFIT™. Lisa e-post või telefon, et saaksime vastata samale kanalile.',
+        'Kirjelda lühidalt oma olukorda — koolitus, konsultatsioon või Product Name. Lisa e-post või telefon, et saaksime vastata samale kanalile.',
     }),
     defineField({
       name: 'contactFieldLabel',
@@ -48,7 +48,7 @@ export default defineType({
       title: 'Väli: sõnum — placeholder',
       type: 'string',
       initialValue:
-        'Kirjelda lühidalt, millega saame aidata — koolitus, konsultatsioon või OPSTAR PROFIT™…',
+        'Kirjelda lühidalt, millega saame aidata — koolitus, konsultatsioon või Product Name…',
     }),
     defineField({
       name: 'messageHint',
@@ -86,7 +86,7 @@ export default defineType({
       type: 'text',
       rows: 2,
       initialValue:
-        'Andres vastab esimesel võimalusel, tavaliselt sama või järgmise tööpäeva jooksul.',
+        'Meie meeskond vastab esimesel võimalusel, tavaliselt sama või järgmise tööpäeva jooksul.',
     }),
     defineField({
       name: 'formAriaTitle',

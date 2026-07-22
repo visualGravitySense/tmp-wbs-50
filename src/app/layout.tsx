@@ -47,8 +47,8 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "Andres Kase - Tootmisjuhtimise koolitused ja konsultatsioonid",
-  description: "Praktilised tootmisjuhtimise ja LEAN koolitused ning konsultatsioonid Eesti ettevõtetele. Paneme asjad juhtuma!",
+  title: "Site Name — Training and consulting",
+  description: "Reusable Next.js + Sanity template for training, consulting, and product marketing sites.",
   robots: {
     index: true,
     follow: true,

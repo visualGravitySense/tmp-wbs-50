@@ -41,7 +41,7 @@ export const aboutHeroField: AboutFieldDefinition = {
       name: 'linkedinUrl',
       title: 'LinkedIn URL',
       type: 'url',
-      description: 'Andres Kase LinkedIn profiili link',
+      description: 'Trainer LinkedIn profiili link',
     },
     {
       name: 'image',
@@ -234,7 +234,7 @@ export const aboutQuoteSectionField: AboutFieldDefinition = {
   title: 'Tsitaadid (slider)',
   type: 'object',
   description:
-    'Tsitaatide plokk lehel /andres-kase. Lisa nii palju tsitaate kui vaja — kuvatakse karussellina.',
+    'Tsitaatide plokk lehel /about. Lisa nii palju tsitaate kui vaja — kuvatakse karussellina.',
   options: { collapsible: true, collapsed: false },
   fields: [
     {
@@ -258,7 +258,7 @@ export const aboutQuoteSectionField: AboutFieldDefinition = {
       title: 'Teine Badge (kaardi sees)',
       type: 'string',
       description: "See tekst ilmub valge kaardi sees oleval badge'il.",
-      initialValue: 'Andres Kase',
+      initialValue: 'Your Name',
     },
     {
       name: 'quotes',
@@ -298,7 +298,7 @@ export const aboutQuoteSectionField: AboutFieldDefinition = {
           _key: 'q1',
           quote:
             'Tootmisjuht ei pea olema see, kes kustutab tulesid. Ta peab ehitama süsteemi kus tulekahju ei toimu.',
-          author: 'Andres Kase',
+          author: 'Your Name',
         },
       ],
       validation: (Rule: any) => Rule.min(1),
@@ -828,7 +828,7 @@ export const aboutKeyAchievementsField: AboutFieldDefinition = {
       name: 'studentProjects',
       title: 'Student Projects',
       type: 'array',
-      description: 'Projects completed by students under Andres supervision',
+      description: 'Projects completed by students under trainer supervision',
       of: [
         {
           type: 'object',
@@ -1149,7 +1149,7 @@ export const aboutKkkField: AboutFieldDefinition = {
   title: 'KKK (Korduma kippuvad küsimused)',
   type: 'kkkSection',
   description:
-    'FAQ plokk lehel /andres-kase — pealkiri, alapealkiri ja küsimused/vastused. Kui ülal on valitud eraldokument, kasutatakse seda.',
+    'FAQ plokk lehel /about — pealkiri, alapealkiri ja küsimused/vastused. Kui ülal on valitud eraldokument, kasutatakse seda.',
   options: { collapsible: true, collapsed: false },
 }
 

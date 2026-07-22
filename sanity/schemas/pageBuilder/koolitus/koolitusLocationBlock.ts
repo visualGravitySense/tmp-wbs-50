@@ -34,13 +34,13 @@ export default defineType({
       name: 'phone',
       title: 'Telefon',
       type: 'string',
-      initialValue: '5138403'
+      initialValue: '0000000'
     },
     {
       name: 'email',
       title: 'E-mail',
       type: 'string',
-      initialValue: 'andreskase@tootmisjuhtimine.ee'
+      initialValue: 'hello@example.com'
     },
     {
       name: 'mapEmbedUrl',

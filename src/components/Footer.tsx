@@ -50,8 +50,8 @@ const JUHENDATUD_LOPUTOOD_FOOTER_LINK: FooterLinkItem = {
 
 const defaultServiceLinks: FooterLinkItem[] = [
   { href: '/koolitus', label: 'Tootmisjuhtimise koolitus' },
-  { href: '/andres-kase', label: 'Konsultatsioonid' },
-  { href: '/opstar-profit', label: 'Opstar Profit' },
+  { href: '/about', label: 'Konsultatsioonid' },
+  { href: '/product', label: 'Product Name' },
   JUHENDATUD_LOPUTOOD_FOOTER_LINK,
   { href: '/koolitus', label: 'Töötukassa koolitused' },
 ]
@@ -77,7 +77,7 @@ const STANDARD_FOOTER_LINK: FooterLinkItem = {
 }
 
 const defaultInfoLinks: FooterLinkItem[] = [
-  { href: '/andres-kase', label: 'Meist' },
+  { href: '/about', label: 'Meist' },
   { href: '/blog', label: 'Blogi' },
   { href: '/koolitus', label: 'Programm' },
   GALLERY_FOOTER_LINK,
@@ -123,8 +123,8 @@ function ensureServiceColumnLinks(links: FooterLinkItem[]): FooterLinkItem[] {
   }
 
   const out = [...links]
-  const opstarIdx = out.findIndex((l) => l.href === '/opstar-profit')
-  out.splice(opstarIdx >= 0 ? opstarIdx + 1 : out.length, 0, JUHENDATUD_LOPUTOOD_FOOTER_LINK)
+  const productIdx = out.findIndex((l) => l.href === '/product' || l.href === '/opstar-profit')
+  out.splice(productIdx >= 0 ? productIdx + 1 : out.length, 0, JUHENDATUD_LOPUTOOD_FOOTER_LINK)
   return out
 }
 
@@ -236,7 +236,7 @@ export function Footer({ data }: FooterProps) {
     normalizeFooterLinks(data?.infoLinks?.length ? data.infoLinks : defaultInfoLinks),
   )
   const socialLinks = resolveSocialLinks(data)
-  const partnerBadgeText = data?.partnerBadgeText || 'OPSTAR PROFIT RAAMISTIK'
+  const partnerBadgeText = data?.partnerBadgeText || 'PRODUCT FRAMEWORK'
   const partnerBadgeLink = data?.partnerBadgeLink?.trim()
 
   return (
@@ -252,11 +252,11 @@ export function Footer({ data }: FooterProps) {
           <div className="mb-10 grid gap-8 sm:mb-12 sm:gap-10 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <EyebrowPillBadge
-                text={data?.brandBadge || 'Andres Kase'}
+                text={data?.brandBadge || 'Site Name'}
                 className="mb-4 sm:mb-6"
               />
               <h3 className="mb-3 text-2xl font-black tracking-[-0.03em] sm:mb-4 sm:text-3xl">
-                {data?.brandTitle || 'Andres Kase'}
+                {data?.brandTitle || 'Site Name'}
               </h3>
               <p className="max-w-md text-sm leading-relaxed text-[rgb(var(--text-secondary))] sm:text-[15px]">
                 {data?.brandDescription ||
@@ -327,10 +327,10 @@ export function Footer({ data }: FooterProps) {
                     {data?.emailLabel || 'Email:'}
                   </span>{' '}
                   <a
-                    href={`mailto:${data?.email || 'andreskase@tootmisjuhtimine.ee'}`}
+                    href={`mailto:${data?.email || 'hello@example.com'}`}
                     className="footer-contact-link break-all underline-offset-2 transition-colors hover:text-blue-600 hover:underline"
                   >
-                    {data?.email || 'andreskase@tootmisjuhtimine.ee'}
+                    {data?.email || 'hello@example.com'}
                   </a>
                 </p>
                 <p>
@@ -338,10 +338,10 @@ export function Footer({ data }: FooterProps) {
                     {data?.phoneLabel || 'Telefon:'}
                   </span>{' '}
                   <a
-                    href={`tel:${(data?.phone || '5138403').replace(/\s+/g, '')}`}
+                    href={`tel:${(data?.phone || '+3720000000').replace(/\s+/g, '')}`}
                     className="footer-contact-link underline-offset-2 transition-colors hover:text-blue-600 hover:underline"
                   >
-                    {data?.phone || '5138403'}
+                    {data?.phone || '+372 000 0000'}
                   </a>
                 </p>
                 <p>
@@ -385,7 +385,7 @@ export function Footer({ data }: FooterProps) {
           <div className="footer-divider border-t border-[var(--border)]/70 pt-5 sm:pt-6">
             <div className="flex flex-col items-center justify-between gap-2.5 text-center md:flex-row md:text-left">
               <p className="text-xs font-medium text-[rgb(var(--text-secondary))]">
-                {data?.copyrightText || '\u00A9 2026 Andres Kase. Kõik õigused kaitstud.'}
+                {data?.copyrightText || '\u00A9 2026 Site Name. All rights reserved.'}
               </p>
               <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[rgb(var(--text-secondary))] sm:tracking-[0.16em]">
                 {data?.bottomTagline || 'Built for practical manufacturing leadership'}

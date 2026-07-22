@@ -19,7 +19,7 @@ import { Images } from 'lucide-react'
 export const revalidate = 60
 
 const FALLBACK_META = {
-  title: 'Galerii — Andres Kase',
+  title: 'Gallery — Site Name',
   description: 'Fotod koolitustest, tehaste külastustest ja praktilistest momentidest.',
 }
 

@@ -25,7 +25,7 @@ export const revalidate = 60
 export async function generateMetadata(): Promise<Metadata> {
   const pageSettings = await client.fetch(`*[_type == "testimonialsPage"][0]{ seo }`)
   return {
-    title: pageSettings?.seo?.metaTitle || 'Tagasiside — kaikki lõpetajate hinnangud | Andres Kase',
+    title: pageSettings?.seo?.metaTitle || 'Testimonials | Site Name',
     description: pageSettings?.seo?.metaDescription || 'Lõpetajate päris tagasiside tootmisjuhtimise koolitusest. Loe kõiki hinnanguid ja registreeru järgmisse gruppi.',
     keywords: pageSettings?.seo?.metaKeywords || undefined,
     openGraph: {

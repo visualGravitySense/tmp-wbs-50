@@ -1,6 +1,6 @@
 {
-  "name": "andres-kase-v2",
-  "version": "0.1.0",
+  "name": "nextjs-sanity-template",
+  "version": "1.0.0-template",
   "private": true,
   "engines": {
     "node": ">=20.9.0"

@@ -24,7 +24,7 @@ export default defineType({
       type: 'text',
       rows: 4,
       initialValue:
-        'Kõik koolitused, konsultatsioonid ja OPSTAR PROFIT™ programmid on seotud Andres Kase ja tema praktilise tootmisjuhtimise kogemusega. Kirjuta, helista või täida vorm — leiame koos järgmise sammu.',
+        'Kõik koolitused, konsultatsioonid ja Product Name programmid on seotud meie meeskonna praktilise tootmisjuhtimise kogemusega. Kirjuta, helista või täida vorm — leiame koos järgmise sammu.',
     }),
     defineField({
       name: 'image',

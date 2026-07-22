@@ -59,7 +59,7 @@ export default function OpstarProfitAcronymGrid() {
           className="mb-8 text-center text-[clamp(1rem,2.6vw,1.3rem)] font-black uppercase italic leading-tight tracking-tight text-[rgb(var(--text-primary))] sm:mb-10 md:text-xl"
         >
           <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-600 bg-clip-text text-transparent dark:from-blue-200 dark:via-sky-200 dark:to-cyan-200">
-            OPSTAR PROFIT – SÜSTEEMNE INIMKESKSUS JUHTIMISES
+            Product Name – SÜSTEEMNE INIMKESKSUS JUHTIMISES
           </span>
         </h2>
 

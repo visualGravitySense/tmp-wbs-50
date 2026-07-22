@@ -120,8 +120,8 @@ const FALLBACK_FACT_ROWS: Omit<FactRow, 'Icon' | 'iconWrap'>[] = [
   {
     id: 'cert',
     label: 'Tunnistus',
-    value: 'OPSTAR PROFIT™',
-    hint: 'Tunnustatud programm, mis ühendab LEAN, TPS ja OPSTAR PROFIT™ raamistiku.',
+    value: 'Product Name',
+    hint: 'Tunnustatud programm, mis ühendab LEAN, TPS ja Product Name raamistiku.',
   },
   {
     id: 'support',
@@ -184,7 +184,7 @@ function buildStats(stats?: QuickFactsSanityStat[] | null): StatDef[] {
   })
 }
 
-const DEF_EYEBROW = 'OPSTAR PROFIT™ · PROGRAMMI ÜLEVAADE'
+const DEF_EYEBROW = 'Product Name · PROGRAMMI ÜLEVAADE'
 const DEF_TITLE = 'Kiired faktid'
 const DEF_PILL = '9 päeva'
 const DEF_SUBSIDY = 'EIS toetus kuni 50%'

@@ -26,7 +26,7 @@ export default function TrainingLocation({ data }: TrainingLocationProps) {
     transportNote = 'Tallinn–Viljandi–Tallinn rongisõidu graafik sobib koolituse aegadega.',
     contactText = 'Lisateave koolitusele registreerimiseks:',
     phone = '51 38 403',
-    email = 'andreskase@tootmisjuhtimine.ee',
+    email = 'hello@example.com',
     mapEmbedUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2144.33!2d25.5954!3d58.3639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4694a9776f8a5413%3A0x6b2b!2sGrand%20Hotel%20Viljandi!',
     mapButtonUrl = 'https://maps.app.goo.gl/PyDBcqDtnqWEJMhf7',
     subsidyText = 'Võimalik on taotleda koolitustoetust Töötukassast — kuni 80% koolituse hinnast.',

@@ -9,7 +9,7 @@ export function createOpstarSectionBlock(options: {
   previewTitlePath: string
   previewSubtitle?: string
 }) {
-  const { name, title, fieldName, previewTitlePath, previewSubtitle = 'OPSTAR Profit' } =
+  const { name, title, fieldName, previewTitlePath, previewSubtitle = 'Product Name' } =
     options
 
   return defineType({

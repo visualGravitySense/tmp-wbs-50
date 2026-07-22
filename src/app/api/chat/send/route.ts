@@ -58,7 +58,7 @@ export async function POST(req: Request) {
         fallbackTriggered: false,
       });
     } else {
-      // Update the session mapping with the latest message ID so Andres can reply to the newest post
+      // Update the session mapping with the latest message ID so the team can reply to the newest post
       const sessionUpdates: any = {
         telegramChatId: result.chatId,
         telegramMessageId: result.messageId,
