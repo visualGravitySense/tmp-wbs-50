@@ -54,7 +54,7 @@ export default function AboutSplitHero({
   floatingBadges,
 }: AboutSplitHeroProps) {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F8F9FB] pt-28 pb-16 text-slate-900 dark:bg-slate-950 dark:text-white md:pt-36">
+    <section className="site-hero site-hero--about-split relative w-full overflow-hidden bg-[#F8F9FB] pt-28 pb-16 text-slate-900 dark:bg-slate-950 dark:text-white md:pt-36">
       <Container size="6xl" className="relative z-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
           
@@ -76,7 +76,7 @@ export default function AboutSplitHero({
               25 aastat tootmispõrandal — õpetan seda, mida olen ise teinud, mitte seda, mida raamatutest lugesin.
             </p>
             
-            <div className="mt-6 flex flex-wrap justify-center gap-4 lg:justify-start">
+            <div className="site-hero-cta-row mt-6 flex flex-wrap justify-center gap-4 lg:justify-start">
               {primaryButton ? (
                 <BrandVibrantButton href="/kontakt" icon={Phone}>
                   {primaryButton.text?.replace(/\s*(?:->|=>|→|>|›)\s*$/, '') || 'Kontakt'}

@@ -257,7 +257,7 @@ export default function HeroFeatureCards({ eyebrow, title, scriptSubtitle, descr
   return (
     <div
       className={cn(
-        'min-w-0 max-w-full overflow-x-clip overflow-y-visible px-1 pb-2 pt-1 sm:overflow-visible',
+        'site-hero-features min-w-0 max-w-full overflow-x-clip overflow-y-visible px-1 pb-2 pt-1 sm:overflow-visible',
         'md:mx-auto md:w-full md:max-w-6xl',
         className,
       )}

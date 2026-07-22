@@ -197,18 +197,18 @@ export default function HeroStatsGridClient({
   const [inView, setInView] = useState(true)
 
   return (
-    <div ref={rootRef} className={cn('min-w-0 max-w-full overflow-visible', className)}>
+    <div ref={rootRef} className={cn('site-hero-stats min-w-0 max-w-full overflow-visible', className)}>
       {showDivider ? (
         <div
           className={cn(
-            'mx-auto mb-4 h-px max-w-6xl bg-gradient-to-r from-transparent via-[var(--border)] to-transparent transition-opacity duration-700 sm:mb-6',
+            'site-hero-stats-divider mx-auto mb-4 h-px max-w-6xl bg-gradient-to-r from-transparent via-[var(--border)] to-transparent transition-opacity duration-700 sm:mb-6',
             inView ? 'opacity-100' : 'opacity-0',
           )}
         />
       ) : null}
       <div
         className={cn(
-          'mx-auto mb-4 grid min-w-0 max-w-full grid-cols-2 gap-x-4 gap-y-8 overflow-visible sm:mb-8 sm:gap-6 lg:grid-cols-4 [&>*]:min-w-0 [&>*]:overflow-visible',
+          'site-hero-stats-grid mx-auto mb-4 grid min-w-0 max-w-full grid-cols-2 gap-x-4 gap-y-8 overflow-visible sm:mb-8 sm:gap-6 lg:grid-cols-4 [&>*]:min-w-0 [&>*]:overflow-visible',
           gridClassName,
         )}
       >

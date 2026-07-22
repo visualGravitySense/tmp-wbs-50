@@ -1,0 +1,40 @@
+# Swiss class coverage (via workspace grep tool — Select-String shell unavailable)
+# File: src/styles/theme-swiss.css
+# Date: 2026-07-22
+# Method: ripgrep line matches (count > 0 for each required class)
+
+site-hero-cta : 9 lines
+site-hero-overlay : 1 lines
+site-hero : 45 lines
+site-hero-quick-facts : 7 lines
+site-hero-diagram : 2 lines
+
+chat-panel-container : 2 lines
+chat-panel-glow : 1 lines
+chat-message-bubble : 1 lines
+chat-bubble-btn : 3 lines
+chat-message-input : 2 lines
+chat-send-btn : 2 lines
+chat-welcome-icon-box : 1 lines
+
+challenges-card : 3 lines
+challenges-badge : 1 lines
+challenges-dot : 1 lines
+
+blog-article-prose : 4 lines
+blog-article-h2 : 6 lines (1023,1031,1037,1044,1107 + group)
+blog-article-h3 : 3 lines (1021,1024,1051)
+blog-article-h4 : 3 lines (1022,1025,1060)
+blog-article-figure : 8 lines
+blog-article-display : 1 lines
+ak-h1 : 1 lines
+
+ALL_COUNTS_GT_ZERO: YES
+
+# BLOCKED
+# Terminal/shell: IO Error program not found (cannot run npm/git)
+# Branch from .git/HEAD: template/clean
+# Local/remote tip: 5b4bcab5a8c3438272642ed5fb88aeb34d644ff0
+# Commit message on HEAD: swiss minimalism  rebrending part 1 1
+# Remote origin exists: yes (github.com/visualGravitySense/website-template-v5-main.git)
+# Run when shell works: powershell -File _verify-swiss-coverage.ps1

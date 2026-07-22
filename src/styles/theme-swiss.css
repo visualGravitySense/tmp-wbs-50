@@ -670,3 +670,456 @@
   border-color: #fff !important;
   background: transparent !important;
 }
+
+/* ═══════════════════════════════════════════════════════════
+   11. Hero sections (site-hero*)
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .site-hero {
+  background-color: rgb(var(--bg-primary));
+}
+
+[data-brand="swiss-minimalism"] .site-hero--about-split {
+  background: rgb(var(--bg-primary)) !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-overlay {
+  background: rgb(0 0 0 / 0.55) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-title {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  letter-spacing: -0.03em !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-sub {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-cta,
+[data-brand="swiss-minimalism"] a.site-hero-cta {
+  background: rgb(var(--color-primary)) !important;
+  background-image: none !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  border: 1px solid rgb(var(--color-primary)) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-cta:hover,
+[data-brand="swiss-minimalism"] a.site-hero-cta:hover {
+  background: transparent !important;
+  color: rgb(var(--color-primary)) !important;
+  border-color: rgb(var(--color-primary)) !important;
+  box-shadow: none !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+/* When CTA sits on photo hero, use white invert for contrast */
+[data-brand="swiss-minimalism"] .site-hero-media ~ .site-hero-content .site-hero-cta,
+[data-brand="swiss-minimalism"] .site-hero:has(.site-hero-media) .site-hero-cta {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #fff !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero:has(.site-hero-media) .site-hero-cta:hover {
+  background: transparent !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-cta-secondary {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border: 1px solid rgb(var(--border)) !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-cta-secondary:hover {
+  background: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-stats-divider {
+  background: rgb(var(--border)) !important;
+  background-image: none !important;
+  opacity: 1 !important;
+  height: 1px !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-global-stats {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: transparent !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-icon-container {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-icon-container > span {
+  display: none !important; /* gradient gloss */
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-arrow-btn {
+  border-radius: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card .absolute.rounded-full.blur-3xl,
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card [class*="blur-3xl"] {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-features .group:hover .text-\[var\(--text-primary\)\],
+[data-brand="swiss-minimalism"] .site-hero-features .hero-feature-card:hover .relative.z-10.mb-1 {
+  color: rgb(var(--color-accent)) !important;
+}
+
+/* Koolitus quick-facts glass card → flat Swiss panel */
+[data-brand="swiss-minimalism"] .site-hero-quick-facts {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: rgb(var(--bg-primary)) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-quick-facts:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: rgb(var(--border)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-quick-facts > .pointer-events-none,
+[data-brand="swiss-minimalism"] .site-hero-quick-facts .absolute.rounded-full,
+[data-brand="swiss-minimalism"] .site-hero-quick-facts [class*="blur-"] {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-quick-facts h2 {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  color: rgb(var(--text-primary)) !important;
+  -webkit-text-fill-color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-quick-facts .bg-gradient-to-r {
+  background: rgb(var(--color-accent)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  height: 2px !important;
+}
+
+/* Product / OPSTAR hero diagram */
+[data-brand="swiss-minimalism"] .site-hero-diagram {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  box-shadow: none !important;
+  background: rgb(var(--bg-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero-diagram-glow {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/* Marketing split hero portrait cards / linkedin chip */
+[data-brand="swiss-minimalism"] .site-hero--marketing-split [class*="rounded-t-\[24px\]"],
+[data-brand="swiss-minimalism"] .site-hero--about-split [class*="rounded-t-\[24px\]"],
+[data-brand="swiss-minimalism"] .site-hero--about-split .rounded-t-\[24px\],
+[data-brand="swiss-minimalism"] .site-hero--about-split .rounded-b-\[24px\] {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero--about-split a[class*="border-\[\#0055E5\]"],
+[data-brand="swiss-minimalism"] .site-hero--marketing-split a[class*="border-\[\#0055E5\]"] {
+  border-radius: 0 !important;
+  border-color: rgb(var(--border)) !important;
+  background: transparent !important;
+  background-image: none !important;
+  color: rgb(var(--text-primary)) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .site-hero--kontakt h1 span.font-serif,
+[data-brand="swiss-minimalism"] .site-hero--about-split h2,
+[data-brand="swiss-minimalism"] .site-hero .font-serif,
+[data-brand="swiss-minimalism"] .site-hero .text-marketing-accent-shell {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  color: rgb(var(--color-accent)) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   12. Floating chat widget
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .chat-panel-container {
+  border-radius: 0 !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: rgb(var(--bg-primary)) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-panel-glow {
+  display: none !important;
+  opacity: 0 !important;
+  background: none !important;
+  filter: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-panel-eyebrow {
+  color: rgb(var(--color-accent)) !important;
+  letter-spacing: 0.18em !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-welcome-icon-box {
+  border-radius: 0 !important;
+  background: transparent !important;
+  border: 1px solid rgb(var(--border)) !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-message-bubble {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--border)) !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-message-input {
+  border-radius: 0 !important;
+  border-width: 0 0 1px 0 !important;
+  border-style: solid !important;
+  border-color: rgb(var(--border)) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-message-input:focus {
+  border-color: rgb(var(--color-accent)) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-send-btn {
+  border-radius: 0 !important;
+  background: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  border: 1px solid rgb(var(--color-primary)) !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-send-btn:hover {
+  background: transparent !important;
+  color: rgb(var(--color-primary)) !important;
+}
+
+/* Launcher may stay circular as a functional FAB; strip glow/gradient only */
+[data-brand="swiss-minimalism"] .chat-bubble-btn {
+  background: rgb(var(--bg-primary)) !important;
+  color: rgb(var(--text-primary)) !important;
+  border: 1px solid rgb(var(--border)) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .chat-bubble-btn:hover {
+  background: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   13. Challenges / pain-points
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .challenges-card {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: rgb(var(--bg-primary)) !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .challenges-card:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-brand="swiss-minimalism"] .challenges-badge {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: transparent !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .challenges-dot {
+  /* functional bullet — keep circle, force Swiss red */
+  background: rgb(var(--color-accent)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   14. Blog article typography
+   ═══════════════════════════════════════════════════════════ */
+[data-brand="swiss-minimalism"] .blog-article-prose {
+  font-family: var(--font-sans) !important;
+  font-feature-settings: normal !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+  max-width: 42rem;
+  color: rgb(var(--text-primary));
+}
+
+[data-brand="swiss-minimalism"] .blog-article-prose h2,
+[data-brand="swiss-minimalism"] .blog-article-prose h3,
+[data-brand="swiss-minimalism"] .blog-article-prose h4,
+[data-brand="swiss-minimalism"] .blog-article-h2,
+[data-brand="swiss-minimalism"] .blog-article-h3,
+[data-brand="swiss-minimalism"] .blog-article-h4 {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h2 {
+  border-bottom: 1px solid rgb(var(--border)) !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h2::before {
+  font-family: var(--font-mono) !important;
+  color: rgb(var(--color-accent)) !important;
+  opacity: 1 !important;
+  letter-spacing: 0.16em !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h2::after {
+  background: rgb(var(--color-accent)) !important;
+  background-image: none !important;
+  height: 1px !important;
+  width: min(8rem, 40%) !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h3::before {
+  border-radius: 0 !important;
+  border-color: rgb(var(--color-accent)) !important;
+  box-shadow: none !important;
+  background: rgb(var(--color-accent)) !important;
+  width: 0.35rem !important;
+  height: 0.35rem !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-h4 {
+  font-family: var(--font-mono) !important;
+  letter-spacing: 0.1em !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-display {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-figure {
+  border-radius: 0 !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-figure img,
+[data-brand="swiss-minimalism"] .blog-article-figure picture,
+[data-brand="swiss-minimalism"] .blog-article-figure video {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-figure::before,
+[data-brand="swiss-minimalism"] .blog-article-figure::after {
+  border-color: rgb(var(--border)) !important;
+  opacity: 1 !important;
+}
+
+[data-brand="swiss-minimalism"] .blog-article-figure::before {
+  border-left-color: rgb(var(--border)) !important;
+  border-top-color: rgb(var(--border)) !important;
+}
+
+/* Hairline under figure instead of soft shadow */
+[data-brand="swiss-minimalism"] .blog-article-figure {
+  border-bottom: 1px solid rgb(var(--border));
+  padding-bottom: 0.75rem;
+}
+
+[data-brand="swiss-minimalism"] .ak-h1 {
+  font-family: var(--font-sans) !important;
+  font-style: normal !important;
+  letter-spacing: -0.03em !important;
+  text-transform: uppercase !important;
+  color: rgb(var(--text-primary)) !important;
+}
+
+/* Dark blog polish */
+.dark [data-brand="swiss-minimalism"] .blog-article-h2::after {
+  background: rgb(var(--color-accent)) !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .chat-panel-container {
+  background: #000 !important;
+  border-color: #fff !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .chat-bubble-btn {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.dark [data-brand="swiss-minimalism"] .challenges-card {
+  background: #000 !important;
+  border-color: #fff !important;
+}

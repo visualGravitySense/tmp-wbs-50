@@ -270,14 +270,14 @@ export function renderMarketingSplitHeroBlock(
       rightColumn={rightColumn}
       customCtas={
         hasPrimary || hasSecondary ? (
-          <div className="flex w-full flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center sm:gap-4 md:justify-start">
+          <div className="site-hero-cta-row flex w-full flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center sm:gap-4 md:justify-start">
             {hasPrimary ? (
-              <BrandVibrantButton href={primaryHref} className="w-full sm:w-auto">
+              <BrandVibrantButton href={primaryHref} className="site-hero-cta w-full sm:w-auto">
                 {block.primaryCta!.text}
               </BrandVibrantButton>
             ) : null}
             {hasSecondary ? (
-              <WhiteButton href={secondaryHref} className="w-full sm:w-auto">
+              <WhiteButton href={secondaryHref} className="site-hero-cta-secondary w-full sm:w-auto">
                 {block.secondaryCta!.text}
               </WhiteButton>
             ) : null}
@@ -285,7 +285,7 @@ export function renderMarketingSplitHeroBlock(
         ) : undefined
       }
       belowCtas={heroStats}
-      className="pb-10"
+      className="site-hero site-hero--marketing-split pb-10"
     />
   )
 }

@@ -7,7 +7,7 @@ interface KontaktHeroProps {
 
 export default function KontaktHero({ block }: KontaktHeroProps) {
   return (
-    <header className="mb-12 grid items-center gap-8 pt-28 pb-16 md:pt-36 lg:grid-cols-2 lg:gap-12 sm:mb-14">
+    <header className="site-hero site-hero--kontakt mb-12 grid items-center gap-8 pt-28 pb-16 md:pt-36 lg:grid-cols-2 lg:gap-12 sm:mb-14">
       <div className="flex flex-col items-center text-center md:items-start md:text-left">
         <EyebrowPillBadge flow text={block.eyebrow} />
         <h1 className="text-3xl font-extrabold tracking-tight leading-[1.1] text-[#122136] dark:text-white sm:text-4xl md:text-5xl lg:text-6xl">

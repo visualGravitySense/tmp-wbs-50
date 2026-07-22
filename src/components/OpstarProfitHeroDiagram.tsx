@@ -156,10 +156,10 @@ export default function OpstarProfitHeroDiagram({
   const centralLine2 = centralParts.slice(1).join(' ') || 'PROFIT'
 
   return (
-    <div className={`relative mx-auto flex w-full max-w-[540px] flex-col justify-between overflow-hidden !p-5 transition-all duration-500 sm:!p-7 ${marketingInsetCardClass}`}>
-      {/* Subtle background glow */}
-      <div className="absolute -left-20 -top-20 pointer-events-none h-48 w-48 rounded-full bg-blue-500/10 dark:bg-blue-500/15 blur-3xl" />
-      <div className="absolute -right-20 -bottom-20 pointer-events-none h-48 w-48 rounded-full bg-indigo-500/10 dark:bg-indigo-500/15 blur-3xl" />
+    <div className={`site-hero-diagram relative mx-auto flex w-full max-w-[540px] flex-col justify-between overflow-hidden !p-5 transition-all duration-500 sm:!p-7 ${marketingInsetCardClass}`}>
+      {/* Subtle background glow (hidden under Swiss via theme-swiss.css) */}
+      <div className="site-hero-diagram-glow absolute -left-20 -top-20 pointer-events-none h-48 w-48 rounded-full bg-blue-500/10 dark:bg-blue-500/15 blur-3xl" />
+      <div className="site-hero-diagram-glow absolute -right-20 -bottom-20 pointer-events-none h-48 w-48 rounded-full bg-indigo-500/10 dark:bg-indigo-500/15 blur-3xl" />
 
       {/* 1. Header */}
       <div className="relative z-10 flex items-start justify-between gap-4">

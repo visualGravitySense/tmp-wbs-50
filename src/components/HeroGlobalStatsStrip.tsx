@@ -47,5 +47,10 @@ export default function HeroGlobalStatsStrip({
   const stripStats = mapGlobalStatsToStripStats(stats ?? [], limit)
   if (stripStats.length === 0) return null
 
-  return <QuickStatsStrip stats={stripStats} className={className} />
+  return (
+    <QuickStatsStrip
+      stats={stripStats}
+      className={['site-hero-global-stats', className].filter(Boolean).join(' ')}
+    />
+  )
 }
