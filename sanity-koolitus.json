@@ -1,0 +1,1088 @@
+{
+  "sections": [
+    {
+      "_key": "2bb0eb728a86",
+      "_type": "marketingSplitHeroBlock",
+      "description": "9-päevane praktiline arenguprogramm tootmis- ja operatsioonide juhtimises.\nLean-juhtimine, agiilne hoiak ja parendusprojekt. Kasva teadlikuks juhiks, tipptasemel spetsialistiks või tulemuslikuks meeskonnaliikmeks.",
+      "eyebrow": "OPSTAR PROFIT™ • ARENGUPROGRAMM",
+      "headline": "Lean-Agile",
+      "hideFromScrollNav": false,
+      "isVisible": true,
+      "navLabel": "Hero",
+      "primaryCta": {
+        "link": {
+          "_type": "link",
+          "linkType": "external",
+          "url": "https://andres-kase-tootmisjuhtimine.vercel.app/koolitus#pricing"
+        },
+        "text": "Registreeru"
+      },
+      "quickFactsCard": {
+        "durationPill": "Faktid",
+        "eyebrow": "Arenguprogrammi lühiülevaade",
+        "priceText": "Sügis 2026",
+        "rows": [
+          {
+            "_key": "d776335fa3fe",
+            "hint": "Õpid neljapäeval, kavandad reedel ja juurutad enne järgmist kohtumist.",
+            "icon": "calendarDays",
+            "label": "Kuidas õpid?",
+            "value": "9 neljapäeva 4 kuu jooksul"
+          },
+          {
+            "_key": "a6547ca10cf3",
+            "hint": "Võimaldab kogemuste jagamist, sisukaid arutelusid ja personaalset tuge.",
+            "icon": "users",
+            "label": "Kellega õpid?",
+            "value": "Kuni 16 osalejat"
+          },
+          {
+            "_key": "d55c87b7379a",
+            "hint": "Lahendad päris väljakutse oma ettevõttes ja rakendad õpitut kohe praktikas.",
+            "icon": "clock",
+            "label": "Mida lahendad?",
+            "value": "Oma ettevõtte parendusprojekti"
+          },
+          {
+            "_key": "669774f7ff1f",
+            "hint": "Seminarid Viljandis, õppekäigud Eesti tootmisettevõtetesse.",
+            "icon": "mapPin",
+            "label": "Kus õppimine toimub?",
+            "value": "Viljandi linnas"
+          },
+          {
+            "_key": "04eb8142a6ca",
+            "hint": "Praktilised LEAN juhtimise, tootmisjuhtimise ja süsteemse parendamise oskused, mida kinnitab tunnistus.",
+            "icon": "award",
+            "label": "Mida omandad?",
+            "value": "LEAN, Tootmisjuhtimine, OPSTAR PROFIT raamistiku."
+          },
+          {
+            "_key": "1f3a8bab79b3",
+            "hint": "Jätkad õpituga ja soovi korral personaalne tugi ka pärast programmi lõppu.",
+            "icon": "calendarDays",
+            "label": "Mis saab pärast?",
+            "value": "3–12 kuud järelmentorlust"
+          }
+        ],
+        "subsidyText": "Registreerimine avatud",
+        "title": "Lean-Agile Tootmisjuhtimise arenguprogramm"
+      },
+      "rightComponentType": "quickFacts",
+      "scriptHeadline": "Tootmisjuhtimise arenguprogramm",
+      "secondaryCta": {
+        "link": {
+          "_type": "link",
+          "linkType": "internal",
+          "reference": {
+            "_ref": "testimonialsPage",
+            "_type": "reference"
+          }
+        },
+        "text": "Loe tagasisidet"
+      }
+    },
+    {
+      "_key": "7e85a5c121ab",
+      "_type": "koolitusStatsBlock",
+      "hideFromScrollNav": false,
+      "isVisible": false,
+      "showDivider": true
+    },
+    {
+      "_key": "11010d6847ed",
+      "_type": "homePartnersBlock",
+      "hideFromScrollNav": false,
+      "isVisible": true,
+      "navLabel": "Osalenud",
+      "partners": [
+        {
+          "_key": "6beded850fc1",
+          "_ref": "194bba40-cdf9-46ef-8d86-8ee040768827",
+          "_type": "reference"
+        },
+        {
+          "_key": "6505127cb4f9",
+          "_ref": "1b35f425-9185-469e-8307-7765b78adb64",
+          "_type": "reference"
+        },
+        {
+          "_key": "fdd084683343",
+          "_ref": "fb05d431-de9a-4486-a194-1aa7683328a4",
+          "_type": "reference"
+        },
+        {
+          "_key": "76be6a3ff83b",
+          "_ref": "0102a6d6-79c1-41b4-805f-802d12b5cba5",
+          "_type": "reference"
+        },
+        {
+          "_key": "b93610525689",
+          "_ref": "1ac053c2-f4ee-4825-82f0-896b7e24b006",
+          "_type": "reference"
+        },
+        {
+          "_key": "c18de44c5852",
+          "_ref": "82f8ccc2-a0e9-4b96-8cd4-4967d5f5f5b5",
+          "_type": "reference"
+        },
+        {
+          "_key": "0c4636dcd925",
+          "_ref": "7e5a9344-3923-407e-b3a1-244d2c476e6a",
+          "_type": "reference"
+        },
+        {
+          "_key": "de80e1416a44",
+          "_ref": "54b6bcfc-b72b-45ce-9e18-51f04ae39d80",
+          "_type": "reference"
+        },
+        {
+          "_key": "bcfab5cbe3f3",
+          "_ref": "27e79aeb-80cb-42f7-ba01-bfde34c4cbe6",
+          "_type": "reference"
+        },
+        {
+          "_key": "08ff1a3f0870",
+          "_ref": "fd36614b-3854-4ad7-9f35-19db49b0c9b6",
+          "_type": "reference"
+        },
+        {
+          "_key": "f568eb76e5da",
+          "_ref": "eb65e352-dc34-41c1-bb2c-fcebca37f4f7",
+          "_type": "reference"
+        },
+        {
+          "_key": "8f7c8d57a957",
+          "_ref": "63d069f3-eba0-4c28-b4d7-b2a2b6a24d1e",
+          "_type": "reference"
+        },
+        {
+          "_key": "0320eb7de24c",
+          "_ref": "242b2466-1906-4852-ad21-bf773de6b3f2",
+          "_type": "reference"
+        },
+        {
+          "_key": "d1ec6755ecc3",
+          "_ref": "68215980-cafe-444a-b056-353b0d885b5f",
+          "_type": "reference"
+        },
+        {
+          "_key": "28a6cfe3d2c9",
+          "_ref": "4650ff12-fccd-4e94-a30c-0473b02b764b",
+          "_type": "reference"
+        },
+        {
+          "_key": "bedd5d4db95e",
+          "_ref": "57e669ba-a627-4cfd-9a66-30246855ce0b",
+          "_type": "reference"
+        }
+      ],
+      "partnersTitle": "KOOLITUST USALDANUD ETTEVÕTTED"
+    },
+    {
+      "_key": "681875d772da",
+      "_type": "painPointsBlock",
+      "cards": [
+        {
+          "_key": "e65acbddf45b",
+          "behavior": "Juht, kes tunneb ära oma praeguse juhtimisstiili — reageeriv vs. süsteemne",
+          "percentage": "64 akadeemilist kontakttundi · 4 kuud · päris tootmispõrand",
+          "quote": "Kas sinu meeskond töötab iseseisvalt või pead sageli sekkuma, suunama?",
+          "revealLink": "/koolitus",
+          "revealText": "Süsteemse juhtimise programm annab sulle tööriistad, et meeskond leiaks lahendused ka siis, kui sind kohal pole. 10+ aastat arendatud, Eesti tootmisettevõtetes tõestatud."
+        },
+        {
+          "_key": "34ee294f29a7",
+          "behavior": "Juht, kes on väsinud teoreetilistest koolitustest ilma reaalse rakenduseta",
+          "percentage": "100% osalejatel on reaalne parendusprojekt oma ettevõttes koolituse ajal",
+          "quote": "Oled käinud koolitustel, aga tulemused jäid sahtlisse?",
+          "revealLink": "/opstar-profit",
+          "revealText": "Sa ei lahenda väljamõeldud juhtumit. Sinu projekt põhineb sinu ettevõtte tegelikul probleemil — kvaliteet, OEE, logistika, meeskond. Tulemus on mõõdetav juba programmi ajal."
+        },
+        {
+          "_key": "bbbe8ba52ba5",
+          "behavior": "Juht, kes mõistab, et tehniline süsteem ilma inimkesksuseta ei toimi",
+          "percentage": "38% efektiivsuse kasv · 31% OEE kasv · 150+ koolitatud juhti",
+          "quote": "Kas su protsessid on korras, aga inimesed ei järgi neid?",
+          "revealLink": "/opstar-profit",
+          "revealText": "Ühendame LEAN tootmisjuhtimistarkuse, inimese ja vastutuse. Õpid juhtima nii protsessi kui inimest — et meeskond mõistab oma rolli tervikus ja tegutseb iseseisvalt."
+        },
+        {
+          "_key": "ae4602451c77",
+          "behavior": "Tootmisjuht, meister või operatsioonijuht, kes soovib selget juhtimissüsteemi",
+          "percentage": "25+ aastat kogemust Eesti, Soome ja Läti tootmisettevõtetes",
+          "quote": "Juhin tehast, tootmisliini või ladu — aga tunnen, et süsteem puudub?",
+          "revealLink": "/kontakt",
+          "revealText": "LEAN, TPS ja OPSTAR PROFIT™ — kolm metoodikat, mis töötavad koos. Õpid juhtima tootmisliini, tehast ja meeskonda nii, et tulemused on mõõdetavad ja jätkusuutlikud."
+        },
+        {
+          "_key": "61eb3fc553fc",
+          "behavior": "Teenindus-, ehitus-, logistika- või põllumajandusjuht, kes otsib tõhusamat töökorraldust",
+          "percentage": "4 valdkonda · tootmine, teenindus, logistika, põllumajandus · kõik on protsess",
+          "quote": "Arvan, et LEAN on ainult tootmisettevõtte jaoks — kas mul on õigus?",
+          "revealLink": "/andres-kase",
+          "revealText": "Iga teenindus, laondus, ehitus ja vahendus on olemuselt tootmisprotsess. LEAN töötab kõikjal, kus on protsessid, inimesed ja ressursid. Ka talus. Tule ja veendu ise."
+        },
+        {
+          "_key": "017b108d1171",
+          "behavior": "Alustav juht või spetsialist, kes kardab, et pole veel «valmis»",
+          "percentage": "Sobib 100% — nii algajale kui edasijõudnule · max 16 osalejat grupis",
+          "quote": "Pole kindel, kas olen piisavalt kogenud, et sellel programmil osaleda?",
+          "revealLink": "/kontakt",
+          "revealText": "Programm on üles ehitatud nii, et iga osaleja liigub edasi oma lähtekohast. Väike grupp (max 16) tagab, et kõik saavad tähelepanu. Sinu reaalne parendusprojekt on sinu esimene tõestus."
+        }
+      ],
+      "confirmButtonText": "Kinnita oma sihtgrupp",
+      "directorPath": {
+        "description": "Kuidas LEAN aitab sinu juhtimist?",
+        "linkText": "Vaata direktorite tee",
+        "linkUrl": "/director",
+        "title": "Töö direktorina?"
+      },
+      "eyebrow": "Sihtrühm",
+      "goalSection": {
+        "confirmText": "Kinnita, et näha personaalset koolitusteed",
+        "label": "Sinu eesmärk",
+        "placeholder": "Kirjuta oma sihtgrupp siia..."
+      },
+      "socialProofIntro": "Mõtle oma rollile ja olukorrale — saad lühiülevaate, kuidas programm sinu jaoks töötab.  \"Üle 150 osalenud on programmi teekonna läbinud — igaüks oma lähtekohast\"",
+      "title": "Kellele see koolitus on mõeldud?",
+      "transformBar": {
+        "afterLabel": "Pärast",
+        "afterText": "Töötad efektiivselt, vähem stressi",
+        "beforeLabel": "Enne",
+        "beforeText": "Töötad raskelt, palju stressi"
+      },
+      "variant": "audience"
+    },
+    {
+      "_key": "05d3c180d847",
+      "_type": "koolitusFeaturesBlock",
+      "featuresSection": {
+        "eyebrow": "Omadused",
+        "features": [
+          {
+            "_key": "d3d2161dcd1c",
+            "description": "Koolituse sees külastad Eesti juhtivaid tootmisettevõtteid: ETS Nord, Baltic Workboats, Scanfil, Wendre, Palmse Mehaanikakoda ja 15+ muud. Näed, kuidas LEAN ja TPS töötab tegelikul tootmispõrandal — ja tood lahendused oma ettevõttesse. 20+ partnerettevõtet · reaalne tootmispõrand",
+            "icon": "⭐",
+            "title": "Õpid teistes ettevõtetes — näed päris lahendusi, mitte slaide"
+          },
+          {
+            "_key": "408122fb29e8",
+            "description": "Sa ei lahenda koolitusel väljamõeldud juhtumit. Sinu parendusprojekt põhineb sinu ettevõtte tegelikul väljakutsel — kvaliteet, OEE, logistika, meeskond. Tulemus on mõõdetav ja nähtav juba programmi ajal. Kohene rakendamine · faktipõhised KPI-d",
+            "icon": "⭐",
+            "title": "Iga osaleja teeb parendusprojekti — oma ettevõttes, oma probleemiga"
+          },
+          {
+            "_key": "58d150dd5c6e",
+            "description": "Programm on üles ehitatud nii, et see toimib operatiivtasandil (meister, tootmisjuht) ja strateegilises rollis (tegevjuht, operatsioonidirektor). Kvaliteedi-, ostu-, lao- ja projektijuhid saavad ühise keele kogu tootmisahelaks. Kõik tootmisahela võtmeisikud · ühine keel",
+            "icon": "⭐",
+            "title": "Sobib nii suurettevõtte juhile kui meistritasandi juhtijale"
+          },
+          {
+            "_key": "7639c08b63f3",
+            "description": "LEAN, TPS ja Six Sigma ei ole ainult tootmise jaoks. Operatsioonide juhtimine on kõikjal, kus on protsessid, inimesed ja ressursid. Programm annab universaalse juhtimiskeele, mida saad rakendada igas valdkonnas. LEAN · TPS · Six Sigma · kõigile valdkondadele",
+            "icon": "⭐",
+            "title": "Tootmisjuhtimise põhimõtted toimivad ka teeninduses, logistikas ja meditsiinis"
+          }
+        ],
+        "mainFeature": {
+          "description": "Õpi reaalses tootmiskeskkonnas, mitte klassiruumis",
+          "difference": "Erinevalt teooria-kursustest, me keskendume otseselt teostusele",
+          "title": "Praktiline õppekeskkond"
+        },
+        "secondaryText": "Meie programm on disainitud spetsiaalselt tootmisjuhtidele, kes soovivad näha reaalseid muutusi lühikese aja jooksul.",
+        "subtitle": "LEAN · TPS · OPSTAR PROFIT™ — kolm metoodikat ühes programmis.\nMitte teooria. Mõõdetavad tulemused juba 4 kuuga.",
+        "title": "9 päevaga — süsteem, mis töötab ka siis, kui sind kohal pole"
+      }
+    },
+    {
+      "_key": "96161393c522",
+      "_type": "koolitusLeanHouseBlock",
+      "leanHouseSection": {
+        "backgroundColor": "bg-gray-50",
+        "benefits": [
+          {
+            "_key": "57b43c990deac08f7f4c9a698ae2e4c2",
+            "description": "Kõrvalda väärtustmitte lisavad tegevused",
+            "icon": "📈",
+            "title": "40% Vähem Raiskamist"
+          },
+          {
+            "_key": "cb2b8d456f212b48c080ce3403dd2394",
+            "description": "Sisseehitatud kvaliteet igas sammus",
+            "icon": "✅",
+            "title": "Kvaliteedi Üleolek"
+          },
+          {
+            "_key": "7bbb8db3610ad96df9bc0dbdcb19d32b",
+            "description": "Lühemad ettevalmistusajad voolu kaudu",
+            "icon": "⚡",
+            "title": "50% Kiirem Tarne"
+          }
+        ],
+        "center": {
+          "systems": [
+            {
+              "_key": "3e71f5d74a16349f84202d1a175d0ad7",
+              "description": "",
+              "name": "INIMLIKKUS"
+            }
+          ],
+          "title": "Tuumsüsteemid"
+        },
+        "description": "Mõista, kuidas LEAN süsteem töötab läbi tõestatud LEAN MAJA raamistiku",
+        "foundation": {
+          "items": [
+            {
+              "_key": "b7f7f4e97c49daeb91b1a0a4c798685f",
+              "description": "Usaldusväärsed, kordatavad protsessid",
+              "title": "Operatiivne Stabiilsus"
+            },
+            {
+              "_key": "d72d35da1307a1ce14c07fb738992309",
+              "description": "Järjepidevad töömeetodid",
+              "title": "Standardiseerimine"
+            },
+            {
+              "_key": "c6ea719534216820cc1b021fa543e70e",
+              "description": "Töökoha organiseerimine",
+              "title": "5S & Visuaalne Juhtimine"
+            }
+          ],
+          "title": "Alus"
+        },
+        "leftPillar": {
+          "items": [
+            "Tõmbesüsteem",
+            "Ühe-tpi Vool",
+            "Taktaeg",
+            "Pidev Vool"
+          ],
+          "shortTitle": "JIT",
+          "title": "Õigel Ajal"
+        },
+        "rightPillar": {
+          "items": [
+            "Sisseehitatud Kvaliteet",
+            "Peata & Reageeri",
+            "Veadeta Tegemine",
+            "Visuaalne Juhtimine"
+          ],
+          "shortTitle": "K",
+          "title": "Jidoka"
+        },
+        "roof": {
+          "subtitle": "Kõrgeim Kvaliteet, Madalaim Hind, Lühim Tarneaeg",
+          "title": "Kliendikesksus"
+        },
+        "sideAnnotations": {
+          "left": {
+            "subtitle": "Kõrvalda raiskamine",
+            "title": "Tõhusus & Vool"
+          },
+          "right": {
+            "subtitle": "Sisseehitatud kvaliteet",
+            "title": "Kvaliteet Esmalt"
+          }
+        },
+        "subtitle": "LEAN MAJA Mudel",
+        "title": "LEAN Süsteemi Arhitektuur"
+      }
+    },
+    {
+      "_key": "82a642b92b55",
+      "_type": "andresBlock",
+      "bio": [
+        {
+          "_key": "f2c7a3cf4741",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "edb5a337f617",
+              "_type": "span",
+              "marks": [],
+              "text": "Tõhus juhtimine ei ole juhuslik reageerimine, vaid teadlik ja järjekindel tegutsemine. Kolm põhimõtet, millele programm tugineb:"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "9c5283508b14",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "d7a4c6279324",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Mõõdan"
+            },
+            {
+              "_key": "7eb8ccffc679",
+              "_type": "span",
+              "marks": [],
+              "text": " — ilma faktideta ei saa juhtida. Mõõda seda, mis on oluline, mitte ainult seda, mida on lihtne mõõta."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "3b549101d185",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "d72d76b6d3d2",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Mõistan"
+            },
+            {
+              "_key": "80b04221aca5",
+              "_type": "span",
+              "marks": [],
+              "text": " — protsessi tervikpildi nägemine, sh inimesed, süsteemid ja seosed, mitte ainult numbrid."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "97174d6e0f60",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "e9d5cde42144",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Muudan"
+            },
+            {
+              "_key": "d62c3274c0ba",
+              "_type": "span",
+              "marks": [],
+              "text": " — kui mõõtmine näitab kõrvalekallet, tuleb teha muudatusi — väikeseid või suuri, aga teadlikke."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "62713ee81b1a",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "59fe57de3e65",
+              "_type": "span",
+              "marks": [],
+              "text": "Ma ei õpeta lihtsalt teooriat. Õpetan seda, mida olen ise tehases teinud — töötavat praktikat, mida tegid Henry Ford sajand tagasi ja Jaapani juhid tänaseni. Teen puust ja punaselt ette ja asi saab selgeks."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "ctaLabel": "Loe Andresest",
+      "ctaLink": "/andres-kase",
+      "eyebrow": "Kes sind õpetab",
+      "fieldExperience": "Field Experience Text",
+      "hideFromScrollNav": false,
+      "isVisible": true,
+      "methodologyText": "Methodology Text\nPlain text or string for the methodology description",
+      "methodologyTitle": "Methodology Title",
+      "name": "Andres Kase",
+      "navLabel": "Andres",
+      "photo": {
+        "_type": "image",
+        "alt": "Andres Kase — tootmisjuhtimise koolitaja ja praktik",
+        "asset": {
+          "_ref": "image-bbd476333a07c4119e286a840de4adcae3f93c80-682x1024-jpg",
+          "_type": "reference"
+        }
+      },
+      "quote": "Tootmisjuhi \"3M\" – Mõõda. Mõista. Muuda. \n",
+      "secondaryPhotos": [
+        {
+          "_key": "be1e88b995b4",
+          "_type": "image",
+          "alt": "Koolitusgrupp Gemba-jalutuskäigul tehases, tutvumas tootmissüsteemidega",
+          "asset": {
+            "_ref": "image-fc524f73413c6499e94ecae65df2369ac76e467c-1800x1350-jpg",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "ffb2890e4bf5",
+          "_type": "image",
+          "alt": "Võõrustaja selgitab koolitusgrupile võtmemõõdikute rolli tehase juhtimisel",
+          "asset": {
+            "_ref": "image-538ff6d27c5f58ae7651b09f6f200c6082e2488c-1200x900-jpg",
+            "_type": "reference"
+          }
+        }
+      ],
+      "stats": [
+        {
+          "_key": "4532ee5353e1",
+          "label": "Aastat tööstuses",
+          "value": "26"
+        },
+        {
+          "_key": "af794d172a8e",
+          "label": "Aastat praktilist koolitamist",
+          "value": "19"
+        },
+        {
+          "_key": "604920b52332",
+          "label": "Mõjutatud tehast",
+          "value": "200+"
+        },
+        {
+          "_key": "9cdff88fa38d",
+          "label": "Juhendatud juhti",
+          "value": "3000+"
+        }
+      ],
+      "subtitle": "Programmi juht ja peakoolitaja • 25+ aastat tootmises",
+      "tags": [
+        "LEAN, 5S, Kaizen",
+        "TOYOTA TPS",
+        "PDCA, 8D, Six Sigma",
+        "Theory of Constraints (TOC)",
+        "WCM (World Class Manufacturing)"
+      ],
+      "timeline": [
+        {
+          "_key": "item1",
+          "description": "Alustasin tootmispõrandalt. Mõista töötajat ja tootmisprobleeme seestpoolt — ehitad süsteemi, mida mõistetakse.",
+          "title": "ESIMENE TOOTMISETTEVÕTE JA VISU SUUSAD",
+          "year": "1992"
+        },
+        {
+          "_key": "item2",
+          "description": "Kolm kuud Jaapanis Toyota tehases. Õppisin TPS-i otse allikast — mitte raamatutest vaid päris tootmises.",
+          "title": "TOYOTA TPS SÜVAKOOLITUS JAAPANIS",
+          "year": "2005"
+        },
+        {
+          "_key": "item3",
+          "description": "Tõin Toyota meetodid Eestisse. Esimesed koolitused tootmisjuhtidele — praktiline lähenemine, mitte ainult teooria.",
+          "title": "ESIMESED KOOLITUSPROGRAMMID EESTIS",
+          "year": "2010"
+        },
+        {
+          "_key": "item4",
+          "description": "Kümnendi jooksul konsulteeritud üle 60 Eesti tootmisettevõtte. 100+ tehast üle Euroopa külastatud.",
+          "title": "60+ ETTEVÕTET KONSULTEERITUD",
+          "year": "2020"
+        },
+        {
+          "_key": "item5",
+          "description": "20 aasta kogemuse destilleerimine 8-komponentseks süsteemiks. Eesti tootmise jaoks kohandatud — mitte üldine LEAN.",
+          "title": "OPSTAR PROFIT™ RAAMISTIKU LOOMINE",
+          "year": "2020"
+        },
+        {
+          "_key": "item6",
+          "description": "9-päevane arenguprogramm on muutunud Eesti tuntuimaks tootmisjuhtimise koolituseks. Järgmine grupp oktoober 2026.",
+          "title": "147+ LÕPETAJAT · TOOTMISJUHTIMINE.EE",
+          "year": "2025"
+        }
+      ],
+      "variant": "full"
+    },
+    {
+      "_key": "a56321d5fefb",
+      "_type": "koolitusTrainingScheduleBlock",
+      "dailyScheduleItems": [
+        {
+          "_key": "12e21a0f396b",
+          "desc": "Saabumine, kohv, tööasjad korda — ja oled kohal.",
+          "time": "09:00 – 09:30",
+          "title": "Saabumine"
+        },
+        {
+          "_key": "21364d3f73db",
+          "desc": "Päeva alus: mõtteviis ja meetodid",
+          "time": "09:30 – 11:00",
+          "title": "Teooria"
+        },
+        {
+          "_key": "4820903ab1ce",
+          "desc": "Joogipaus, šokolaad, jalasirutus ja asjaajamine.",
+          "time": "11:00 – 11:15",
+          "title": "Paus"
+        },
+        {
+          "_key": "1ca4d648c655",
+          "desc": "Töötuba, harjutus või näide",
+          "time": "11:15 – 12:30",
+          "title": "Praktika"
+        },
+        {
+          "_key": "7aaf5d49d5f1",
+          "desc": "Rikkalik lõuna hubases restoranis (sisaldub hinnas)",
+          "time": "12:30 – 13:00",
+          "title": "Lõuna"
+        },
+        {
+          "_key": "850d26c8c5bd",
+          "desc": "Mõtestame ja arutema koos",
+          "time": "13:00 – 14:30",
+          "title": "Arutelu"
+        },
+        {
+          "_key": "250ca84c68b4",
+          "desc": "Joogipaus, šokolaad, jalasirutus ja asjaajamine",
+          "time": "14:30 – 14:45",
+          "title": "Paus"
+        },
+        {
+          "_key": "345d4deca776",
+          "desc": "Mida võtad kaasa ja mida homme teisiti teed",
+          "time": "14:45 – 16:00",
+          "title": "Järeldused"
+        }
+      ],
+      "dailyScheduleTitle": "Päevakava",
+      "description1": "Ajakava paremal. Lisa kalendrisse.",
+      "description2": "Ettevõtete külastuspäevad lepime kokku. ",
+      "enabled": true,
+      "foodCardText": "Rikkalik ja maitsev lõunasöök sisaldub koolituse hinnas ning toimub hubases restoranis.",
+      "footerNote": "* Muudatustest annan teada.",
+      "headerSubtitle": "Oktoober 2026 kuni märts 2027",
+      "headerTitle": "2026-2027. aasta, Lean-Agile tootmisjuhtimise arenguprogramm",
+      "image": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-c40ed0d5d7a079b65ad5348546fec8b2050aa6af-742x700-png",
+          "_type": "reference"
+        }
+      },
+      "infoBannerSub": "Kohtume Sinuga 9 korral – kokku",
+      "infoBannerTitle": "64 akadeemilist kontakttundi",
+      "modules": [
+        {
+          "_key": "01955469da8d",
+          "date": "Neljapäev, 22.10.2026",
+          "details": "Sissejuhatus LEAN mõtteviisi ja Toyota Tootmissüsteemi (TPS) alustesse. Keskendume väärtusloomele ja raiskamiste tuvastamisele tootmises. Täpsem sisu: https://tootmisjuhtimine.ee",
+          "num": "01",
+          "type": "normal",
+          "week": "Nädal 42"
+        },
+        {
+          "_key": "b139799e2eb4",
+          "date": "Neljapäev, 12.11.2026",
+          "details": "Just-In-Time (JIT) ja tõmbesüsteemid. Õpime, kuidas luua voolavust ning vähendada pooltoodangut ja laovarusid.",
+          "num": "02",
+          "type": "normal",
+          "week": "Nädal 45"
+        },
+        {
+          "_key": "429082b001b9",
+          "desc": "Lepime kokku koolitusel",
+          "details": "Koolituse käigus lepime ühiselt kokku esimese külastatava ettevõtte, et näha TPS põhimõtteid reaalses tootmiskeskkonnas.",
+          "num": "03",
+          "title": "Esimene ettevõtte külastus",
+          "type": "special"
+        },
+        {
+          "_key": "c6301aa425ce",
+          "date": "Neljapäev, 10.12.2026",
+          "details": "Jidoka ja sisseehitatud kvaliteet. Kuidas peatada liin probleemi ilmnemisel ja luua veakindlaid (Poka-Yoke) lahendusi.",
+          "num": "04",
+          "type": "normal",
+          "week": "Nädal 49"
+        },
+        {
+          "_key": "01555629618e",
+          "date": "Neljapäev, 14.01.2027",
+          "details": "Standardiseeritud töö ja 5S. Uurime, kuidas luua stabiilne, turvaline ja visuaalselt juhitud töökeskkond.",
+          "num": "05",
+          "type": "normal",
+          "week": "Nädal 2"
+        },
+        {
+          "_key": "8f06c021aa99",
+          "date": "Neljapäev, 28.01.2027",
+          "details": "Pideva parendamise (Kaizen) kultuur. Kuidas kaasata kogu meeskonda igapäevaste väikeste parenduste tegemisse.",
+          "num": "06",
+          "type": "normal",
+          "week": "Nädal 4"
+        },
+        {
+          "_key": "eec8d2d8be45",
+          "desc": "Lepime kokku koolitusel",
+          "details": "Koolituse käigus lepime ühiselt kokku teise külastatava ettevõtte, et näha TPS põhimõtete toimimist ja juurutamist praktikas.",
+          "num": "07",
+          "title": "Teine ettevõtte külastus",
+          "type": "special"
+        },
+        {
+          "_key": "b10e698d2ebf",
+          "date": "Neljapäev, 25.02.2027",
+          "details": "Probleemide lahendamise metoodikad. PDCA tsükkel, A3 raportid ja juurpõhjuste analüüs (näiteks 5 Miks meetod).",
+          "num": "08",
+          "type": "normal",
+          "week": "Nädal 8"
+        },
+        {
+          "_key": "b2601e962dbf",
+          "date": "Neljapäev, 11.03.2027",
+          "details": "Programmi kokkuvõte ja edasised sammud. Kuidas tagada muutuste püsivus ja luua ettevõttes jätkusuutlik juhtimissüsteem.",
+          "num": "09",
+          "type": "normal",
+          "week": "Nädal 10"
+        }
+      ],
+      "tag1": "Koolitusperiood – 141 kalendripäeva.",
+      "tag2": "9 kohtumist"
+    },
+    {
+      "_key": "44c7fa138402",
+      "_type": "koolitusCohortsBlock",
+      "cohortsSection": {
+        "cohorts": [
+          {
+            "_key": "f8f186cfc709",
+            "buttonStyle": "primary",
+            "buttonText": "Hoia koht kinni",
+            "calendarLabel": "lisa kalendrisse",
+            "calendarLinks": [
+              "Google"
+            ],
+            "ctaVariant": "blue",
+            "dates": "15. oktoober 2026 kuni 17. mai 2027",
+            "id": "lean-tallinn-2026-10",
+            "location": "Grand Hotel Viljandi konverentsiruumis",
+            "preRegistrationInfo": "Oktoober 2026",
+            "price": "1796",
+            "spotsAvailable": 5,
+            "spotsTotal": 16,
+            "statusLabel": "Aktiivne",
+            "statusTone": "upcoming",
+            "timing": "soon",
+            "trainingTitle": "LEAN Edasijõudnud"
+          },
+          {
+            "_key": "099ad383a5bf",
+            "badges": [
+              {
+                "_key": "fedf4b283f8d",
+                "text": "2 kohta veel",
+                "type": "urgent"
+              }
+            ],
+            "buttonText": "Hoia koht",
+            "calendarLabel": "Lisa kalendrisse",
+            "calendarLinks": [
+              "Google"
+            ],
+            "ctaVariant": "orange",
+            "dates": "22. aprill 2026 kuni 24. aprill 2026",
+            "daysUntil": "Alguseni: 12 päev",
+            "id": "lean-tallinn-2026-04",
+            "location": "Viljandi",
+            "name": "lean",
+            "price": "1 290€",
+            "spotsAvailable": 2,
+            "spotsTotal": 19,
+            "statusLabel": "Aktiivne",
+            "statusTone": "active",
+            "timing": "soon",
+            "trainingTitle": "Lean"
+          }
+        ],
+        "eyebrow": "Kohordid",
+        "filterLabel": "Millal saad olla 9 päevaks eemal?",
+        "filters": [
+          {
+            "_key": "d0d5c2caec26",
+            "active": false,
+            "label": "lean",
+            "value": "lean-tallinn-2026-10"
+          },
+          {
+            "_key": "f0292c104cfb",
+            "label": "Kõik",
+            "value": "all"
+          }
+        ],
+        "maxParticipantsNote": "Disainitud elavaks koostööks: grupi suurus ca 16 inimest. Me ei tee masinkoolitusi. Programmi ülesehitus lähtub grupi dünaamikast – loome paraja suurusega meeskonna, kus tekib reaalne kogemuste vahetus ja individuaalne fookus.",
+        "title": "Grupid ja koolituspäevad"
+      }
+    },
+    {
+      "_key": "f5e55db27cad",
+      "_type": "koolitusLocationBlock",
+      "addressText": "Tartu 11/Lossi 29, 71004 Viljandi.",
+      "addressTitle": "Koolitus toimub Grand Hotel Viljandi konverentsiruumis:",
+      "contactText": "Lisateave koolitusele registreerimiseks saab telefonilt",
+      "email": "andreskase@tootmisjuhtimine.ee",
+      "mapButtonUrl": "https://maps.app.goo.gl/PyDBcqDtnqWEJMhf7",
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2144.33!2d25.5954!3d58.3639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4694a9776f8a5413%3A0x6b2b!2sGrand%20Hotel%20Viljandi!",
+      "phone": "5138403",
+      "subsidyLink": "/standard",
+      "subsidyText": "NB! VÕIMALIK ON TAODELDA KOOLITUSTOETUST TÖÖTUKASSAST - KUNI 80% KOOLITUSE HINNAST. UURI LISAKS TÄIENDKOOLITUSE STANDARDILE VASTAVUST MINU LEHEL - KLIKI SELLEL TEKSTIL",
+      "transportNote": "NB! Väikese mööndusega sobib Tallinn-Viljandi-Tallinn rongisõidu graafik. Seda võimalust on kasutatud."
+    },
+    {
+      "_key": "413a64c05076",
+      "_type": "koolitusCertificateBlock",
+      "certificateSection": {
+        "alumniHighlight": "147+ lõpetajate võrgustikule",
+        "alumniText": "Sertifikaat avab ligipääsu ",
+        "alumniTitle": "OpStar Alumni võrgustik",
+        "backgroundColor": "bg-gray-50",
+        "certName": "OpStar Profit™ · Tunnistus",
+        "certSubtitle": "Intensive 9-Day Professional Programme",
+        "certTitle": "Lean-Agile tootmisjuhtimise oskused",
+        "certificateImage": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-4147d9c8030d9eed10c3f3fa49047f2b68dbb4ad-569x804-png",
+            "_type": "reference"
+          }
+        },
+        "countriesSubtitle": "(14 riiki Euroopas)",
+        "countriesTitle": "Tunnustatud riigid",
+        "ctaLink": "#pricing",
+        "ctaText": "KUI SUL ON SIHT SELGE JA SOOVID LIITUDA ➔ REGISTREERU KOHE GRUPPI ➔ ",
+        "eyebrow": "Tunnistus ja kompetentsid",
+        "habitHighlight": "Ennetama",
+        "habitLabel": "Sinu valitud peamine harjumus:",
+        "habitText": "— Sertifikaat kinnitab, et sa oled seda harjumust koolitusel praktiseerinud ja mõõdetavat tulemust näidanud.",
+        "meaningLabel": "Annan tunnistuse, aga programm annab Sulle:",
+        "meaningPills": [
+          {
+            "_key": "c77906497245e5aa22f760b85a5d2cf4",
+            "active": true,
+            "label": "Inimeste juhtimine ja meeskonna toetamine",
+            "value": "Õpid oma inimesi päriselt toetama ja kaasama. Kui tiim mõistab eesmärke ja tunneb tuge, väheneb rabelemine ning inimesed tulevad muudatustega reaalselt kaasa."
+          },
+          {
+            "_key": "89177f61d7d9f4026ec4cf1e310f4178",
+            "active": true,
+            "label": "Edutamine oma meeskonnaga",
+            "value": "Sa ei pea karjäärihüppeks ettevõtet vahetama. Kasvad ja arened oma praeguses ettevõttes ja tõstad ühiste tulemuste kaudu kogu oma tiimi väärtust."
+          },
+          {
+            "_key": "a3df9516c16bef796862b27624755d30",
+            "active": true,
+            "label": "Usaldus ja suuremad väljakutsed",
+            "value": "Tõestad, et su otsused põhinevad faktidel, mitte kõhutundel. Juhtkond usaldab sulle suuremaid, põnevamaid ja vastutusrikkamaid projekte."
+          },
+          {
+            "_key": "2cabfd272a32",
+            "active": true,
+            "label": "Enesekindlus ja autoriteet",
+            "value": "Saavutad kindluse juhtida protsesse süsteemselt. See kasvatab sinu loomulikku autoriteeti nii oma meeskonna kui ka tippjuhtkonna silmis."
+          },
+          {
+            "_key": "72f304d09818",
+            "active": true,
+            "label": "Nähtav panus ja palgatõus",
+            "value": "Sinu reaalne väärtus, igapäevane vaev ja meeskonna hoidmine muutuvad faktide näol nähtavaks ning lood väärika aluse tasu suurenemiseks.."
+          }
+        ],
+        "proofNumber": "Olen pea 10 aasta ",
+        "proofText": "jooksul õnne soovinud 147 osalenul ja ulatanud kätte tunnistuse. ",
+        "requirements": [
+          "Ole 7 päeva 9-st kohal. Kui tõesti puudu, siis teeme eraldi sessiooni, aitame Sind järele.",
+          "Rakendad etteantud ülesanded oma ettevõttes ja dokumenteeri tulemused",
+          "Lõppesitlus grupile. Esitle oma parendusprojekti tulemusi ja järgmise 90-päeva tegutsemisplaani"
+        ],
+        "requirementsTitle": "Lõpetamise tingimused:",
+        "subtitle": "Tunnistus tõendab mitte ainult, et sa läbisid koolituse — vaid paned asjad reaalselt juhtuma. ",
+        "title": "Sa lahkud enesekindlamalt ja",
+        "titleHighlight": "tõendatud oskustega",
+        "useCases": [
+          {
+            "_key": "edd97eda014a",
+            "author": "Andres Kase",
+            "company": "Opstar Profit",
+            "role": "Juht",
+            "text": "Use Case",
+            "timeframe": "2025-2026"
+          }
+        ],
+        "useCasesTitle": "Kuidas 147 lõpetajat seda kasutasid:"
+      },
+      "navLabel": "Tunnistus"
+    },
+    {
+      "_key": "9327fd45bf3c",
+      "_type": "homePricingBlock",
+      "pricingSection": {
+        "_type": "pricingSectionContent",
+        "corporateBadgeText": "Ettevõtetele",
+        "corporateCtaText": "Küsi pakkumist",
+        "corporateFeatures": [
+          "Alates 5 osalejast",
+          "Kohandatud õppeprogramm",
+          "Koolitus teie kontoris",
+          "Eraldi äriklient haldur",
+          "Arveldamine ettevõttele",
+          "Järelmeetmed ja tugi"
+        ],
+        "corporatePrice": "990",
+        "corporateSubtitle": "Individuaalne lähenemine — teie meeskonnale kohandatud programm",
+        "corporateTitle": "Grupikoolitus ettevõttele",
+        "ctaText": "Vali pakett",
+        "hideCorporateBlock": false,
+        "popularBadgeText": "Populaarseim valik",
+        "subtitle": "Vali oma ettevõtte arengule sobivaim tase",
+        "supportNoteHighlight": "Töötukassa 80% toetuse",
+        "supportNotePrefix": "Küsi lisa",
+        "tiers": [
+          {
+            "_key": "81512fa41cf16e142ad841344ca8a3e2",
+            "description": "Ideaalne alustavale tootmisjuhile",
+            "features": [
+              "9 õppepäeva",
+              "Õppematerjalid",
+              "Visiidid tehastesse",
+              "Sertifikaat"
+            ],
+            "isPopular": false,
+            "name": "Standard",
+            "price": "1490"
+          },
+          {
+            "_key": "7de3689693a6976b0d693131ec5871fd",
+            "description": "Kõige populaarsem valik",
+            "features": [
+              "Kõik Standard paketis",
+              "Personaalne mentorlus",
+              "KPI analüüs",
+              "Ligipääs kogukonnale"
+            ],
+            "isPopular": true,
+            "name": "Professional",
+            "price": "2190"
+          },
+          {
+            "_key": "eb220f0c697ed364e24cca59f1d39a17",
+            "description": "Täielik strateegiline tugi",
+            "features": [
+              "Kõik Pro paketis",
+              "1-on-1 strateegia sessioon",
+              "Meeskonna koolitus",
+              "Eelisjärjekorras tugi"
+            ],
+            "isPopular": false,
+            "name": "Executive",
+            "price": "3490"
+          }
+        ],
+        "title": "Investeering tulevikku"
+      }
+    },
+    {
+      "_key": "4501126660d4",
+      "_type": "aboutGuaranteeBlock",
+      "guaranteeSection": {
+        "eyebrow": "RISKIVABA OSALEMINE",
+        "headline": "Kui ei sobi — raha tagasi",
+        "pillars": [
+          {
+            "_key": "bc2a5b8f1b82",
+            "icon": "shield",
+            "text": "Osale esimesel koolituspäeval. Kui tunned, et programm ei vasta ootustele — annan kogu osalustasu tagasi. Küsimusteta.",
+            "title": "100% tagatis"
+          },
+          {
+            "_key": "89a7a0391c1f",
+            "icon": "calendar",
+            "text": "Pärast registreerumist saad 14 päeva otsust muuta. Muutusid plaanid — pole probleemi.",
+            "title": "14 päeva järelmõtlemist"
+          },
+          {
+            "_key": "d242c23fc0c3",
+            "icon": "message-circle",
+            "text": "Pole kindel kas programm sobib? Broneeri tasuta 30-minutiline kõne — selgitame koos välja.",
+            "title": "Räägi enne Andresega"
+          }
+        ],
+        "primaryButton": {
+          "link": "#registreeru",
+          "text": "Registreeru riskivabalt"
+        },
+        "secondaryButton": {
+          "link": "/kontakt",
+          "text": "Broneeri tasuta kõne"
+        },
+        "subtext": "Osale esimesel koolituspäeval. Kui tunned, et programm ei vasta ootustele — annan kogu osalustasu tagasi. Küsimusteta."
+      },
+      "hideFromScrollNav": false
+    },
+    {
+      "_key": "4244a24535fa",
+      "_type": "homeTestimonialsBlock",
+      "testimonials": {
+        "buttonLink": "/testimonials",
+        "buttonText": "Vaata kõik tagasisideid",
+        "subtitle": "Kliendid räägivad",
+        "testimonials": [
+          {
+            "_key": "77590a2d5a79f78817b0ca8b96e39a4d",
+            "company": "Tehnikum OÜ",
+            "content": "Andrese koolitus oli mängu muutev. Õppisime praktilikke meetodeid, mida saime kohe tehases rakendada. OEE tõusis 35% esimese 3 kuuga.",
+            "name": "Margus Põld",
+            "rating": 5,
+            "role": "Tootmisjuht"
+          },
+          {
+            "_key": "3ad2a3ee6d8829ea1c67185b013ed0e5",
+            "company": "Baltic Pack",
+            "content": "Parim investeering meie meeskonnale. Andres ei õpeta ainult teooriat, vaid näitab kuidas asju tegelikult tehases toimima paneb.",
+            "name": "Tiina Lepik",
+            "rating": 5,
+            "role": "Olemike juht"
+          },
+          {
+            "_key": "f3a7d75ea8f21772b87e44751c1a748d",
+            "company": "MetalWorks AS",
+            "content": "25+ aastat kogemust on näha. Andres räägib keelt, mida tootmisinimene mõistab ja usaldab. Soovitan kõigile tootmisjuhtidele.",
+            "name": "Jaan Tamm",
+            "rating": 5,
+            "role": "CEO"
+          }
+        ],
+        "title": "Kuidas me aitasid teistel"
+      }
+    },
+    {
+      "_key": "a7a5d1f972aa",
+      "_type": "koolitusKkkBlock",
+      "kkk": {
+        "eyebrow": "KKK",
+        "showEyebrowDots": true,
+        "title": "Korduma kippuvad küsimused"
+      }
+    },
+    {
+      "_key": "57f23d4aa8e0",
+      "_type": "koolitusCtaBlock",
+      "ctaSection": {
+        "_type": "ctaSection",
+        "backgroundColor": "blue-purple",
+        "description": "Oktoober 2026 Toetus kuni 80%",
+        "primaryButtonText": "Registreeru",
+        "primaryButtonUrl": "https://andres-kase-tootmisjuhtimine.vercel.app/koolitus#pricing",
+        "secondaryButtonText": "Registreeru",
+        "secondaryButtonUrl": "https://andres-kase-tootmisjuhtimine.vercel.app/koolitus#pricing",
+        "title": "Õpi otse Andreselt 9 päeva jooksul",
+        "trustFootnote": "Kohtade arv on piiratud"
+      },
+      "isVisible": true
+    }
+  ]
+}

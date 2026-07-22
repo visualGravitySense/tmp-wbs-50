@@ -1,0 +1,22 @@
+{
+  "_comment": "Slug → existing sanity.imageAsset _id (custom covers uploaded before 2026-06-11 WP restore). Edit in Studio if a pairing looks wrong.",
+  "skipSlugs": ["mikro-juhtimine", "juhtimine", "Standardiseerimine"],
+  "covers": {
+    "fookus-sisul-tulemusel-ja-jarjepidevusel-tootmis-ja-toostusjuhtimise-tipptase": "image-cf7362e240a7cd4bc33565a08872516515346da9-2560x1920-jpg",
+    "juhi-vastutus-voi-tootaja-vaba-tahe-2": "image-f7101b4a4c0ceff9e8b41fa158e41298a89e64ff-1024x559-jpg",
+    "tootmisjuhtimise-koolitus-alustab-5-korda": "image-5363a34dfd61f700529fbd5d394b0e2967570279-1390x854-png",
+    "lean-maja-ja-lean-juhtimine-eesti-moodi": "image-8e4cc1bbfb7628323c345f9640e0e09bc49adfe1-982x477-png",
+    "lean-juhtimise-toovahendid": "image-10daa4d43dce1a442994165611a8781d7f717a24-1376x768-jpg",
+    "stop-saad-sartsu-ara-investeeri-voi-varba-kohe-kannatab-efektiivsus-omahind": "image-ffbf81b148bcb168bc044598baf2591baec01bcf-982x471-png",
+    "noudluse-planeerimine": "image-17e8dd6255be980e7feb1b65576fe03bd13b85cf-1389x854-png",
+    "toojoupuudus": "image-c75a51afb59b5b2947e3ec92275e42a72a912be4-1024x559-jpg",
+    "organisatsioonis-ka-poliitikas-vajame-katalusaatorit-mitte-antikatalusaatorit": "image-e136c76fbf33b44190fca2214a2b2888da0a1d26-1024x559-jpg",
+    "lean-agile-tootmisjuhtimise-oppekava": "image-1313069450fb1de39b1ece7e47352bed9ad64197-2816x1536-png",
+    "lean-agile-tootmisjuhtimise-koolituse-teemad": "image-a384836fa0fa3061461140fc48bd1d723111af64-2752x1536-png",
+    "lean-agile-tootmisjuhtimise-koolitus-paneb-asjad-juhtuma": "image-f4597fd11766bce675812f70ade536dfbe1fedae-2816x1536-png",
+    "tehase-ja-tootmisjuhi-vaade-2023-aasta-riigieelarvele": "image-7484e6bc7bd60501f7379e9334848920c4cbe5b4-2816x1536-png",
+    "uuendused-kas-covid-aastate-finishisirge": "image-a027979bab1c12ae89c49ccde9128faf79d8e5d0-2816x1536-png",
+    "ostujuhtimine-seostatus-ja-strateegia-osa-1": "image-863db2691ef3cca804e346195cf3c8188b936dd5-2752x1536-png",
+    "ostujuhtimine-seostatus-ja-strateegia-2": "image-4435a1281521dac82edf7908d2411c04b19a9fa2-1408x768-png"
+  }
+}

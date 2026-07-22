@@ -1,0 +1,2322 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable import/no-anonymous-default-export */
+export const koolitusPageLegacyData = {
+  name: 'koolitusPage',
+  title: 'Koolitus Page',
+  type: 'document',
+  fields: [
+    {
+      name: 'title',
+      title: 'Page Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'hero',
+      title: 'Hero Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'headline',
+          title: 'Headline',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'subtitle',
+          title: 'Subtitle',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'eyebrow',
+          title: 'Eyebrow Text',
+          type: 'string',
+          description: 'Small text displayed above the main headline (e.g., "Professional Training", "Expert-Led Courses")',
+        },
+        {
+          name: 'description',
+          title: 'Description',
+          type: 'text',
+          rows: 3,
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'backgroundColor',
+          title: 'Background Gradient',
+          type: 'string',
+          options: {
+            list: [
+              { title: 'Blue to Purple', value: 'blue-purple' },
+              { title: 'Purple to Pink', value: 'purple-pink' },
+              { title: 'Green to Blue', value: 'green-blue' },
+              { title: 'Orange to Red', value: 'orange-red' },
+              { title: 'Blue to Light Blue', value: 'blue-lightblue' },
+              { title: 'Gray to Dark Gray', value: 'gray-darkgray' },
+              { title: 'Light Gray to Gray', value: 'lightgray-gray' },
+              { title: 'Slate to Dark Slate', value: 'slate-darkslate' },
+              { title: 'Cool Gray to Blue Gray', value: 'coolgray-bluegray' },
+              { title: 'Warm Gray to Rose', value: 'warmgray-rose' },
+            ],
+          },
+          initialValue: 'blue-purple',
+        },
+        {
+          name: 'primaryButton',
+          title: 'Primary Button',
+          type: 'object',
+          fields: [
+            {
+              name: 'text',
+              title: 'Button Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'link',
+              title: 'Button Link',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+        {
+          name: 'secondaryButton',
+          title: 'Secondary Button',
+          type: 'object',
+          fields: [
+            {
+              name: 'text',
+              title: 'Button Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'link',
+              title: 'Button Link',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+        {
+          name: 'badges',
+          title: 'Badges',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'text',
+                  title: 'Badge Text',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'color',
+                  title: 'Badge Color',
+                  type: 'string',
+                  options: {
+                    list: [
+                      { title: 'Blue', value: 'blue' },
+                      { title: 'Green', value: 'green' },
+                      { title: 'Yellow', value: 'yellow' },
+                      { title: 'Red', value: 'red' },
+                      { title: 'Purple', value: 'purple' },
+                      { title: 'Gray', value: 'gray' },
+                      { title: 'White', value: 'white' },
+                    ],
+                  },
+                  initialValue: 'blue',
+                },
+                {
+                  name: 'size',
+                  title: 'Badge Size',
+                  type: 'string',
+                  options: {
+                    list: [
+                      { title: 'Small', value: 'sm' },
+                      { title: 'Medium', value: 'md' },
+                      { title: 'Large', value: 'lg' },
+                    ],
+                  },
+                  initialValue: 'md',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'audienceSection',
+      title: 'Audience Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'eyebrow',
+          title: 'Eyebrow Text',
+          type: 'string',
+        },
+        {
+          name: 'title',
+          title: 'Section Title',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'socialProofIntro',
+          title: 'Social Proof Introduction',
+          type: 'text',
+          rows: 2,
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'cards',
+          title: 'Audience Cards',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'quote',
+                  title: 'Quote',
+                  type: 'text',
+                  rows: 2,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'behavior',
+                  title: 'Behavior Description',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'percentage',
+                  title: 'Percentage',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'revealText',
+                  title: 'Reveal Text',
+                  type: 'text',
+                  rows: 3,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'revealLink',
+                  title: 'Reveal Link URL',
+                  type: 'url',
+                },
+              ],
+            },
+          ],
+          validation: (Rule: any) => Rule.required().min(3),
+        },
+        {
+          name: 'confirmButtonText',
+          title: 'Confirm Button Text',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'transformBar',
+          title: 'Transform Bar',
+          type: 'object',
+          fields: [
+            {
+              name: 'beforeLabel',
+              title: 'Before Label',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'beforeText',
+              title: 'Before Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'afterLabel',
+              title: 'After Label',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'afterText',
+              title: 'After Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+        {
+          name: 'goalSection',
+          title: 'Goal Section',
+          type: 'object',
+          fields: [
+            {
+              name: 'label',
+              title: 'Label',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'placeholder',
+              title: 'Placeholder Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'confirmText',
+              title: 'Confirmation Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+        {
+          name: 'directorPath',
+          title: 'Director Path',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'description',
+              title: 'Description',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'linkText',
+              title: 'Link Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'linkUrl',
+              title: 'Link URL',
+              type: 'url',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'nineDaysProgram',
+      title: 'Nine Days Program',
+      type: 'object',
+      fields: [
+        {
+          name: 'eyebrow',
+          title: 'Eyebrow Text',
+          type: 'string',
+        },
+        {
+          name: 'title',
+          title: 'Section Title',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'subtitle',
+          title: 'Section Subtitle',
+          type: 'text',
+          rows: 2,
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'habits',
+          title: 'Habits',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'id',
+                  title: 'Habit ID',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'name',
+                  title: 'Habit Name',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'popularity',
+                  title: 'Popularity Count',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+              ],
+            },
+          ],
+          validation: (Rule: any) => Rule.required().min(3),
+        },
+        {
+          name: 'days',
+          title: 'Program Days',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'dayNumber',
+                  title: 'Day Number',
+                  type: 'number',
+                  validation: (Rule: any) => Rule.required().min(1).max(9),
+                },
+                {
+                  name: 'habit',
+                  title: 'Habit Quote',
+                  type: 'text',
+                  rows: 2,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'tag',
+                  title: 'Day Tag',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'title',
+                  title: 'Day Title',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'description',
+                  title: 'Day Description',
+                  type: 'array',
+                  of: [{ type: 'block' }],
+                  validation: (Rule: any) => Rule.required(),
+                },
+              ],
+            },
+          ],
+          validation: (Rule: any) => Rule.required().min(9).max(9),
+        },
+        {
+          name: 'testimonials',
+          title: 'Testimonials',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'quote',
+                  title: 'Quote',
+                  type: 'text',
+                  rows: 2,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'author',
+                  title: 'Author',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'company',
+                  title: 'Company',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'position',
+                  title: 'Position',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'completionSection',
+          title: 'Completion Section',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'description',
+              title: 'Description',
+              type: 'text',
+              rows: 2,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'selectedHabits',
+              title: 'Selected Habits (Default)',
+              type: 'array',
+              of: [{ type: 'string' }],
+            },
+            {
+              name: 'nextCourseInfo',
+              title: 'Next Course Info',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'buttonText',
+              title: 'Button Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+        {
+          name: 'faqSection',
+          title: 'FAQ Section',
+          type: 'object',
+          fields: [
+            {
+              name: 'question',
+              title: 'FAQ Question',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'testimonials',
+              title: 'FAQ Testimonials',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'quote',
+                      title: 'Quote',
+                      type: 'text',
+                      rows: 2,
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'author',
+                      title: 'Author',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'company',
+                      title: 'Company',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'position',
+                      title: 'Position',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'testimonialsSection',
+      title: 'Testimonials Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Section Title',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'subtitle',
+          title: 'Section Subtitle',
+          type: 'text',
+          rows: 2,
+        },
+        {
+          name: 'testimonials',
+          title: 'Testimonials',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'quote',
+                  title: 'Quote',
+                  type: 'text',
+                  rows: 3,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'author',
+                  title: 'Author',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'position',
+                  title: 'Position',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'company',
+                  title: 'Company',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'avatar',
+                  title: 'Avatar Image',
+                  type: 'image',
+                  options: {
+                    hotspot: true,
+                  },
+                },
+                {
+                  name: 'rating',
+                  title: 'Rating (1-5)',
+                  type: 'number',
+                  validation: (Rule: any) => Rule.required().min(1).max(5),
+                },
+              ],
+            },
+          ],
+          validation: (Rule: any) => Rule.required().min(1),
+        },
+      ],
+    },
+    {
+      name: 'featuresSection',
+      title: 'Features Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'eyebrow',
+          title: 'Eyebrow',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'subtitle',
+          title: 'Subtitle',
+          type: 'text',
+          rows: 2,
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'mainFeature',
+          title: 'Main Feature',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'description',
+              title: 'Description',
+              type: 'text',
+              rows: 3,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'difference',
+              title: 'Difference',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'factoryBadges',
+              title: 'Factory Badges',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'name',
+                      title: 'Name',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'isActive',
+                      title: 'Is Active',
+                      type: 'boolean',
+                      initialValue: true,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              name: 'expandContent',
+              title: 'Expand Content',
+              type: 'text',
+              rows: 4,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'ctaText',
+              title: 'CTA Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'ctaLink',
+              title: 'CTA Link',
+              type: 'url',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'features',
+          title: 'Features',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'id',
+                  title: 'ID',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'description',
+                  title: 'Description',
+                  type: 'text',
+                  rows: 2,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'insight',
+                  title: 'Insight',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'isHighlighted',
+                  title: 'Is Highlighted',
+                  type: 'boolean',
+                  initialValue: false,
+                },
+                {
+                  name: 'relevantHabit',
+                  title: 'Relevant Habit',
+                  type: 'string',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'miniCards',
+          title: 'Mini Cards',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'description',
+                  title: 'Description',
+                  type: 'text',
+                  rows: 2,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'proof',
+                  title: 'Proof',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'shortcutCTA',
+          title: 'Shortcut CTA',
+          type: 'object',
+          fields: [
+            {
+              name: 'text',
+              title: 'Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'primaryLink',
+              title: 'Primary Link',
+              type: 'url',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'primaryText',
+              title: 'Primary Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'secondaryLink',
+              title: 'Secondary Link',
+              type: 'url',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'secondaryText',
+              title: 'Secondary Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+          validation: (Rule: any) => Rule.required(),
+        },
+      ],
+    },
+    {
+      name: 'buildingsSection',
+      title: 'Buildings Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'eyebrow',
+          title: 'Eyebrow',
+          type: 'string',
+        },
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'subtitle',
+          title: 'Subtitle',
+          type: 'text',
+          rows: 2,
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'backgroundGradient',
+          title: 'Background Gradient',
+          type: 'string',
+          initialValue: 'from-gray-50 to-blue-50',
+          options: {
+            list: [
+              { title: 'Gray to Blue', value: 'from-gray-50 to-blue-50' },
+              { title: 'Blue to Purple', value: 'from-blue-50 to-purple-50' },
+              { title: 'Green to Blue', value: 'from-green-50 to-blue-50' },
+              { title: 'Orange to Pink', value: 'from-orange-50 to-pink-50' },
+            ]
+          }
+        },
+        {
+          name: 'showStats',
+          title: 'Show Stats Row',
+          type: 'boolean',
+          initialValue: true,
+        },
+        {
+          name: 'buildings',
+          title: 'Buildings',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'id',
+                  title: 'ID',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'description',
+                  title: 'Description',
+                  type: 'text',
+                  rows: 3,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'features',
+                  title: 'Features',
+                  type: 'array',
+                  of: [{ type: 'string' }],
+                  validation: (Rule: any) => Rule.required().min(1),
+                },
+                {
+                  name: 'icon',
+                  title: 'Icon',
+                  type: 'string',
+                  options: {
+                    list: [
+                      { title: 'Building', value: 'building' },
+                      { title: 'Industry', value: 'industry' },
+                      { title: 'Warehouse', value: 'warehouse' },
+                      { title: 'Store', value: 'store' },
+                      { title: 'Home', value: 'home' },
+                      { title: 'City', value: 'city' },
+                      { title: 'Cog', value: 'cog' },
+                      { title: 'Rocket', value: 'rocket' },
+                      { title: 'Shield', value: 'shield' },
+                      { title: 'Lightbulb', value: 'lightbulb' },
+                    ]
+                  },
+                  initialValue: 'building',
+                },
+                {
+                  name: 'color',
+                  title: 'Color',
+                  type: 'string',
+                  options: {
+                    list: [
+                      { title: 'Blue', value: 'blue' },
+                      { title: 'Green', value: 'green' },
+                      { title: 'Purple', value: 'purple' },
+                      { title: 'Orange', value: 'orange' },
+                      { title: 'Red', value: 'red' },
+                    ]
+                  },
+                  initialValue: 'blue',
+                },
+                {
+                  name: 'size',
+                  title: 'Size',
+                  type: 'string',
+                  options: {
+                    list: [
+                      { title: 'Small', value: 'small' },
+                      { title: 'Medium', value: 'medium' },
+                      { title: 'Large', value: 'large' },
+                    ]
+                  },
+                  initialValue: 'medium',
+                },
+                {
+                  name: 'isHighlighted',
+                  title: 'Is Highlighted',
+                  type: 'boolean',
+                  initialValue: false,
+                },
+                {
+                  name: 'stats',
+                  title: 'Stats',
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'label',
+                      title: 'Label',
+                      type: 'string',
+                    },
+                    {
+                      name: 'value',
+                      title: 'Value',
+                      type: 'string',
+                    },
+                  ],
+                },
+                {
+                  name: 'buttonText',
+                  title: 'Button Text',
+                  type: 'string',
+                },
+                {
+                  name: 'buttonLink',
+                  title: 'Button Link',
+                  type: 'url',
+                },
+              ],
+            },
+          ],
+          validation: (Rule: any) => Rule.required().min(1),
+        },
+      ],
+    },
+    {
+      name: 'leanHouseSection',
+      title: 'Lean House Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+          initialValue: 'LEAN Süsteemi Arhitektuur',
+        },
+        {
+          name: 'subtitle',
+          title: 'Subtitle',
+          type: 'string',
+          initialValue: 'LEAN MAJA Mudel',
+        },
+        {
+          name: 'description',
+          title: 'Description',
+          type: 'text',
+          rows: 2,
+          initialValue: 'Mõista, kuidas LEAN süsteem töötab läbi tõestatud LEAN MAJA raamistiku',
+        },
+        {
+          name: 'backgroundColor',
+          title: 'Background Color',
+          type: 'string',
+          initialValue: 'bg-gray-50',
+          options: {
+            list: [
+              { title: 'Gray', value: 'bg-gray-50' },
+              { title: 'Blue', value: 'bg-blue-50' },
+              { title: 'Green', value: 'bg-green-50' },
+              { title: 'White', value: 'bg-white' },
+            ]
+          }
+        },
+        {
+          name: 'roof',
+          title: 'Roof Section',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              initialValue: 'Kliendikesksus',
+            },
+            {
+              name: 'subtitle',
+              title: 'Subtitle',
+              type: 'string',
+              initialValue: 'Kõrgeim Kvaliteet, Madalaim Hind, Lühim Tarneaeg',
+            },
+          ],
+        },
+        {
+          name: 'leftPillar',
+          title: 'Left Pillar (Just-In-Time)',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              initialValue: 'Õigel Ajal',
+            },
+            {
+              name: 'shortTitle',
+              title: 'Short Title (Badge)',
+              type: 'string',
+              initialValue: 'JIT',
+            },
+            {
+              name: 'items',
+              title: 'Items',
+              type: 'array',
+              of: [{ type: 'string' }],
+              initialValue: ['Tõmbesüsteem', 'Ühe-tpi Vool', 'Taktaeg', 'Pidev Vool'],
+            },
+          ],
+        },
+        {
+          name: 'center',
+          title: 'Center Section',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              initialValue: 'Tuumsüsteemid',
+            },
+            {
+              name: 'systems',
+              title: 'Core Systems',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'name',
+                      title: 'Name',
+                      type: 'string',
+                    },
+                    {
+                      name: 'description',
+                      title: 'Description',
+                      type: 'string',
+                    },
+                  ],
+                },
+              ],
+              initialValue: [
+                { name: 'Kaizen', description: 'Pidev Parandamine' },
+                { name: 'Heijunka', description: 'Tasane Tootmine' },
+                { name: 'Standardiseeritud Töö', description: 'Järjepidevad Protsessid' },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'rightPillar',
+          title: 'Right Pillar (Jidoka)',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              initialValue: 'Jidoka',
+            },
+            {
+              name: 'shortTitle',
+              title: 'Short Title (Badge)',
+              type: 'string',
+              initialValue: 'K',
+            },
+            {
+              name: 'items',
+              title: 'Items',
+              type: 'array',
+              of: [{ type: 'string' }],
+              initialValue: ['Sisseehitatud Kvaliteet', 'Peata & Reageeri', 'Veadeta Tegemine', 'Visuaalne Juhtimine'],
+            },
+          ],
+        },
+        {
+          name: 'foundation',
+          title: 'Foundation Section',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              initialValue: 'Alus',
+            },
+            {
+              name: 'items',
+              title: 'Foundation Items',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'title',
+                      title: 'Title',
+                      type: 'string',
+                    },
+                    {
+                      name: 'description',
+                      title: 'Description',
+                      type: 'string',
+                    },
+                  ],
+                },
+              ],
+              initialValue: [
+                { title: 'Operatiivne Stabiilsus', description: 'Usaldusväärsed, kordatavad protsessid' },
+                { title: 'Standardiseerimine', description: 'Järjepidevad töömeetodid' },
+                { title: '5S & Visuaalne Juhtimine', description: 'Töökoha organiseerimine' },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'sideAnnotations',
+          title: 'Side Annotations',
+          type: 'object',
+          fields: [
+            {
+              name: 'left',
+              title: 'Left Annotation',
+              type: 'object',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                  initialValue: 'Tõhusus & Vool',
+                },
+                {
+                  name: 'subtitle',
+                  title: 'Subtitle',
+                  type: 'string',
+                  initialValue: 'Kõrvalda raiskamine',
+                },
+              ],
+            },
+            {
+              name: 'right',
+              title: 'Right Annotation',
+              type: 'object',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                  initialValue: 'Kvaliteet Esmalt',
+                },
+                {
+                  name: 'subtitle',
+                  title: 'Subtitle',
+                  type: 'string',
+                  initialValue: 'Sisseehitatud kvaliteet',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'benefits',
+          title: 'Benefits Section',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'icon',
+                  title: 'Icon',
+                  type: 'string',
+                  initialValue: '📈',
+                },
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                },
+                {
+                  name: 'description',
+                  title: 'Description',
+                  type: 'string',
+                },
+              ],
+            },
+          ],
+          initialValue: [
+            { icon: '📈', title: '40% Vähem Raiskamist', description: 'Kõrvalda väärtustmitte lisavad tegevused' },
+            { icon: '✅', title: 'Kvaliteedi Üleolek', description: 'Sisseehitatud kvaliteet igas sammus' },
+            { icon: '⚡', title: '50% Kiirem Tarne', description: 'Lühemad ettevalmistusajad voolu kaudu' },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'investmentSection',
+      title: 'Investment Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'eyebrow',
+          title: 'Eyebrow',
+          type: 'string',
+          initialValue: 'Investeering',
+        },
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+          initialValue: 'Mida saad ',
+        },
+        {
+          name: 'titleHighlight',
+          title: 'Title Highlight',
+          type: 'string',
+          initialValue: 'tagasi?',
+        },
+        {
+          name: 'contemplationQuestion',
+          title: 'Contemplation Question',
+          type: 'string',
+          initialValue: 'Mis olukord on sinu tootmises 12 kuu pärast, kui sa jätkad praegusel viisil?',
+        },
+        {
+          name: 'contemplationLabel',
+          title: 'Contemplation Label',
+          type: 'string',
+          initialValue: 'Mõtle hetkeks:',
+        },
+        {
+          name: 'benefitsTitle',
+          title: 'Benefits Title',
+          type: 'string',
+          initialValue: 'Harjumuste omandamise hind sisaldab:',
+        },
+        {
+          name: 'benefits',
+          title: 'Benefits',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                },
+                {
+                  name: 'subtitle',
+                  title: 'Subtitle',
+                  type: 'string',
+                },
+                {
+                  name: 'isHidden',
+                  title: 'Is Hidden',
+                  type: 'boolean',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'price',
+          title: 'Price',
+          type: 'number',
+          initialValue: 1490,
+        },
+        {
+          name: 'priceDaily',
+          title: 'Price Daily',
+          type: 'string',
+          initialValue: '= 166 € päevas',
+        },
+        {
+          name: 'priceReframe',
+          title: 'Price Reframe',
+          type: 'string',
+          initialValue: 'Vähem kui üks koosolekupäev sinu ettevõttes. Tagastatav kui programm ei vasta lubatule.',
+        },
+        {
+          name: 'roiCalculator',
+          title: 'ROI Calculator',
+          type: 'object',
+          fields: [
+            {
+              name: 'label',
+              title: 'Label',
+              type: 'string',
+              initialValue: 'Arvuta tasuvus kiiresti:',
+            },
+            {
+              name: 'sizes',
+              title: 'Sizes',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'label',
+                      title: 'Label',
+                      type: 'string',
+                    },
+                    {
+                      name: 'sublabel',
+                      title: 'Sublabel',
+                      type: 'string',
+                    },
+                    {
+                      name: 'result',
+                      title: 'Result',
+                      type: 'string',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              name: 'defaultResult',
+              title: 'Default Result',
+              type: 'string',
+            },
+            {
+              name: 'sendRoiText',
+              title: 'Send ROI Text',
+              type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'guarantee',
+          title: 'Guarantee',
+          type: 'object',
+          fields: [
+            {
+              name: 'text',
+              title: 'Text',
+              type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'primaryButtonText',
+          title: 'Primary Button Text',
+          type: 'string',
+        },
+        {
+          name: 'secondaryButtonText',
+          title: 'Secondary Button Text',
+          type: 'string',
+        },
+        {
+          name: 'peerProof',
+          title: 'Peer Proof',
+          type: 'object',
+          fields: [
+            {
+              name: 'avatarInitials',
+              title: 'Avatar Initials',
+              type: 'array',
+              of: [{ type: 'string' }],
+            },
+            {
+              name: 'text',
+              title: 'Text',
+              type: 'string',
+            },
+            {
+              name: 'highlight',
+              title: 'Highlight',
+              type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'contactInfo',
+          title: 'Contact Info',
+          type: 'object',
+          fields: [
+            {
+              name: 'text',
+              title: 'Text',
+              type: 'string',
+            },
+            {
+              name: 'phone',
+              title: 'Phone',
+              type: 'string',
+            },
+            {
+              name: 'email',
+              title: 'Email',
+              type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'backgroundColor',
+          title: 'Background Color',
+          type: 'string',
+        },
+      ],
+    },
+    {
+  name: 'trainingPrograms',
+  title: 'Training Programs',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'Section Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'subtitle',
+      title: 'Section Subtitle',
+      type: 'text',
+      rows: 2,
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'programs',
+      title: 'Training Programs',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Section Title',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'subtitle',
+              title: 'Section Subtitle',
+              type: 'text',
+              rows: 2,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'programs',
+              title: 'Training Programs',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'id',
+                      title: 'Program ID',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'title',
+                      title: 'Program Title',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'subtitle',
+                      title: 'Program Subtitle',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'description',
+                      title: 'Program Description',
+                      type: 'text',
+                      rows: 3,
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'duration',
+                      title: 'Duration',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'level',
+                      title: 'Level',
+                      type: 'string',
+                      options: {
+                        list: [
+                          { title: 'Beginner', value: 'Beginner' },
+                          { title: 'Intermediate', value: 'Intermediate' },
+                          { title: 'Advanced', value: 'Advanced' },
+                          { title: 'All Levels', value: 'All Levels' },
+                        ],
+                      },
+                      initialValue: 'All Levels',
+                    },
+                    {
+                      name: 'price',
+                      title: 'Price',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'topics',
+                      title: 'Topics Covered',
+                      type: 'array',
+                      of: [{ type: 'string' }],
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'outcomes',
+                      title: 'Expected Outcomes',
+                      type: 'array',
+                      of: [{ type: 'string' }],
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'color',
+                      title: 'Program Color',
+                      type: 'string',
+                      options: {
+                        list: [
+                          { title: 'Blue', value: 'blue' },
+                          { title: 'Green', value: 'green' },
+                          { title: 'Purple', value: 'purple' },
+                          { title: 'Orange', value: 'orange' },
+                        ],
+                      },
+                      initialValue: 'blue',
+                    },
+                    {
+                      name: 'icon',
+                      title: 'Icon/Emoji',
+                      type: 'string',
+                      description: 'Emoji character (e.g., 🏭, 👑, ✅, ⚡)',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'workshops',
+      title: 'Workshops Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Section Title',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'subtitle',
+          title: 'Section Subtitle',
+          type: 'text',
+          rows: 2,
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'workshops',
+          title: 'Workshops',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Workshop Title',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'duration',
+                  title: 'Duration',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'description',
+                  title: 'Workshop Description',
+                  type: 'text',
+                  rows: 2,
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'price',
+                  title: 'Price',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'methodology',
+      title: 'Training Methodology Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Section Title',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'subtitle',
+          title: 'Section Subtitle',
+          type: 'text',
+          rows: 2,
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'methodologyItems',
+          title: 'Methodology Items',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'icon',
+                  title: 'Icon/Emoji',
+                  type: 'string',
+                  description: 'Icon or emoji (e.g., 🎯, 🔧, 📈, 🔄)',
+                },
+                {
+                  name: 'title',
+                  title: 'Item Title',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'description',
+                  title: 'Item Description',
+                  type: 'text',
+                  rows: 2,
+                  validation: (Rule: any) => Rule.required(),
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'investmentSection',
+      title: 'Investment Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'eyebrow',
+          title: 'Eyebrow',
+          type: 'string',
+          initialValue: 'Investeering',
+        },
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+          initialValue: 'Mida saad ',
+        },
+        {
+          name: 'titleHighlight',
+          title: 'Title Highlight',
+          type: 'string',
+          initialValue: 'tagasi?',
+        },
+        {
+          name: 'contemplationQuestion',
+          title: 'Contemplation Question',
+          type: 'string',
+          initialValue: 'Mis olukord on sinu tootmises 12 kuu pärast, kui sa jätkad praegusel viisil?',
+        },
+        {
+          name: 'contemplationLabel',
+          title: 'Contemplation Label',
+          type: 'string',
+          initialValue: 'Mõtle hetkeks:',
+        },
+        {
+          name: 'benefitsTitle',
+          title: 'Benefits Title',
+          type: 'string',
+          initialValue: 'Harjumuste omandamise hind sisaldab:',
+        },
+        {
+          name: 'benefits',
+          title: 'Benefits',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                },
+                {
+                  name: 'subtitle',
+                  title: 'Subtitle',
+                  type: 'string',
+                },
+                {
+                  name: 'isHidden',
+                  title: 'Is Hidden',
+                  type: 'boolean',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'price',
+          title: 'Price',
+          type: 'number',
+          initialValue: 1490,
+        },
+        {
+          name: 'priceDaily',
+          title: 'Price Daily',
+          type: 'string',
+          initialValue: '= 166 € päevas',
+        },
+        {
+          name: 'priceReframe',
+          title: 'Price Reframe',
+          type: 'string',
+          initialValue: 'Vähem kui üks koosolekupäev sinu ettevõttes. Tagastatav kui programm ei vasta lubatule.',
+        },
+        {
+          name: 'roiCalculator',
+          title: 'ROI Calculator',
+          type: 'object',
+          fields: [
+            {
+              name: 'label',
+              title: 'Label',
+              type: 'string',
+              initialValue: 'Arvuta tasuvus kiiresti:',
+            },
+            {
+              name: 'sizes',
+              title: 'Sizes',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'label',
+                      title: 'Label',
+                      type: 'string',
+                    },
+                    {
+                      name: 'sublabel',
+                      title: 'Sublabel',
+                      type: 'string',
+                    },
+                    {
+                      name: 'result',
+                      title: 'Result',
+                      type: 'string',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              name: 'defaultResult',
+              title: 'Default Result',
+              type: 'string',
+            },
+            {
+              name: 'sendRoiText',
+              title: 'Send ROI Text',
+              type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'guarantee',
+          title: 'Guarantee',
+          type: 'object',
+          fields: [
+            {
+              name: 'text',
+              title: 'Text',
+              type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'primaryButtonText',
+          title: 'Primary Button Text',
+          type: 'string',
+        },
+        {
+          name: 'secondaryButtonText',
+          title: 'Secondary Button Text',
+          type: 'string',
+        },
+        {
+          name: 'peerProof',
+          title: 'Peer Proof',
+          type: 'object',
+          fields: [
+            {
+              name: 'avatarInitials',
+              title: 'Avatar Initials',
+              type: 'array',
+              of: [{ type: 'string' }],
+            },
+            {
+              name: 'text',
+              title: 'Text',
+              type: 'string',
+            },
+            {
+              name: 'highlight',
+              title: 'Highlight',
+              type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'contactInfo',
+          title: 'Contact Info',
+          type: 'object',
+          fields: [
+            {
+              name: 'text',
+              title: 'Text',
+              type: 'string',
+            },
+            {
+              name: 'phone',
+              title: 'Phone',
+              type: 'string',
+            },
+            {
+              name: 'email',
+              title: 'Email',
+              type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'backgroundColor',
+          title: 'Background Color',
+          type: 'string',
+        },
+      ],
+    },
+    {
+      name: 'cohortsSection',
+      title: 'Cohorts Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'eyebrow',
+          title: 'Eyebrow',
+          type: 'string',
+          initialValue: 'Kohordid',
+        },
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+          initialValue: 'Grupid ja koolituspäevad',
+        },
+        {
+          name: 'filterLabel',
+          title: 'Filter Label',
+          type: 'string',
+          initialValue: 'Millal saad olla 9 päevaks eemal?',
+        },
+        {
+          name: 'filters',
+          title: 'Filters',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'label',
+                  title: 'Label',
+                  type: 'string',
+                },
+                {
+                  name: 'value',
+                  title: 'Value',
+                  type: 'string',
+                },
+                {
+                  name: 'active',
+                  title: 'Active',
+                  type: 'boolean',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'cohorts',
+          title: 'Cohorts',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'id',
+                  title: 'ID',
+                  type: 'string',
+                },
+                {
+                  name: 'name',
+                  title: 'Name',
+                  type: 'string',
+                },
+                {
+                  name: 'dates',
+                  title: 'Dates',
+                  type: 'string',
+                },
+                {
+                  name: 'daysUntil',
+                  title: 'Days Until',
+                  type: 'string',
+                },
+                {
+                  name: 'timing',
+                  title: 'Timing',
+                  type: 'string',
+                  options: {
+                    list: [
+                      { title: 'Soon', value: 'soon' },
+                      { title: 'Mid', value: 'mid' },
+                      { title: 'Flexible', value: 'flex' },
+                    ],
+                  },
+                },
+                {
+                  name: 'badges',
+                  title: 'Badges',
+                  type: 'array',
+                  of: [
+                    {
+                      type: 'object',
+                      fields: [
+                        {
+                          name: 'text',
+                          title: 'Text',
+                          type: 'string',
+                        },
+                        {
+                          name: 'type',
+                          title: 'Type',
+                          type: 'string',
+                          options: {
+                            list: [
+                              { title: 'Urgent', value: 'urgent' },
+                              { title: 'Open', value: 'open' },
+                              { title: 'Pre-registration', value: 'pre' },
+                              { title: 'Recommended', value: 'rec' },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  name: 'spotsAvailable',
+                  title: 'Spots Available',
+                  type: 'number',
+                },
+                {
+                  name: 'spotsTotal',
+                  title: 'Spots Total',
+                  type: 'number',
+                },
+                {
+                  name: 'socialProof',
+                  title: 'Social Proof',
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'initials',
+                      title: 'Initials',
+                      type: 'array',
+                      of: [{ type: 'string' }],
+                    },
+                    {
+                      name: 'text',
+                      title: 'Text',
+                      type: 'string',
+                    },
+                  ],
+                },
+                {
+                  name: 'countdown',
+                  title: 'Countdown',
+                  type: 'string',
+                },
+                {
+                  name: 'buttonText',
+                  title: 'Button Text',
+                  type: 'string',
+                },
+                {
+                  name: 'buttonStyle',
+                  title: 'Button Style',
+                  type: 'string',
+                  options: {
+                    list: [
+                      { title: 'Primary', value: 'primary' },
+                      { title: 'Secondary', value: 'secondary' },
+                      { title: 'Outline', value: 'outline' },
+                    ],
+                  },
+                },
+                {
+                  name: 'calendarLabel',
+                  title: 'Calendar Label',
+                  type: 'string',
+                },
+                {
+                  name: 'calendarLinks',
+                  title: 'Calendar Links',
+                  type: 'array',
+                  of: [{ type: 'string' }],
+                },
+                {
+                  name: 'preRegistrationInfo',
+                  title: 'Pre-registration Info',
+                  type: 'string',
+                },
+                {
+                  name: 'preRegistrationBenefits',
+                  title: 'Pre-registration Benefits',
+                  type: 'array',
+                  of: [{ type: 'string' }],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'maxParticipantsNote',
+          title: 'Max Participants Note',
+          type: 'string',
+          initialValue: 'Grupis on alati max 16 osalejat — rohkem ei võta. See on programmi osa, mitte piirang.',
+        },
+        {
+          name: 'jtbdSection',
+          title: 'JTBD Section',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+            },
+            {
+              name: 'subtitle',
+              title: 'Subtitle',
+              type: 'string',
+            },
+            {
+              name: 'buttons',
+              title: 'Buttons',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'label',
+                      title: 'Label',
+                      type: 'string',
+                    },
+                    {
+                      name: 'icon',
+                      title: 'Icon',
+                      type: 'string',
+                    },
+                    {
+                      name: 'response',
+                      title: 'Response',
+                      type: 'string',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'backgroundColor',
+          title: 'Background Color',
+          type: 'string',
+        },
+      ],
+    },
+    {
+      name: 'ctaSection',
+      title: 'CTA Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Section Title',
+          type: 'string',
+        },
+        {
+          name: 'subtitle',
+          title: 'Section Subtitle',
+          type: 'text',
+          rows: 2,
+        },
+        {
+          name: 'backgroundColor',
+          title: 'Background Gradient',
+          type: 'string',
+          options: {
+            list: [
+              { title: 'Blue to Purple', value: 'blue-purple' },
+              { title: 'Purple to Pink', value: 'purple-pink' },
+              { title: 'Green to Blue', value: 'green-blue' },
+              { title: 'Orange to Red', value: 'orange-red' },
+              { title: 'Blue to Light Blue', value: 'blue-lightblue' },
+            ],
+          },
+          initialValue: 'blue-purple',
+        },
+        {
+          name: 'description',
+          title: 'Description',
+          type: 'text',
+          rows: 3,
+        },
+        {
+          name: 'primaryButtonText',
+          title: 'Primary Button Text',
+          type: 'string',
+        },
+        {
+          name: 'primaryButtonUrl',
+          title: 'Primary Button URL',
+          type: 'url',
+        },
+        {
+          name: 'secondaryButtonText',
+          title: 'Secondary Button Text',
+          type: 'string',
+        },
+        {
+          name: 'secondaryButtonUrl',
+          title: 'Secondary Button URL',
+          type: 'url',
+        },
+      ],
+    },
+    {
+      name: 'contactSection',
+      title: 'Contact Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Section Title',
+          type: 'string',
+        },
+        {
+          name: 'description',
+          title: 'Section Description',
+          type: 'text',
+          rows: 2,
+        },
+        {
+          name: 'backgroundColor',
+          title: 'Background Gradient',
+          type: 'string',
+          options: {
+            list: [
+              { title: 'Blue to Purple', value: 'blue-purple' },
+              { title: 'Purple to Pink', value: 'purple-pink' },
+              { title: 'Green to Blue', value: 'green-blue' },
+              { title: 'Orange to Red', value: 'orange-red' },
+              { title: 'Blue to Light Blue', value: 'blue-lightblue' },
+            ],
+          },
+          initialValue: 'blue-lightblue',
+        },
+        {
+          name: 'email',
+          title: 'Email',
+          type: 'string',
+        },
+        {
+          name: 'phone',
+          title: 'Phone',
+          type: 'string',
+        },
+        {
+          name: 'address',
+          title: 'Address',
+          type: 'string',
+        },
+      ],
+    },
+    {
+      name: 'seo',
+      title: 'SEO Settings',
+      type: 'object',
+      fields: [
+        {
+          name: 'metaTitle',
+          title: 'Meta Title',
+          type: 'string',
+        },
+        {
+          name: 'metaDescription',
+          title: 'Meta Description',
+          type: 'text',
+          rows: 3,
+        },
+        {
+          name: 'ogImage',
+          title: 'OG Image',
+          type: 'image',
+        },
+      ],
+    },
+  ],
+  preview: {
+    select: {
+      title: 'title',
+      headline: 'hero.headline',
+    },
+    prepare(selection: any) {
+      const { title, headline } = selection
+      return {
+        title: title,
+        subtitle: headline,
+      }
+    },
+  },
+}

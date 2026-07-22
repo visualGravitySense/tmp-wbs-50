@@ -1,0 +1,167 @@
+/**
+ * Design tokens — single source of truth (stage 0.1).
+ * Consumed via `globals.css` (@import) and `@theme inline` for Tailwind.
+ *
+ * Sections: colors · radii · glass · eyebrow · CTA · layout (section/container)
+ */
+
+:root {
+  /* ── Colors (RGB triplets for rgb(var(--*)) / alpha) ── */
+  --color-primary: 59 130 246; /* blue-600 */
+  --color-primary-foreground: 255 255 255;
+  --color-secondary: 107 114 128; /* gray-500 */
+  --color-secondary-foreground: 255 255 255;
+  --color-background: 255 255 255;
+  --color-foreground: 17 24 39; /* gray-900 */
+  --color-muted: 243 244 246; /* gray-100 */
+  --color-muted-foreground: 107 114 128; /* gray-500 */
+  --color-border: 229 231 235; /* gray-200 */
+  --color-input: 255 255 255;
+  --color-ring: 59 130 246; /* blue-600 */
+
+  --text-primary: 17 24 39; /* gray-900 */
+  --text-secondary: 107 114 128; /* gray-500 */
+  --bg-primary: 255 255 255;
+  --bg-secondary: 249 250 251; /* gray-50 */
+  --border: 229 231 235; /* gray-200 */
+
+  --color-accent: 34 197 94; /* green-600 */
+  --color-accent-foreground: 255 255 255;
+  --color-destructive: 239 68 68; /* red-500 */
+  --color-destructive-foreground: 255 255 255;
+
+  /* ── Radii ──
+   * Base scale → Tailwind `rounded-sm` … `rounded-full` via @theme.
+   * Semantic → glass cards, surfaces, CTAs (see globals `.glass-card`, `.btn-vibrant-blue`).
+   */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  --radius-glass-card: 2rem; /* 32px — .glass-card, .glass-pricing-card (light) */
+  --radius-glass-inner: 1.5rem; /* 24px — .inner-glass-box */
+  --radius-surface: 2.5rem; /* 40px — premium large panels (dark default) */
+  --radius-glass-mobile: 1.75rem; /* dark .glass-card ≤640px */
+  --radius-cta-pill: var(--radius-full); /* primary blue/green CTA (light) */
+  --radius-cta-dark: var(--radius-full); /* .dark .btn-vibrant-blue */
+
+  /* ── Glass (surfaces) ──
+   * Used by `.glass-card`, `.inner-glass-box`, `.glass-pricing-card` in globals.css.
+   * RGB triplets pair with alpha in component rules.
+   */
+  --glass-blur-strong: 40px;
+  --glass-blur-medium: 18px;
+  --glass-blur-inner: 12px;
+  --glass-saturate-strong: 180%;
+  --glass-saturate-medium: 145%;
+  --glass-saturate-inner: 150%;
+
+  --glass-rim-light: 255 255 255;
+  --glass-rim-light-alpha: 0.12;
+  --glass-fill-light-alpha: 0.03;
+  --glass-fill-light-hover-alpha: 0.07;
+  --glass-inset-highlight-alpha: 0.05;
+
+  --glass-shadow-outer: 0 4px 24px -1px rgb(0 0 0 / 0.2);
+  --glass-shadow-inset: inset 0 0 20px 0 rgba(255, 255, 255, 0.05);
+
+  /* ── Eyebrow (section labels, pill badges) ──
+   * Canonical tracking: 0.22em — was scattered as `tracking-[0.22em]` in components.
+   * Prefer `EyebrowPillBadge`, `.eyebrow-pill-badge-text`, or `tracking-eyebrow` (theme).
+   */
+  --eyebrow-font-size: 0.625rem; /* 10px — text-[10px] */
+  --eyebrow-font-size-relaxed: 0.6875rem; /* 11px */
+  --eyebrow-letter-spacing: 0.22em;
+  --eyebrow-font-weight: 900; /* font-black */
+  --eyebrow-text-transform: uppercase;
+
+  --eyebrow-pill-bg-light: 239 246 255; /* blue-50 family */
+  --eyebrow-pill-text-light: 30 64 175; /* blue-800 */
+  --eyebrow-ink-light: 10 10 10;
+  --eyebrow-ink-dark: 255 255 255;
+
+  /* ── CTA (call-to-action buttons) ──
+   * Classes: `.btn-vibrant-blue`, `.btn-apple-green`, `.btn-soft-white` (globals.css).
+   * Dark primary aligns with --color-primary (#1D61FF).
+   */
+  --cta-blue-from: 37 99 235; /* #2563EB */
+  --cta-blue-to: 30 64 175; /* #1E40AF */
+  --cta-blue-dark-from: 43 108 255; /* #2b6cff */
+  --cta-blue-dark-mid: 29 97 255; /* #1d61ff — brand electric blue */
+  --cta-blue-dark-to: 21 87 232; /* #1557e8 */
+  --cta-blue-glow: 37 99 235; /* shadow tint (light) */
+  --cta-blue-glow-dark: 29 97 255;
+
+  --cta-green-from: 0 200 150; /* #00C896 */
+  --cta-green-to: 0 166 124; /* #00A67C */
+  --cta-green-glow: 0 200 150;
+
+  --cta-white-fill-alpha: 0.8;
+  --cta-white-fill-hover-alpha: 0.95;
+  --cta-white-rim-alpha: 0.3;
+
+  /* ── Typography ── */
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+
+  /* ── Layout (section / container) ──
+   * Canonical shells: `Section` + `Container` in `@/components/ui` (`section-container-styles.ts`).
+   * Variants: default · band · page · compact · audience · bordered.
+   */
+  --section-py-band: 6rem; /* py-24 */
+  --section-py-page: 3rem; /* base py-12, sm:py-16, lg:py-20 */
+  --container-max-6xl: 72rem;
+
+  /* ── Spacing ── */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* ── Motion ── */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark — premium navy stack + electric blue */
+.dark {
+  --color-background: 11 15 26; /* #0B0F1A */
+  --color-foreground: 255 255 255;
+  --color-muted: 22 27 38;
+  --color-muted-foreground: 163 174 196;
+  --color-border: 48 58 78;
+  --color-input: 22 27 38;
+
+  --color-primary: 29 97 255; /* #1D61FF */
+  --color-ring: 29 97 255;
+
+  --text-primary: 255 255 255;
+  --text-secondary: 163 174 196;
+  --bg-primary: 11 15 26;
+  --bg-secondary: 22 27 38; /* #161B26 */
+  --border: 48 58 78;
+
+  --pill-badge-bg: 220 228 242; /* #DCE4F2 */
+  --pill-badge-text: 43 89 195; /* #2B59C3 */
+
+  --glass-fill-dark: 22 27 38;
+  --glass-fill-dark-hover: 28 34 48;
+  --glass-rim-dark-alpha: 0.08;
+  --glass-primary-rim-alpha: 0.38;
+}

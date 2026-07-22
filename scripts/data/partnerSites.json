@@ -1,0 +1,12 @@
+[
+  { "name": "ABB", "url": "https://www.abb.com" },
+  { "name": "Wendre", "url": "https://www.wendre.com" },
+  { "name": "Ericsson", "url": "https://www.ericsson.com/en" },
+  { "name": "Cleveron", "url": "https://cleveron.com" },
+  { "name": "MRPeasy", "url": "https://www.mrpeasy.com" },
+  { "name": "Ensto", "url": "https://www.ensto.com" },
+  { "name": "Mistra-Autex", "url": "https://www.mistra.ee" },
+  { "name": "Incap", "url": "https://www.incapcorp.com" },
+  { "name": "Scanfil", "url": "https://www.scanfil.com" },
+  { "name": "Gren", "url": "https://gren.com" }
+]

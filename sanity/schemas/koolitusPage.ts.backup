@@ -1,0 +1,63 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable import/no-anonymous-default-export */
+import { definePageSectionsField } from './pageBuilder/defineSectionsField'
+import { pageBuilderPresets } from './pageBuilder/pagePresets'
+
+export default {
+  name: 'koolitusPage',
+  title: 'Koolitus Page',
+  type: 'document',
+  fields: [
+    {
+      name: 'title',
+      title: 'Page Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    definePageSectionsField({
+      allowedTypes: [...pageBuilderPresets.koolitusPage],
+      description:
+        'Ühised marketingu blokid (sama teek kui avalehel). Tühi = legacy väljad allpool.',
+    }),
+    {
+      name: 'seo',
+      title: 'SEO',
+      type: 'object',
+      fields: [
+        {
+          name: 'metaTitle',
+          title: 'Meta Title',
+          type: 'string',
+        },
+        {
+          name: 'metaDescription',
+          title: 'Meta Description',
+          type: 'text',
+          rows: 3,
+        },
+        {
+          name: 'metaKeywords',
+          title: 'Meta keywords (SEO võtmesõnad - komadega eraldatud)',
+          type: 'string',
+        },
+        {
+          name: 'ogImage',
+          title: 'OG Image',
+          type: 'image',
+        },
+      ],
+    },
+  ],
+  preview: {
+    select: {
+      title: 'title',
+    },
+    prepare(selection: any) {
+      const { title } = selection
+      return {
+        title: title,
+        subtitle: 'Koolitus Page',
+      }
+    },
+  },
+}

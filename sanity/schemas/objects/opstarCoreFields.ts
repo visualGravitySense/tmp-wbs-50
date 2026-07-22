@@ -1,0 +1,1264 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { faqQuestionsField } from '../fields/faqQuestionsField'
+import { withLegacyBlockquote } from './legacyBlockquoteStyle'
+
+export type OpstarFieldDefinition = {
+  name: string
+  type: string
+  title?: string
+  [key: string]: unknown
+}
+
+export function withOpstarLegacyHidden(
+  field: OpstarFieldDefinition,
+): OpstarFieldDefinition {
+  return { ...field, hidden: true }
+}
+
+export const opstarOrbitBlockRefField: OpstarFieldDefinition = {
+  name: 'orbitBlockRef',
+  title: 'Orbit intro block',
+  type: 'reference',
+  to: [{ type: 'opstarProfitBlock' }],
+  description:
+    'Optional. Links the three-column + orbit section. If empty, the site loads the singleton document with id "opstarProfitBlock".',
+}
+
+export const opstarComparisonPartnerLogosField: OpstarFieldDefinition = {
+  name: 'comparisonPartnerLogos',
+  title: 'Lean vs OPSTAR — partner initials',
+  type: 'array',
+  of: [
+    {
+      type: 'reference',
+      to: [{ type: 'partnerLogo' }],
+    },
+  ],
+  description:
+    'Optional. Initials under the comparison table. Leave empty to use the same partner list as the home page marquee.',
+}
+
+export const opstarHeroField: OpstarFieldDefinition = {
+  name: 'hero',
+  title: 'Hero Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'tag',
+      title: 'Tag',
+      type: 'object',
+      fields: [
+        {
+          name: 'text',
+          title: 'Tag Text',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'showDot',
+          title: 'Show Dot',
+          type: 'boolean',
+          initialValue: true,
+        },
+      ],
+    },
+    {
+      name: 'mainTitle',
+      title: 'Main Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'showTrademark',
+      title: 'Show Trademark Symbol',
+      type: 'boolean',
+      initialValue: true,
+    },
+    {
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'text',
+      rows: 2,
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      rows: 3,
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'primaryButton',
+      title: 'Primary Button',
+      type: 'object',
+      fields: [
+        {
+          name: 'text',
+          title: 'Button Text',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'url',
+          title: 'Button URL',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'showArrow',
+          title: 'Show Arrow',
+          type: 'boolean',
+          initialValue: true,
+        },
+      ],
+    },
+    {
+      name: 'secondaryButton',
+      title: 'Secondary Button',
+      type: 'object',
+      fields: [
+        {
+          name: 'text',
+          title: 'Button Text',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'url',
+          title: 'Button URL',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+      ],
+    },
+    {
+      name: 'heroImage',
+      title: 'Hero image (optional)',
+      description:
+        'Portrait or brand visual — right column (matches Andre Kase hero). Leave empty for a built-in graphic.',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'statistics',
+      title: 'Statistics',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'text',
+              title: 'Statistic Text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'showStar',
+              title: 'Show Star Icon',
+              type: 'boolean',
+              initialValue: false,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
+
+export const opstarContentSectionsField: OpstarFieldDefinition = {
+  name: 'contentSections',
+  title: 'Content Sections',
+  type: 'array',
+  of: [
+    {
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Section Title',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'description',
+          title: 'Section Description',
+          type: 'text',
+          rows: 3,
+        },
+        {
+          name: 'features',
+          title: 'Features',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Feature Title',
+                  type: 'string',
+                  validation: (Rule: any) => Rule.required(),
+                },
+                {
+                  name: 'description',
+                  title: 'Feature Description',
+                  type: 'text',
+                  rows: 3,
+                  validation: (Rule: any) => Rule.required(),
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
+
+export const opstarComparisonField: OpstarFieldDefinition = {
+  name: 'comparison',
+  title: 'Comparison Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'Comparison Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'eyebrow',
+      title: 'Eyebrow Text',
+      type: 'string',
+    },
+    {
+      name: 'subtitle',
+      title: 'Comparison Subtitle',
+      type: 'text',
+      rows: 2,
+    },
+    {
+      name: 'comparisonItems',
+      title: 'Comparison Items',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'isNot',
+              title: 'Mis see EI ole',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'is',
+              title: 'Mis see ON',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+      ],
+      validation: (Rule: any) => Rule.required().min(1),
+    },
+    {
+      name: 'backgroundColor',
+      title: 'Comparison Background Color',
+      type: 'string',
+      initialValue: 'bg-gray-50',
+    },
+    {
+      name: 'titleColor',
+      title: 'Comparison Title Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'isNotColor',
+      title: 'Is Not Column Color',
+      type: 'string',
+      initialValue: 'text-red-600',
+    },
+    {
+      name: 'isColor',
+      title: 'Is Column Color',
+      type: 'string',
+      initialValue: 'text-green-600',
+    },
+  ],
+}
+
+export const opstarKolmSammastField: OpstarFieldDefinition = {
+  name: 'kolmSammast',
+  title: 'Kolm sammast Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'Steps Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'eyebrow',
+      title: 'Eyebrow Text',
+      type: 'string',
+    },
+    {
+      name: 'subtitle',
+      title: 'Steps Subtitle',
+      type: 'text',
+      rows: 2,
+    },
+    {
+      name: 'steps',
+      title: 'Steps',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'stepNumber',
+              title: 'Step Number',
+              type: 'number',
+              validation: (Rule: any) => Rule.required().min(1),
+            },
+            {
+              name: 'title',
+              title: 'Step Title',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'description',
+              title: 'Step Description',
+              type: 'array',
+              of: [
+                {
+                  type: 'block',
+                  styles: withLegacyBlockquote([
+                    { title: 'Normal', value: 'normal' },
+                    { title: 'H1', value: 'h1' },
+                    { title: 'H2', value: 'h2' },
+                    { title: 'H3', value: 'h3' },
+                  ]),
+                  lists: [
+                    { title: 'Bullet', value: 'bullet' },
+                    { title: 'Numbered', value: 'number' },
+                  ],
+                  marks: {
+                    decorators: [
+                      { title: 'Strong', value: 'strong' },
+                      { title: 'Emphasis', value: 'em' },
+                      { title: 'Code', value: 'code' },
+                    ],
+                    annotations: [
+                      {
+                        name: 'link',
+                        type: 'object',
+                        fields: [
+                          {
+                            name: 'href',
+                            type: 'url',
+                            title: 'URL',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+            {
+              name: 'icon',
+              title: 'Icon',
+              type: 'string',
+              description: 'Icon name or emoji (e.g., 🎯, 📊, 🚀)',
+            },
+          ],
+        },
+      ],
+      validation: (Rule: any) => Rule.required().min(1).max(3),
+    },
+    {
+      name: 'backgroundColor',
+      title: 'Steps Background Color',
+      type: 'string',
+      initialValue: 'bg-white',
+    },
+    {
+      name: 'titleColor',
+      title: 'Steps Title Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'stepColor',
+      title: 'Step Number Color',
+      type: 'string',
+      initialValue: 'bg-blue-600 text-white',
+    },
+  ],
+}
+
+export const opstarFrameworkField: OpstarFieldDefinition = {
+  name: 'framework',
+  title: 'OPSTAR PROFIT™ Framework (6 parts)',
+  type: 'object',
+  fields: [
+    {
+      name: 'eyebrow',
+      title: 'Eyebrow',
+      type: 'string',
+      initialValue: 'Raamistik',
+    },
+    {
+      name: 'title',
+      title: 'Section Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+      initialValue: 'OPSTAR PROFIT™ — kuus osa',
+    },
+    {
+      name: 'subtitle',
+      title: 'Section Subtitle',
+      type: 'text',
+      rows: 2,
+      initialValue:
+        'Iga osa vastab konkreetsele juhtimisvalule ja viib sind lahenduseni.',
+    },
+    {
+      name: 'parts',
+      title: 'Framework parts',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'code',
+              title: 'Code name',
+              type: 'string',
+              description: 'e.g. OP, ST, AR, PRO, FIT, PROFIT',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'fullTitle',
+              title: 'Full title',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'explanation',
+              title: 'Explanation',
+              type: 'text',
+              rows: 3,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'painQuote',
+              title: 'Pain quote',
+              type: 'text',
+              rows: 2,
+              description: 'User voice — written as a quote',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'ctaText',
+              title: 'CTA button text',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'ctaHref',
+              title: 'CTA link',
+              type: 'string',
+              description: 'Suvaline URL või tee, nt /koolitus, /blog või https://…',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+          preview: {
+            select: { code: 'code', title: 'fullTitle' },
+            prepare({ code, title }: { code?: string; title?: string }) {
+              return {
+                title:
+                  code && title
+                    ? `${code} — ${title}`
+                    : code || title || 'Framework part',
+              }
+            },
+          },
+        },
+      ],
+      validation: (Rule: any) => Rule.min(1).max(6),
+    },
+  ],
+}
+
+export const opstarEightComponentsField: OpstarFieldDefinition = {
+  name: 'eightComponents',
+  title: '8 Components Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'Section Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'eyebrow',
+      title: 'Eyebrow Text',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'subtitle',
+      title: 'Section Subtitle',
+      type: 'text',
+      rows: 2,
+    },
+    {
+      name: 'components',
+      title: 'Components',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'number',
+              title: 'Component Number',
+              type: 'number',
+              validation: (Rule: any) => Rule.required().min(1).max(8),
+            },
+            {
+              name: 'title',
+              title: 'Component Title',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'tags',
+              title: 'Tags',
+              type: 'string',
+              description: 'Tags separated by · (e.g., KPI · Gemba · Andon)',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'whatIs',
+              title: 'Mis see on',
+              type: 'text',
+              rows: 3,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'howItWorks',
+              title: 'Kuidas toimib',
+              type: 'text',
+              rows: 3,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'result',
+              title: 'Tulemus',
+              type: 'text',
+              rows: 3,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'resultMetric',
+              title: 'Result Metric',
+              type: 'string',
+              description:
+                'Result metric with arrow (e.g., ↑ 15–25% tootlikkus 90 päevaga)',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+      ],
+      validation: (Rule: any) => Rule.required().min(8).max(8),
+    },
+    {
+      name: 'backgroundColor',
+      title: 'Background Color',
+      type: 'string',
+      initialValue: 'bg-white',
+    },
+    {
+      name: 'titleColor',
+      title: 'Title Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'eyebrowColor',
+      title: 'Eyebrow Color',
+      type: 'string',
+      initialValue: 'text-blue-600',
+    },
+  ],
+}
+
+export const opstarLeanVsOpstarField: OpstarFieldDefinition = {
+  name: 'leanVsOpstar',
+  title: 'LEAN vs OPSTAR PROFIT™ Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'Section Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'eyebrow',
+      title: 'Eyebrow Text',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'subtitle',
+      title: 'Section Subtitle',
+      type: 'text',
+      rows: 2,
+    },
+    {
+      name: 'comparisonItems',
+      title: 'Pain scenarios',
+      description:
+        'Each row is one interactive tab (e.g. "Protsessid ei tööta"). Criterion = tab label; lean/opstar values = comparison text.',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'criterion',
+              title: 'Scenario tab label',
+              type: 'string',
+              description: 'Short pain label shown on the tab button',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'leanValue',
+              title: 'How LEAN handles this',
+              type: 'text',
+              rows: 3,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'opstarValue',
+              title: 'How OPSTAR PROFIT™ handles this',
+              type: 'text',
+              rows: 3,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'opstarHasAdvantage',
+              title: 'OPSTAR has Advantage',
+              type: 'boolean',
+              initialValue: true,
+            },
+          ],
+        },
+      ],
+      validation: (Rule: any) => Rule.required().min(1),
+    },
+    {
+      name: 'cta',
+      title: 'Call to Action',
+      type: 'object',
+      fields: [
+        {
+          name: 'text',
+          title: 'CTA Text',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'subtitle',
+          title: 'CTA Subtitle',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'buttonText',
+          title: 'Button Text',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+        {
+          name: 'buttonUrl',
+          title: 'Button URL',
+          type: 'string',
+          validation: (Rule: any) => Rule.required(),
+        },
+      ],
+    },
+    {
+      name: 'backgroundColor',
+      title: 'Background Color',
+      type: 'string',
+      initialValue: 'bg-white',
+    },
+    {
+      name: 'titleColor',
+      title: 'Title Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'eyebrowColor',
+      title: 'Eyebrow Color',
+      type: 'string',
+      initialValue: 'text-blue-600',
+    },
+    {
+      name: 'opstarColumnColor',
+      title: 'OPSTAR Column Color',
+      type: 'string',
+      initialValue: 'bg-blue-50 border-blue-200',
+    },
+  ],
+}
+
+export const opstarMeasuredResultsField: OpstarFieldDefinition = {
+  name: 'meodetavadTulemused',
+  title: 'Mõõdetavad tulemused Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'Section Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'eyebrow',
+      title: 'Eyebrow Text',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'subtitle',
+      title: 'Section Subtitle',
+      type: 'text',
+      rows: 2,
+    },
+    {
+      name: 'results',
+      title: 'Results',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'value',
+              title: 'Result Value',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'valueColor',
+              title: 'Value Color',
+              type: 'string',
+              initialValue: 'text-blue-600',
+            },
+            {
+              name: 'label',
+              title: 'Result Label',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'description',
+              title: 'Result Description',
+              type: 'text',
+              rows: 2,
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+      ],
+      validation: (Rule: any) => Rule.required().min(1),
+    },
+    {
+      name: 'source',
+      title: 'Source Information',
+      type: 'text',
+      rows: 2,
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'backgroundColor',
+      title: 'Background Color',
+      type: 'string',
+      initialValue: 'bg-white',
+    },
+    {
+      name: 'titleColor',
+      title: 'Title Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'eyebrowColor',
+      title: 'Eyebrow Color',
+      type: 'string',
+      initialValue: 'text-blue-600',
+    },
+  ],
+}
+
+export const opstarCasesField: OpstarFieldDefinition = {
+  name: 'cases',
+  title: 'Cases Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'Section Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'eyebrow',
+      title: 'Eyebrow Text',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'subtitle',
+      title: 'Section Subtitle',
+      type: 'text',
+      rows: 2,
+    },
+    {
+      name: 'caseStudies',
+      title: 'Case Studies',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'company',
+              title: 'Company Name',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'industry',
+              title: 'Industry',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'employees',
+              title: 'Number of Employees',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'location',
+              title: 'Location',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'year',
+              title: 'Year',
+              type: 'number',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'beforeMetrics',
+              title: 'Before Metrics',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'label',
+                      title: 'Metric Label',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'value',
+                      title: 'Metric Value',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                  ],
+                },
+              ],
+              validation: (Rule: any) => Rule.required().min(1),
+            },
+            {
+              name: 'afterMetrics',
+              title: 'After Metrics',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'label',
+                      title: 'Metric Label',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                    {
+                      name: 'value',
+                      title: 'Metric Value',
+                      type: 'string',
+                      validation: (Rule: any) => Rule.required(),
+                    },
+                  ],
+                },
+              ],
+              validation: (Rule: any) => Rule.required().min(1),
+            },
+            {
+              name: 'resultMain',
+              title: 'Main Result',
+              type: 'text',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'resultTime',
+              title: 'Result Time',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+          ],
+        },
+      ],
+      validation: (Rule: any) => Rule.required().min(1),
+    },
+    {
+      name: 'backgroundColor',
+      title: 'Background Color',
+      type: 'string',
+      initialValue: 'bg-white',
+    },
+    {
+      name: 'titleColor',
+      title: 'Title Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'eyebrowColor',
+      title: 'Eyebrow Color',
+      type: 'string',
+      initialValue: 'text-blue-600',
+    },
+  ],
+}
+
+export const opstarArvamusedField: OpstarFieldDefinition = {
+  name: 'arvamused',
+  title: 'Arvamused Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'Section Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'eyebrow',
+      title: 'Eyebrow Text',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'subtitle',
+      title: 'Section Subtitle',
+      type: 'text',
+      rows: 2,
+    },
+    {
+      name: 'reviews',
+      title: 'Reviews',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'rating',
+              title: 'Rating',
+              type: 'number',
+              validation: (Rule: any) => Rule.required().min(1).max(5),
+              initialValue: 5,
+            },
+            {
+              name: 'quote',
+              title: 'Review Quote',
+              type: 'text',
+              rows: 3,
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'authorName',
+              title: 'Author Name',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'authorRole',
+              title: 'Author Role',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'authorCompany',
+              title: 'Author Company/Location',
+              type: 'string',
+              validation: (Rule: any) => Rule.required(),
+            },
+            {
+              name: 'avatarInitials',
+              title: 'Avatar Initials',
+              type: 'string',
+              validation: (Rule: any) => Rule.required().min(2).max(3),
+            },
+            {
+              name: 'avatarGradient',
+              title: 'Avatar Gradient',
+              type: 'string',
+              initialValue:
+                'radial-gradient(ellipse at 38% 30%,#5baeff,#007aff 50%,#0040a8)',
+            },
+          ],
+        },
+      ],
+      validation: (Rule: any) => Rule.required().min(1),
+    },
+    {
+      name: 'totalReviews',
+      title: 'Total Reviews Count',
+      type: 'number',
+      validation: (Rule: any) => Rule.required().min(1),
+    },
+    {
+      name: 'averageRating',
+      title: 'Average Rating',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'recommendationPercentage',
+      title: 'Recommendation Percentage',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'backgroundColor',
+      title: 'Background Color',
+      type: 'string',
+      initialValue: 'bg-white',
+    },
+    {
+      name: 'titleColor',
+      title: 'Title Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'eyebrowColor',
+      title: 'Eyebrow Color',
+      type: 'string',
+      initialValue: 'text-blue-600',
+    },
+  ],
+}
+
+export const opstarKkkField: OpstarFieldDefinition = {
+  name: 'kkk',
+  title: 'KKK Section (FAQ)',
+  type: 'object',
+  description:
+    'Accordion block on page /opstar-profit. Heading, pill label, subtitle, then question/answer pairs.',
+  fields: [
+    {
+      name: 'title',
+      title: 'Section Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'eyebrow',
+      title: 'Pill badge text',
+      description: 'Short label shown in the pill with dots (same style as hero).',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'showEyebrowDots',
+      title: 'Show dots on pill badge',
+      type: 'boolean',
+      initialValue: true,
+    },
+    {
+      name: 'subtitle',
+      title: 'Subtitle (optional)',
+      type: 'text',
+      rows: 2,
+    },
+    faqQuestionsField,
+    {
+      name: 'backgroundColor',
+      title: 'Background Color',
+      type: 'string',
+      initialValue: 'bg-white',
+    },
+    {
+      name: 'titleColor',
+      title: 'Title Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'eyebrowColor',
+      title: 'Eyebrow Color',
+      type: 'string',
+      initialValue: 'text-blue-600',
+    },
+    {
+      name: 'questionBackgroundColor',
+      title: 'Question Background Color',
+      type: 'string',
+      initialValue: 'bg-gray-50',
+    },
+    {
+      name: 'questionTextColor',
+      title: 'Question Text Color',
+      type: 'string',
+      initialValue: 'text-gray-900',
+    },
+    {
+      name: 'answerBackgroundColor',
+      title: 'Answer Background Color',
+      type: 'string',
+      initialValue: 'bg-white',
+    },
+    {
+      name: 'answerTextColor',
+      title: 'Answer Text Color',
+      type: 'string',
+      initialValue: 'text-gray-700',
+    },
+  ],
+}
+
+export const opstarCtaField: OpstarFieldDefinition = {
+  name: 'cta',
+  title: 'CTA Section',
+  type: 'object',
+  fields: [
+    {
+      name: 'title',
+      title: 'CTA Title',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'subtitle',
+      title: 'CTA Subtitle',
+      type: 'text',
+      rows: 2,
+    },
+    {
+      name: 'description',
+      title: 'CTA Description',
+      type: 'text',
+      rows: 3,
+    },
+    {
+      name: 'backgroundColor',
+      title: 'Background Color',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Blue to Purple', value: 'blue-purple' },
+          { title: 'Purple to Pink', value: 'purple-pink' },
+          { title: 'Green to Blue', value: 'green-blue' },
+          { title: 'Orange to Red', value: 'orange-red' },
+          { title: 'Blue to Light Blue', value: 'blue-lightblue' },
+        ],
+      },
+      initialValue: 'blue-purple',
+    },
+    {
+      name: 'primaryButtonText',
+      title: 'Primary Button Text',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'primaryButtonUrl',
+      title: 'Primary Button URL',
+      type: 'string',
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'primaryButtonIcon',
+      title: 'Primary Button Icon',
+      type: 'string',
+      initialValue: '🚀',
+    },
+    {
+      name: 'secondaryButtonText',
+      title: 'Secondary Button Text',
+      type: 'string',
+    },
+    {
+      name: 'secondaryButtonUrl',
+      title: 'Secondary Button URL',
+      type: 'string',
+    },
+    {
+      name: 'secondaryButtonIcon',
+      title: 'Secondary Button Icon',
+      type: 'string',
+      initialValue: '📞',
+    },
+    {
+      name: 'trustFootnote',
+      title: 'Small line under CTA (under the ribbon)',
+      type: 'string',
+      initialValue: 'Kohtade arv on piiratud',
+    },
+  ],
+}
+
+export const opstarPageSectionFields: Record<string, OpstarFieldDefinition> = {
+  orbitBlockRef: opstarOrbitBlockRefField,
+  comparisonPartnerLogos: opstarComparisonPartnerLogosField,
+  hero: opstarHeroField,
+  contentSections: opstarContentSectionsField,
+  comparison: opstarComparisonField,
+  kolmSammast: opstarKolmSammastField,
+  framework: opstarFrameworkField,
+  eightComponents: opstarEightComponentsField,
+  leanVsOpstar: opstarLeanVsOpstarField,
+  meodetavadTulemused: opstarMeasuredResultsField,
+  cases: opstarCasesField,
+  arvamused: opstarArvamusedField,
+  kkk: opstarKkkField,
+  cta: opstarCtaField,
+}

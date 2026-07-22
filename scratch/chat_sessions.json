@@ -1,0 +1,17 @@
+[
+  {
+    "id": "83647966-b7f0-400d-8adb-21137a972697",
+    "sessionId": "8c9743c3-f2f2-4f80-9d9f-babfb046a6c6",
+    "telegramChatId": "5883625804",
+    "telegramMessageId": "121",
+    "messages": [
+      {
+        "sender": "user",
+        "text": "See on test, kuidas toimib?",
+        "timestamp": "2026-05-27T21:34:41.402Z"
+      }
+    ],
+    "createdAt": "2026-05-27T21:34:39.701Z",
+    "updatedAt": "2026-05-27T21:34:41.511Z"
+  }
+]
