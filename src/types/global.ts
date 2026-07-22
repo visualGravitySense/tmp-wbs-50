@@ -7,6 +7,7 @@ export interface GlobalSettings {
     linkedin?: string
   }
   theme: {
+    themeStyle?: 'opstar' | 'vip-holidays' | 'swiss-minimalism'
     primaryColor: string
     accentColor: string
   }

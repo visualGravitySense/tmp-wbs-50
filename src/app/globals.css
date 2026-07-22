@@ -4,6 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @import "../styles/tokens.css";
+@import "../styles/theme-swiss.css";
 
 /* ========================================================
    Brand dynamic themes & variables bridge

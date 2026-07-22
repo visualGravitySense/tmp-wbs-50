@@ -13,9 +13,9 @@ export const LogoOpstarProfit = ({ variant = 'centered', theme = 'light', scroll
   const isDark = theme === 'dark';
   const isScrolled = scrolled;
   
-  // Знак звезды с изображением и градиентом
+  // Brand mark (logo image); themed via data-brand CSS where needed
   const BrandMark = () => (
-    <div className="relative w-7 h-7 md:w-8 md:h-8 flex items-center justify-center">
+    <div className="site-logo-mark relative w-7 h-7 md:w-8 md:h-8 flex items-center justify-center">
       {/* Plain <img>: next/image here caused SSR/client src mismatch inside client Header (hydration). */}
       <img
         src="/placeholder-logo.svg"
